@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "record_exists": true,
+    "five_rounds": true,
+    "steps_150": true,
+    "apex_count_150": true,
+    "evm_reduced": true,
+    "external_all_ok": true,
+    "hetu_all_5": true,
+    "next_gate_all": true,
+    "non_template_shortboards": true
+  },
+  "missing": [],
+  "status": "verified_complete"
+}

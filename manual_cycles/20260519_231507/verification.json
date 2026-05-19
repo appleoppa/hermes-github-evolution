@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "record_exists": true,
+    "previous_verified_cycle_checked": true,
+    "five_rounds": true,
+    "steps_150": true,
+    "apex_count_150": true,
+    "formula_missing_zero": true,
+    "evm_reduced": true,
+    "external_all_ok": true,
+    "hetu_all_5": true,
+    "structured_counter_evidence": true,
+    "trace_records_150": true,
+    "regression_cases_5": true,
+    "non_template_shortboards": true,
+    "next_gate_all": true
+  },
+  "missing": [],
+  "status": "verified_complete"
+}

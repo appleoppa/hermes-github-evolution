@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "record_exists": true,
+    "previous_gate_checked": true,
+    "five_rounds": true,
+    "steps_150": true,
+    "apex_count_150": true,
+    "formula_missing_zero": true,
+    "evm_reduced": true,
+    "external_all_ok": true,
+    "hetu_all_5": true,
+    "failure_probe_recorded": true,
+    "non_template_shortboards": true,
+    "next_gate_all": true
+  },
+  "missing": [],
+  "status": "verified_complete"
+}

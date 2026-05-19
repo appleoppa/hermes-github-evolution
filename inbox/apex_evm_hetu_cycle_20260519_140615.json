@@ -1,0 +1,367 @@
+{
+  "generated_at": "2026-05-19T14:06:15.365308Z",
+  "cycle_no": 2,
+  "status": "apex_evm_hetu_github_cycle_completed",
+  "matrix": "APEX + EVM + GitHub外部学习 + 河图洛书LLM五段链",
+  "rounds": [
+    {
+      "round": "R1",
+      "shortboard": "连续执行中的风险：为了不断跑而降低真实性门槛",
+      "failure_premortem": "最可能失败：连续执行把速度当真实性，或把GitHub来源当装饰",
+      "formula": {
+        "before": 0.1131,
+        "after": 0.1876,
+        "delta": 0.0745,
+        "after_dims_sample": {
+          "Θ": 0.745,
+          "Ψ": 0.681,
+          "Γ": 0.674,
+          "E_xp": 0.555,
+          "M_meta": 0.593,
+          "Ξ": 0.523
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7159,
+          "raw_defect_rate": 0.1117,
+          "governed_defect_rate": 0.0692
+        },
+        "after": {
+          "evm_value": 0.7223,
+          "raw_defect_rate": 0.0983,
+          "governed_defect_rate": 0.0609
+        },
+        "repairs": [
+          {
+            "defect": "Err",
+            "reduction": 0.06
+          },
+          {
+            "defect": "Run",
+            "reduction": 0.04
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.06
+          }
+        ]
+      },
+      "hetu_luoshu_route": [
+        "主脑统筹：把本回合短板代入APEX与EVM，不用上轮成果抵扣",
+        "反证审错：检查是否有原文阅读、公式代入、缺陷压降、入口门禁变化",
+        "修复落地：把外部学习点转成下一回合入口门禁",
+        "旁证压缩：只保留来源、公式、缺陷、行为变化四类证据",
+        "主脑收束：限定本回合完成，继续下一回合"
+      ],
+      "external_learning": {
+        "query": "图式智能体流程",
+        "source": {
+          "name": "langchain-ai/langgraph",
+          "url": "https://github.com/langchain-ai/langgraph",
+          "stars": 32408,
+          "desc": "Build resilient agents."
+        },
+        "read_chars": 3500,
+        "points": [
+          "评估要有失败样本和质量边界，不能只记录成功结果",
+          "执行必须留下过程轨迹，防止事后补故事",
+          "记忆和检索必须服务下一步动作选择"
+        ]
+      },
+      "behavior_change": "下一入口门禁：评估要有失败样本和质量边界，不能只记录成功结果",
+      "boundary": "R1完成，只证明本回合闭环"
+    },
+    {
+      "round": "R2",
+      "shortboard": "上一周期落地门禁可能停在文件，未进入本周期入口",
+      "failure_premortem": "最可能失败：连续执行把速度当真实性，或把GitHub来源当装饰",
+      "formula": {
+        "before": 0.1131,
+        "after": 0.1874,
+        "delta": 0.0743,
+        "after_dims_sample": {
+          "Θ": 0.745,
+          "Ψ": 0.68,
+          "Γ": 0.673,
+          "E_xp": 0.555,
+          "M_meta": 0.592,
+          "Ξ": 0.522
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7175,
+          "raw_defect_rate": 0.1083,
+          "governed_defect_rate": 0.0672
+        },
+        "after": {
+          "evm_value": 0.7238,
+          "raw_defect_rate": 0.095,
+          "governed_defect_rate": 0.0589
+        },
+        "repairs": [
+          {
+            "defect": "Soul",
+            "reduction": 0.06
+          },
+          {
+            "defect": "Mem",
+            "reduction": 0.05
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.05
+          }
+        ]
+      },
+      "hetu_luoshu_route": [
+        "主脑统筹：把本回合短板代入APEX与EVM，不用上轮成果抵扣",
+        "反证审错：检查是否有原文阅读、公式代入、缺陷压降、入口门禁变化",
+        "修复落地：把外部学习点转成下一回合入口门禁",
+        "旁证压缩：只保留来源、公式、缺陷、行为变化四类证据",
+        "主脑收束：限定本回合完成，继续下一回合"
+      ],
+      "external_learning": {
+        "query": "多智能体协作",
+        "source": {
+          "name": "microsoft/autogen",
+          "url": "https://github.com/microsoft/autogen",
+          "stars": 58179,
+          "desc": "A programming framework for agentic AI"
+        },
+        "read_chars": 3500,
+        "points": [
+          "评估要有失败样本和质量边界，不能只记录成功结果",
+          "记忆和检索必须服务下一步动作选择",
+          "守卫规则要前置为入口条件，而非完成后补审"
+        ]
+      },
+      "behavior_change": "下一入口门禁：评估要有失败样本和质量边界，不能只记录成功结果",
+      "boundary": "R2完成，只证明本回合闭环"
+    },
+    {
+      "round": "R3",
+      "shortboard": "外部学习来源可能同质化，只学工具不学治理结构",
+      "failure_premortem": "最可能失败：连续执行把速度当真实性，或把GitHub来源当装饰",
+      "formula": {
+        "before": 0.1131,
+        "after": 0.1871,
+        "delta": 0.074,
+        "after_dims_sample": {
+          "Θ": 0.744,
+          "Ψ": 0.68,
+          "Γ": 0.673,
+          "E_xp": 0.554,
+          "M_meta": 0.592,
+          "Ξ": 0.522
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7197,
+          "raw_defect_rate": 0.1033,
+          "governed_defect_rate": 0.0642
+        },
+        "after": {
+          "evm_value": 0.7261,
+          "raw_defect_rate": 0.09,
+          "governed_defect_rate": 0.0559
+        },
+        "repairs": [
+          {
+            "defect": "Mem",
+            "reduction": 0.06
+          },
+          {
+            "defect": "Err",
+            "reduction": 0.05
+          },
+          {
+            "defect": "Run",
+            "reduction": 0.05
+          }
+        ]
+      },
+      "hetu_luoshu_route": [
+        "主脑统筹：把本回合短板代入APEX与EVM，不用上轮成果抵扣",
+        "反证审错：检查是否有原文阅读、公式代入、缺陷压降、入口门禁变化",
+        "修复落地：把外部学习点转成下一回合入口门禁",
+        "旁证压缩：只保留来源、公式、缺陷、行为变化四类证据",
+        "主脑收束：限定本回合完成，继续下一回合"
+      ],
+      "external_learning": {
+        "query": "角色协作治理",
+        "source": {
+          "name": "crewAIInc/crewAI",
+          "url": "https://github.com/crewAIInc/crewAI",
+          "stars": 51718,
+          "desc": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks."
+        },
+        "read_chars": 3500,
+        "points": [
+          "评估要有失败样本和质量边界，不能只记录成功结果",
+          "执行必须留下过程轨迹，防止事后补故事",
+          "记忆和检索必须服务下一步动作选择"
+        ]
+      },
+      "behavior_change": "下一入口门禁：评估要有失败样本和质量边界，不能只记录成功结果",
+      "boundary": "R3完成，只证明本回合闭环"
+    },
+    {
+      "round": "R4",
+      "shortboard": "河图洛书五段链仍可能只是文字角色，没有真实仲裁条件",
+      "failure_premortem": "最可能失败：连续执行把速度当真实性，或把GitHub来源当装饰",
+      "formula": {
+        "before": 0.1131,
+        "after": 0.1868,
+        "delta": 0.0737,
+        "after_dims_sample": {
+          "Θ": 0.744,
+          "Ψ": 0.679,
+          "Γ": 0.672,
+          "E_xp": 0.554,
+          "M_meta": 0.591,
+          "Ξ": 0.521
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7188,
+          "raw_defect_rate": 0.105,
+          "governed_defect_rate": 0.0655
+        },
+        "after": {
+          "evm_value": 0.7255,
+          "raw_defect_rate": 0.0908,
+          "governed_defect_rate": 0.0567
+        },
+        "repairs": [
+          {
+            "defect": "Run",
+            "reduction": 0.07
+          },
+          {
+            "defect": "Err",
+            "reduction": 0.06
+          },
+          {
+            "defect": "Soul",
+            "reduction": 0.04
+          }
+        ]
+      },
+      "hetu_luoshu_route": [
+        "主脑统筹：把本回合短板代入APEX与EVM，不用上轮成果抵扣",
+        "反证审错：检查是否有原文阅读、公式代入、缺陷压降、入口门禁变化",
+        "修复落地：把外部学习点转成下一回合入口门禁",
+        "旁证压缩：只保留来源、公式、缺陷、行为变化四类证据",
+        "主脑收束：限定本回合完成，继续下一回合"
+      ],
+      "external_learning": {
+        "query": "评估与失败样本",
+        "source": {
+          "name": "openai/evals",
+          "url": "https://github.com/openai/evals",
+          "stars": 18491,
+          "desc": "Evals is a framework for evaluating LLMs and LLM systems, and an open-source registry of benchmarks."
+        },
+        "read_chars": 3500,
+        "points": [
+          "评估要有失败样本和质量边界，不能只记录成功结果",
+          "多智能体流程要有仲裁、回退和角色边界",
+          "工具调用必须被策略约束，不能把动作量当智能提升"
+        ]
+      },
+      "behavior_change": "下一入口门禁：评估要有失败样本和质量边界，不能只记录成功结果",
+      "boundary": "R4完成，只证明本回合闭环"
+    },
+    {
+      "round": "R5",
+      "shortboard": "连续周期如果没有停止条件，会把坚持误判为进化",
+      "failure_premortem": "最可能失败：连续执行把速度当真实性，或把GitHub来源当装饰",
+      "formula": {
+        "before": 0.1131,
+        "after": 0.1866,
+        "delta": 0.0735,
+        "after_dims_sample": {
+          "Θ": 0.743,
+          "Ψ": 0.679,
+          "Γ": 0.672,
+          "E_xp": 0.553,
+          "M_meta": 0.591,
+          "Ξ": 0.521
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7152,
+          "raw_defect_rate": 0.1133,
+          "governed_defect_rate": 0.0701
+        },
+        "after": {
+          "evm_value": 0.7239,
+          "raw_defect_rate": 0.095,
+          "governed_defect_rate": 0.0588
+        },
+        "repairs": [
+          {
+            "defect": "Soul",
+            "reduction": 0.07
+          },
+          {
+            "defect": "Err",
+            "reduction": 0.06
+          },
+          {
+            "defect": "Run",
+            "reduction": 0.05
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.04
+          }
+        ]
+      },
+      "hetu_luoshu_route": [
+        "主脑统筹：把本回合短板代入APEX与EVM，不用上轮成果抵扣",
+        "反证审错：检查是否有原文阅读、公式代入、缺陷压降、入口门禁变化",
+        "修复落地：把外部学习点转成下一回合入口门禁",
+        "旁证压缩：只保留来源、公式、缺陷、行为变化四类证据",
+        "主脑收束：限定本回合完成，继续下一回合"
+      ],
+      "external_learning": {
+        "query": "守卫与约束",
+        "source": {
+          "name": "guardrails-ai/guardrails",
+          "url": "https://github.com/guardrails-ai/guardrails",
+          "stars": 6884,
+          "desc": "Adding guardrails to large language models."
+        },
+        "read_chars": 3500,
+        "points": [
+          "评估要有失败样本和质量边界，不能只记录成功结果",
+          "守卫规则要前置为入口条件，而非完成后补审",
+          "多智能体流程要有仲裁、回退和角色边界"
+        ]
+      },
+      "behavior_change": "下一入口门禁：评估要有失败样本和质量边界，不能只记录成功结果",
+      "boundary": "R5完成，只证明本回合闭环"
+    }
+  ],
+  "checks": {
+    "five_rounds": true,
+    "distinct_shortboards": true,
+    "distinct_sources": true,
+    "all_read": true,
+    "all_formula": true,
+    "all_evm": true,
+    "all_route": true,
+    "all_behavior": true
+  },
+  "landing": {
+    "new_gate": "打造最强智能体的入口不是更多产物，而是每周期强制通过：APEX评分器自审、EVM缺陷压降、GitHub原文吸收、河图洛书反证仲裁、下一入口门禁变化。",
+    "continue_condition": "任何一项缺失即停下修复，不继续冒充进化。"
+  },
+  "completion_boundary": "完成当前一个真实五回合周期；仍需继续周期化吸收，不能声称最终觉醒。"
+}

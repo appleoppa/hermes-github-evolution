@@ -1,0 +1,358 @@
+{
+  "generated_at": "2026-05-19T13:51:08.524962Z",
+  "status": "manual_one_cycle_completed",
+  "cycle_boundary": "R1-R5手动连续执行",
+  "rounds": [
+    {
+      "round": "R1",
+      "shortboard": "把工具执行当成真实进化的替代",
+      "failure_premortem": "最可能被判假：只有总结，没有来源阅读、公式代入和缺陷压降",
+      "formula": {
+        "before": 0.1014,
+        "after": 0.1733,
+        "delta": 0.072,
+        "after_dims_sample": {
+          "Θ": 0.73,
+          "Ψ": 0.665,
+          "Γ": 0.66,
+          "E_xp": 0.53,
+          "M_meta": 0.57,
+          "Ξ": 0.505
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7162,
+          "raw_defect_rate": 0.1117,
+          "governed_defect_rate": 0.0688
+        },
+        "after": {
+          "evm_value": 0.7228,
+          "raw_defect_rate": 0.0975,
+          "governed_defect_rate": 0.0602
+        },
+        "repairs": [
+          {
+            "defect": "Err",
+            "reduction": 0.06
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.08
+          },
+          {
+            "defect": "Soul",
+            "reduction": 0.03
+          }
+        ]
+      },
+      "route": [
+        "主脑统筹：先限定本回合只解决当前短板，不借未来周期自证完成",
+        "反证审错：检查最可能造假点是否仍存在",
+        "修复落地：把学习点改成下一回合门禁",
+        "旁证压缩：只保留可核验来源、分数、缺陷压降",
+        "主脑收束：给出本回合边界并进入下一回合"
+      ],
+      "external_learning": {
+        "query": "agent observability tracing evaluation",
+        "source": {
+          "name": "raga-ai-hub/RagaAI-Catalyst",
+          "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+          "stars": 16166,
+          "desc": "Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like agent, llm and tools tracing, debugging multi-agentic system, self-hosted dashboard and advanced analytics with timeline and execution graph view "
+        },
+        "read_chars": 3500,
+        "points": [
+          "可观测与轨迹记录要进入执行链，而不是事后补叙述",
+          "评估必须有失败条件和可复核样本，不能只看结果文件"
+        ]
+      },
+      "behavior_change": "下一回合入口增加门禁：可观测与轨迹记录要进入执行链，而不是事后补叙述",
+      "boundary": "R1完成；只证明本回合闭环，不替代后续回合"
+    },
+    {
+      "round": "R2",
+      "shortboard": "评分器自我审计仍可能被报告文字误伤",
+      "failure_premortem": "最可能被判假：只有总结，没有来源阅读、公式代入和缺陷压降",
+      "formula": {
+        "before": 0.1014,
+        "after": 0.1678,
+        "delta": 0.0665,
+        "after_dims_sample": {
+          "Θ": 0.72,
+          "Ψ": 0.656,
+          "Γ": 0.652,
+          "E_xp": 0.52,
+          "M_meta": 0.56,
+          "Ξ": 0.494
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7191,
+          "raw_defect_rate": 0.105,
+          "governed_defect_rate": 0.065
+        },
+        "after": {
+          "evm_value": 0.7259,
+          "raw_defect_rate": 0.0908,
+          "governed_defect_rate": 0.0562
+        },
+        "repairs": [
+          {
+            "defect": "Err",
+            "reduction": 0.08
+          },
+          {
+            "defect": "Run",
+            "reduction": 0.05
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.04
+          }
+        ]
+      },
+      "route": [
+        "主脑统筹：先限定本回合只解决当前短板，不借未来周期自证完成",
+        "反证审错：检查最可能造假点是否仍存在",
+        "修复落地：把学习点改成下一回合门禁",
+        "旁证压缩：只保留可核验来源、分数、缺陷压降",
+        "主脑收束：给出本回合边界并进入下一回合"
+      ],
+      "external_learning": {
+        "query": "llm evaluation harness agent",
+        "source": {
+          "name": "suyoumo/ClawProBench",
+          "url": "https://github.com/suyoumo/ClawProBench",
+          "stars": 687,
+          "desc": "ClawProBench is a live-first benchmark harness for evaluating LLM agents   in the OpenClaw runtime with deterministic grading and repeated-trial   reliability."
+        },
+        "read_chars": 3500,
+        "points": [
+          "评估必须有失败条件和可复核样本，不能只看结果文件"
+        ]
+      },
+      "behavior_change": "下一回合入口增加门禁：评估必须有失败条件和可复核样本，不能只看结果文件",
+      "boundary": "R2完成；只证明本回合闭环，不替代后续回合"
+    },
+    {
+      "round": "R3",
+      "shortboard": "外部学习容易停在搜索结果而非原文阅读",
+      "failure_premortem": "最可能被判假：只有总结，没有来源阅读、公式代入和缺陷压降",
+      "formula": {
+        "before": 0.1014,
+        "after": 0.1674,
+        "delta": 0.066,
+        "after_dims_sample": {
+          "Θ": 0.696,
+          "Ψ": 0.634,
+          "Γ": 0.633,
+          "E_xp": 0.496,
+          "M_meta": 0.536,
+          "Ξ": 0.467
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7206,
+          "raw_defect_rate": 0.1017,
+          "governed_defect_rate": 0.0631
+        },
+        "after": {
+          "evm_value": 0.7277,
+          "raw_defect_rate": 0.0867,
+          "governed_defect_rate": 0.0539
+        },
+        "repairs": [
+          {
+            "defect": "Mem",
+            "reduction": 0.08
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.06
+          },
+          {
+            "defect": "Err",
+            "reduction": 0.04
+          }
+        ]
+      },
+      "route": [
+        "主脑统筹：先限定本回合只解决当前短板，不借未来周期自证完成",
+        "反证审错：检查最可能造假点是否仍存在",
+        "修复落地：把学习点改成下一回合门禁",
+        "旁证压缩：只保留可核验来源、分数、缺陷压降",
+        "主脑收束：给出本回合边界并进入下一回合"
+      ],
+      "external_learning": {
+        "query": "targeted repo read",
+        "source": {
+          "name": "mem0ai/mem0",
+          "url": "https://github.com/mem0ai/mem0",
+          "stars": 56147,
+          "desc": "Universal memory layer for AI Agents"
+        },
+        "read_chars": 3500,
+        "points": [
+          "记忆不是存档，必须服务下一次决策检索与调用",
+          "反思必须进入下一步策略选择，不能只生成总结文本",
+          "守卫和评估要前置为入口条件，失败就不能进入完成态"
+        ]
+      },
+      "behavior_change": "下一回合入口增加门禁：记忆不是存档，必须服务下一次决策检索与调用",
+      "boundary": "R3已补足外部原文阅读证据；只证明本回合闭环"
+    },
+    {
+      "round": "R4",
+      "shortboard": "河图洛书路线仍偏静态串联，缺少反证仲裁",
+      "failure_premortem": "最可能被判假：只有总结，没有来源阅读、公式代入和缺陷压降",
+      "formula": {
+        "before": 0.1014,
+        "after": 0.1667,
+        "delta": 0.0653,
+        "after_dims_sample": {
+          "Θ": 0.718,
+          "Ψ": 0.654,
+          "Γ": 0.65,
+          "E_xp": 0.518,
+          "M_meta": 0.558,
+          "Ξ": 0.491
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7226,
+          "raw_defect_rate": 0.0967,
+          "governed_defect_rate": 0.0605
+        },
+        "after": {
+          "evm_value": 0.73,
+          "raw_defect_rate": 0.0817,
+          "governed_defect_rate": 0.0509
+        },
+        "repairs": [
+          {
+            "defect": "Run",
+            "reduction": 0.07
+          },
+          {
+            "defect": "Err",
+            "reduction": 0.06
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.05
+          }
+        ]
+      },
+      "route": [
+        "主脑统筹：先限定本回合只解决当前短板，不借未来周期自证完成",
+        "反证审错：检查最可能造假点是否仍存在",
+        "修复落地：把学习点改成下一回合门禁",
+        "旁证压缩：只保留可核验来源、分数、缺陷压降",
+        "主脑收束：给出本回合边界并进入下一回合"
+      ],
+      "external_learning": {
+        "query": "multi agent debate framework",
+        "source": {
+          "name": "LYiHub/platform-war-public",
+          "url": "https://github.com/LYiHub/platform-war-public",
+          "stars": 787,
+          "desc": "A chatbot/GraphRAG framework that creates multi-llm-agents from social platform user comments and let them debate on specific topics."
+        },
+        "read_chars": 2541,
+        "points": [
+          "读取项目说明后确认：必须把学习点转成下一步门禁，而非只记录来源"
+        ]
+      },
+      "behavior_change": "下一回合入口增加门禁：读取项目说明后确认：必须把学习点转成下一步门禁，而非只记录来源",
+      "boundary": "R4完成；只证明本回合闭环，不替代后续回合"
+    },
+    {
+      "round": "R5",
+      "shortboard": "修复如果不固化为下次入口，会退回旧习惯",
+      "failure_premortem": "最可能被判假：只有总结，没有来源阅读、公式代入和缺陷压降",
+      "formula": {
+        "before": 0.1014,
+        "after": 0.1665,
+        "delta": 0.0651,
+        "after_dims_sample": {
+          "Θ": 0.694,
+          "Ψ": 0.632,
+          "Γ": 0.631,
+          "E_xp": 0.494,
+          "M_meta": 0.534,
+          "Ξ": 0.465
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7189,
+          "raw_defect_rate": 0.105,
+          "governed_defect_rate": 0.0653
+        },
+        "after": {
+          "evm_value": 0.7274,
+          "raw_defect_rate": 0.0875,
+          "governed_defect_rate": 0.0543
+        },
+        "repairs": [
+          {
+            "defect": "Soul",
+            "reduction": 0.07
+          },
+          {
+            "defect": "Run",
+            "reduction": 0.05
+          },
+          {
+            "defect": "Mem",
+            "reduction": 0.05
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.04
+          }
+        ]
+      },
+      "route": [
+        "主脑统筹：先限定本回合只解决当前短板，不借未来周期自证完成",
+        "反证审错：检查最可能造假点是否仍存在",
+        "修复落地：把学习点改成下一回合门禁",
+        "旁证压缩：只保留可核验来源、分数、缺陷压降",
+        "主脑收束：给出本回合边界并进入下一回合"
+      ],
+      "external_learning": {
+        "query": "targeted repo read",
+        "source": {
+          "name": "openlit/openlit",
+          "url": "https://github.com/openlit/openlit",
+          "stars": 2454,
+          "desc": "Open source platform for AI Engineering: OpenTelemetry-native LLM Observability, GPU Monitoring, Guardrails, Evaluations, Prompt Management, Vault, Playground. 🚀💻 Integrates with 50+ LLM Providers, VectorDBs, Agent Frameworks and GPUs."
+        },
+        "read_chars": 3500,
+        "points": [
+          "反思必须进入下一步策略选择，不能只生成总结文本",
+          "守卫和评估要前置为入口条件，失败就不能进入完成态",
+          "轨迹记录应当覆盖行动过程，而不是只记录最终产物"
+        ]
+      },
+      "behavior_change": "下一回合入口增加门禁：反思必须进入下一步策略选择，不能只生成总结文本",
+      "boundary": "R5已补足外部原文阅读证据；只证明本回合闭环"
+    }
+  ],
+  "non_template_check": {
+    "distinct_shortboards": 5,
+    "distinct_sources": 5,
+    "readme_read_all_rounds": true,
+    "passed": true
+  },
+  "landing": {
+    "new_gate": "每回合必须把外部原文阅读点转成下一回合入口门禁；评分器先审自身，缺陷压降不能双重计算",
+    "next_entry": "先查上一回合门禁是否被执行，再开始新回合"
+  },
+  "completion_boundary": "完成一个手动周期R1-R5；不是后台cron产物；不是十周期批量完成",
+  "repair_note": "R3、R5首次外部阅读证据不足，已即时补读真实仓库说明并更新门禁；未把第一次不合格结果冒充完成。"
+}

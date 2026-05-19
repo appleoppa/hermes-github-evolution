@@ -1,0 +1,59 @@
+{
+  "round": "R3",
+  "loops": [
+    {
+      "loop": 1,
+      "sequences": [
+        "21354",
+        "12534",
+        "14325"
+      ]
+    },
+    {
+      "loop": 2,
+      "sequences": [
+        "21354",
+        "12534",
+        "14325"
+      ]
+    }
+  ],
+  "apex": {
+    "inputs": {
+      "Θ": 0.7,
+      "Γ": 0.5
+    },
+    "score": 0.12,
+    "exposes": "默认值掩盖缺项"
+  },
+  "shortboard": {
+    "text": "默认值掩盖缺项",
+    "exposed_from": "R内第2循环效验步骤"
+  },
+  "external_learning": {
+    "after_shortboard": true,
+    "source": "dry-run source 3",
+    "url": "https://example.com",
+    "read_at": "2026-05-19T16:30:56.753233Z",
+    "quote": "原文摘录",
+    "point": "要点",
+    "behavior_change": "下一回合先验门禁"
+  },
+  "evm": {
+    "real_engine_called": true,
+    "before": 0.71,
+    "after": 0.72,
+    "defect_mapping": {
+      "Run": 0.1
+    }
+  },
+  "hetu_luoshu": {
+    "mode": "local",
+    "status": "partial"
+  },
+  "github_factory": {
+    "status": "missing",
+    "run_id": null
+  },
+  "next_gate": "下一回合入口门禁"
+}

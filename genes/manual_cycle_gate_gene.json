@@ -1,0 +1,7 @@
+{
+  "gene": "manual_cycle_truth_gate",
+  "mechanism": "每回合必须把外部原文阅读点转成下一回合入口门禁；评分器先审自身，缺陷压降不能双重计算",
+  "last_report": "inbox/manual_cycle_repaired_20260519_135140.json",
+  "status": "manual_one_cycle_completed",
+  "repair_note": "R3、R5首次外部阅读证据不足，已即时补读真实仓库说明并更新门禁；未把第一次不合格结果冒充完成。"
+}

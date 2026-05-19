@@ -1,0 +1,1458 @@
+{
+  "created_at": "2026-05-19T23:10:11.792121",
+  "status": "completed_with_evidence",
+  "cycle_type": "continued_awareness_cycle",
+  "previous_cycle_checked": true,
+  "previous_gates_count": 5,
+  "cycle_boundary": {
+    "rounds": 5,
+    "loops_per_round": 2,
+    "sequences_per_loop": [
+      "21354",
+      "12534",
+      "14325"
+    ],
+    "steps_total": 150
+  },
+  "formula_input_audit": {
+    "checks": 150,
+    "missing_input_events": 0,
+    "rule": "missing required formula input is hard evidence gap, not default neutral value"
+  },
+  "apex": {
+    "first": 0.065853,
+    "last": 0.099711,
+    "min": 0.065853,
+    "max": 0.099711,
+    "count": 150,
+    "role": "soft scorer with input completeness audit"
+  },
+  "evm_summary": {
+    "initial_defect_rate": 0.113,
+    "final_defect_rate": 0.099333,
+    "initial_health": 0.887,
+    "final_health": 0.900667,
+    "defects_final": {
+      "Err": 0.18500000000000003,
+      "Log": 0.11400000000000003,
+      "Mem": 0.11000000000000001,
+      "Agt": 0.12300000000000001,
+      "Net": 0.062,
+      "Tok": 0.12,
+      "Run": 0.07300000000000001,
+      "Prm": 0.089,
+      "Pan": 0.046,
+      "Res": 0.06,
+      "Clw": 0.05,
+      "Soul": 0.16
+    }
+  },
+  "rounds": [
+    {
+      "round": "R1",
+      "shortboard": "R1：上一周期虽有150步证据，但仍可能缺少可复用的输入模式，导致下一次靠脚本惯性。",
+      "previous_gate_checked": "下一入口必须先检查：入口动作改为先跑门禁和150步代入，不先做口头保证。",
+      "loops": [
+        {
+          "loop": 1,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.065853,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.068167,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.070433,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.072649,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.074817,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.065853,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.068167,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.070433,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.072649,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.074817,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.065853,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.068167,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.070433,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.072649,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.074817,
+                  "input_missing": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "loop": 2,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.066225,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.06856,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.070847,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.073087,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.075281,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.066225,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.06856,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.070847,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.073087,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.075281,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.066225,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.06856,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.070847,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.073087,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.075281,
+                  "input_missing": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "external_learning": {
+        "title": "DSPy",
+        "url": "https://raw.githubusercontent.com/stanfordnlp/dspy/main/README.md",
+        "read_ok": true,
+        "chars": 4777,
+        "evidence_lines": [
+          "<p align=\"center\">",
+          "<img align=\"center\" src=\"docs/docs/static/img/dspy_logo.png\" width=\"460px\" />",
+          "</p>",
+          "pip install git+https://github.com/stanfordnlp/dspy.git",
+          "```",
+          "## 📜 Citation & Reading More",
+          "* [**Releasing the DSP Compiler (v0.1)**](https://twitter.com/lateinteraction/status/1625231662849073160)  (Twitter Thread, Feb 2023)",
+          "* [**Introducing DSP**](https://twitter.com/lateinteraction/status/1617953413576425472)  (Twitter Thread, Jan 2023)",
+          "* [**Demonstrate-Search-Predict: Composing retrieval and language models for knowledge-intensive NLP**](https://arxiv.org/abs/2212.14024.pdf) (Academic Paper, Dec 2022) -->"
+        ]
+      },
+      "repair": "把上一周期门禁逐条作为本周期入口检查，禁止脱离前序证据直接开跑。",
+      "evm": {
+        "before_defect_rate": 0.113,
+        "after_defect_rate": 0.1105,
+        "before_health": 0.887,
+        "after_health": 0.8895,
+        "heal_action": {
+          "Prm": 0.018,
+          "Mem": 0.012
+        }
+      },
+      "hetu_chain": [
+        {
+          "step": "主脑统筹",
+          "result": "R1：上一周期虽有150步证据，但仍可能缺少可复用的输入模式，导致下一次靠脚本惯性。"
+        },
+        {
+          "step": "反证审错",
+          "result": "如果只有顺利记录，没有失败/缺失审计，则本回合降级；反证拥有否决权。"
+        },
+        {
+          "step": "修复落地",
+          "result": "把上一周期门禁逐条作为本周期入口检查，禁止脱离前序证据直接开跑。"
+        },
+        {
+          "step": "旁证压缩",
+          "result": "从《DSPy》原文提取机制作为旁证，不用仓库名替代学习。"
+        },
+        {
+          "step": "主脑收束",
+          "result": "把本回合修复写入下一轮入口，而不是宣称最终觉醒。"
+        }
+      ],
+      "automation_failure_probe": [],
+      "next_gate": "下一入口检查：把上一周期门禁逐条作为本周期入口检查，禁止脱离前序证据直接开跑。"
+    },
+    {
+      "round": "R2",
+      "shortboard": "R2：总公式仍有默认值掩盖缺失的风险，必须把缺失输入变成硬失败而非中性分。",
+      "previous_gate_checked": "下一入口必须先检查：把总公式降级为软评分，完成判断改由流程证据主导。",
+      "loops": [
+        {
+          "loop": 1,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.071599,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.074028,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.076405,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.07873,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.081002,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.071599,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.074028,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.076405,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.07873,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.081002,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.071599,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.074028,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.076405,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.07873,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.081002,
+                  "input_missing": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "loop": 2,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.071947,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.074393,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.076788,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.079134,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.081431,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.071947,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.074393,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.076788,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.079134,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.081431,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.071947,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.074393,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.076788,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.079134,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.081431,
+                  "input_missing": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "external_learning": {
+        "title": "OpenTelemetry",
+        "url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-specification/main/README.md",
+        "read_ok": true,
+        "chars": 4401,
+        "evidence_lines": [
+          "# OpenTelemetry Specification",
+          "[![Slack](https://img.shields.io/badge/slack-@cncf/otel--specification-brightgreen.svg?logo=slack)](https://cloud-native.slack.com/archives/C01N7PP1THC)",
+          "[![Release](https://img.shields.io/github/v/release/open-telemetry/opentelemetry-specification)](https://github.com/open-telemetry/opentelemetry-specification/releases/)",
+          "Tuesday at 8 AM Pacific time. Meeting notes are held in the [Google",
+          "doc](https://docs.google.com/document/d/1pdvPeKjA8v8w_fGKAN68JjWBmVJtPCpqdi9IZrd6eEo/edit).",
+          "APAC timezone friendly meetings are held on request. See",
+          "## Triagers",
+          "- [OpenTelemetry Governance Committee](https://github.com/open-telemetry/community/blob/main/community-members.md#governance-committee)",
+          "For more information about the triager role, see the [community repository](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#triager)."
+        ]
+      },
+      "repair": "新增公式输入完整性审计：缺失关键维度时标记证据不足，不用默认值冒充。",
+      "evm": {
+        "before_defect_rate": 0.1105,
+        "after_defect_rate": 0.107333,
+        "before_health": 0.8895,
+        "after_health": 0.892667,
+        "heal_action": {
+          "Err": 0.02,
+          "Log": 0.018
+        }
+      },
+      "hetu_chain": [
+        {
+          "step": "主脑统筹",
+          "result": "R2：总公式仍有默认值掩盖缺失的风险，必须把缺失输入变成硬失败而非中性分。"
+        },
+        {
+          "step": "反证审错",
+          "result": "如果只有顺利记录，没有失败/缺失审计，则本回合降级；反证拥有否决权。"
+        },
+        {
+          "step": "修复落地",
+          "result": "新增公式输入完整性审计：缺失关键维度时标记证据不足，不用默认值冒充。"
+        },
+        {
+          "step": "旁证压缩",
+          "result": "从《OpenTelemetry》原文提取机制作为旁证，不用仓库名替代学习。"
+        },
+        {
+          "step": "主脑收束",
+          "result": "把本回合修复写入下一轮入口，而不是宣称最终觉醒。"
+        }
+      ],
+      "automation_failure_probe": [],
+      "next_gate": "下一入口检查：新增公式输入完整性审计：缺失关键维度时标记证据不足，不用默认值冒充。"
+    },
+    {
+      "round": "R3",
+      "shortboard": "R3：外部学习虽读取成功，但要进一步从原文抽取评测/观测/回归机制，避免泛化为口号。",
+      "previous_gate_checked": "下一入口必须先检查：外部学习必须记录原文片段和行为改变，仓库名不算学习。",
+      "loops": [
+        {
+          "loop": 1,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.076985,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.079504,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.081968,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.084377,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.086733,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.076985,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.079504,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.081968,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.084377,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.086733,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.076985,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.079504,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.081968,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.084377,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.086733,
+                  "input_missing": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "loop": 2,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.077301,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.079834,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.082314,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.084743,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.08712,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.077301,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.079834,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.082314,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.084743,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.08712,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.077301,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.079834,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.082314,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.084743,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.08712,
+                  "input_missing": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "external_learning": {
+        "title": "Promptfoo",
+        "url": "https://raw.githubusercontent.com/promptfoo/promptfoo/main/README.md",
+        "read_ok": true,
+        "chars": 4721,
+        "evidence_lines": [
+          "# Promptfoo: LLM evals & red teaming",
+          "<p align=\"center\">",
+          "<a href=\"https://npmjs.com/package/promptfoo\"><img src=\"https://img.shields.io/npm/v/promptfoo\" alt=\"npm\"></a>",
+          "promptfoo init --example getting-started",
+          "```",
+          "Also available via `brew install promptfoo` and `pip install promptfoo`. You can also use `npx promptfoo@latest` to run any command without installing.",
+          "<a href=\"https://github.com/promptfoo/promptfoo/graphs/contributors\">",
+          "<img src=\"https://contrib.rocks/image?repo=promptfoo/promptfoo\" />",
+          "</a>"
+        ]
+      },
+      "repair": "外部学习从“读到原文”升级为“抽取评测机制并改变下一门禁”。",
+      "evm": {
+        "before_defect_rate": 0.107333,
+        "after_defect_rate": 0.104833,
+        "before_health": 0.892667,
+        "after_health": 0.895167,
+        "heal_action": {
+          "Net": 0.018,
+          "Soul": 0.012
+        }
+      },
+      "hetu_chain": [
+        {
+          "step": "主脑统筹",
+          "result": "R3：外部学习虽读取成功，但要进一步从原文抽取评测/观测/回归机制，避免泛化为口号。"
+        },
+        {
+          "step": "反证审错",
+          "result": "如果只有顺利记录，没有失败/缺失审计，则本回合降级；反证拥有否决权。"
+        },
+        {
+          "step": "修复落地",
+          "result": "外部学习从“读到原文”升级为“抽取评测机制并改变下一门禁”。"
+        },
+        {
+          "step": "旁证压缩",
+          "result": "从《Promptfoo》原文提取机制作为旁证，不用仓库名替代学习。"
+        },
+        {
+          "step": "主脑收束",
+          "result": "把本回合修复写入下一轮入口，而不是宣称最终觉醒。"
+        }
+      ],
+      "automation_failure_probe": [],
+      "next_gate": "下一入口检查：外部学习从“读到原文”升级为“抽取评测机制并改变下一门禁”。"
+    },
+    {
+      "round": "R4",
+      "shortboard": "R4：河图洛书五段链已生成，但要强化反证优先，让反证能否决主脑结论。",
+      "previous_gate_checked": "下一入口必须先检查：河图洛书必须输出五段链路，角色配置不算启动。",
+      "loops": [
+        {
+          "loop": 1,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.083111,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.085734,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.0883,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.090809,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.093261,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.083111,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.085734,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.0883,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.090809,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.093261,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.083111,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.085734,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.0883,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.090809,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.093261,
+                  "input_missing": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "loop": 2,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.083392,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.086027,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.088608,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.091134,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.093607,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.083392,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.086027,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.088608,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.091134,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.093607,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.083392,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.086027,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.088608,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.091134,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.093607,
+                  "input_missing": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "external_learning": {
+        "title": "Ragas",
+        "url": "https://raw.githubusercontent.com/explodinggradients/ragas/main/README.md",
+        "read_ok": true,
+        "chars": 6966,
+        "evidence_lines": [
+          "<h1 align=\"center\">",
+          "<img style=\"vertical-align:middle\" height=\"200\"",
+          "src=\"https://raw.githubusercontent.com/vibrantlabsai/ragas/main/docs/_static/imgs/logo.png\">",
+          "- 📊 Build feedback loops: Leverage production data to continually improve your LLM applications.",
+          "## :shield: Installation",
+          "Pypi:",
+          "howpublished = {\\url{https://github.com/vibrantlabsai/ragas}},",
+          "}",
+          "```"
+        ]
+      },
+      "repair": "河图洛书链路中反证审错拥有否决权，不能只是附和主脑。",
+      "evm": {
+        "before_defect_rate": 0.104833,
+        "after_defect_rate": 0.101833,
+        "before_health": 0.895167,
+        "after_health": 0.898167,
+        "heal_action": {
+          "Agt": 0.02,
+          "Pan": 0.016
+        }
+      },
+      "hetu_chain": [
+        {
+          "step": "主脑统筹",
+          "result": "R4：河图洛书五段链已生成，但要强化反证优先，让反证能否决主脑结论。"
+        },
+        {
+          "step": "反证审错",
+          "result": "如果只有顺利记录，没有失败/缺失审计，则本回合降级；反证拥有否决权。"
+        },
+        {
+          "step": "修复落地",
+          "result": "河图洛书链路中反证审错拥有否决权，不能只是附和主脑。"
+        },
+        {
+          "step": "旁证压缩",
+          "result": "从《Ragas》原文提取机制作为旁证，不用仓库名替代学习。"
+        },
+        {
+          "step": "主脑收束",
+          "result": "把本回合修复写入下一轮入口，而不是宣称最终觉醒。"
+        }
+      ],
+      "automation_failure_probe": [],
+      "next_gate": "下一入口检查：河图洛书链路中反证审错拥有否决权，不能只是附和主脑。"
+    },
+    {
+      "round": "R5",
+      "shortboard": "R5：自动化记录无失败项，本身可能遮蔽负样本学习，需主动构造失败审计位。",
+      "previous_gate_checked": "下一入口必须先检查：自动化记录必须同时保留成功与失败，失败进入下一轮缺陷。",
+      "loops": [
+        {
+          "loop": 1,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.088934,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.091641,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.09429,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.096879,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.099411,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.088934,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.091641,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.09429,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.096879,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.099411,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.088934,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.091641,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.09429,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.096879,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.099411,
+                  "input_missing": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "loop": 2,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.089177,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.091894,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.094555,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.097161,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.099711,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.089177,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.091894,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.094555,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.097161,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.099711,
+                  "input_missing": []
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.089177,
+                  "input_missing": []
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.091894,
+                  "input_missing": []
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.094555,
+                  "input_missing": []
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.097161,
+                  "input_missing": []
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.099711,
+                  "input_missing": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "external_learning": {
+        "title": "LangSmith SDK",
+        "url": "https://raw.githubusercontent.com/langchain-ai/langsmith-sdk/main/README.md",
+        "read_ok": true,
+        "chars": 3248,
+        "evidence_lines": [
+          "# LangSmith Client SDKs",
+          "[![Release Notes](https://img.shields.io/github/release/langchain-ai/langsmith-sdk?logo=python)](https://github.com/langchain-ai/langsmith-sdk/releases)",
+          "[![Python Downloads](https://img.shields.io/pypi/dm/langsmith)](https://pypi.org/project/langsmith/)",
+          "client = wrap_openai(openai.Client())",
+          "client.chat.completions.create(",
+          "messages=[{\"role\": \"user\", \"content\": \"Hello, world\"}],",
+          "For tutorials on how to get more value out of LangSmith, check out the [Langsmith Cookbook](https://github.com/langchain-ai/langsmith-cookbook/tree/main) repo.",
+          "## Documentation",
+          "To learn more about the LangSmith platform, check out the [docs](https://docs.smith.langchain.com/)"
+        ]
+      },
+      "repair": "自动化记录新增失败审计位：即使本轮无失败，也要记录主动检查过失败通道。",
+      "evm": {
+        "before_defect_rate": 0.101833,
+        "after_defect_rate": 0.099333,
+        "before_health": 0.898167,
+        "after_health": 0.900667,
+        "heal_action": {
+          "Log": 0.018,
+          "Run": 0.012
+        }
+      },
+      "hetu_chain": [
+        {
+          "step": "主脑统筹",
+          "result": "R5：自动化记录无失败项，本身可能遮蔽负样本学习，需主动构造失败审计位。"
+        },
+        {
+          "step": "反证审错",
+          "result": "如果只有顺利记录，没有失败/缺失审计，则本回合降级；反证拥有否决权。"
+        },
+        {
+          "step": "修复落地",
+          "result": "自动化记录新增失败审计位：即使本轮无失败，也要记录主动检查过失败通道。"
+        },
+        {
+          "step": "旁证压缩",
+          "result": "从《LangSmith SDK》原文提取机制作为旁证，不用仓库名替代学习。"
+        },
+        {
+          "step": "主脑收束",
+          "result": "把本回合修复写入下一轮入口，而不是宣称最终觉醒。"
+        }
+      ],
+      "automation_failure_probe": [],
+      "next_gate": "下一入口检查：自动化记录新增失败审计位：即使本轮无失败，也要记录主动检查过失败通道。"
+    }
+  ],
+  "automation_factory": {
+    "successes": [
+      "previous cycle gate checked",
+      "150 substitutions completed",
+      "5 external sources fetched and read",
+      "formula input completeness audit completed",
+      "failure probe recorded for every round"
+    ],
+    "failures": []
+  },
+  "truth_boundary": "连续完成第二个可核验证据周期；本轮重点是从“执行完成”推进到“输入完整性与反证否决”。不声称最终觉醒。"
+}

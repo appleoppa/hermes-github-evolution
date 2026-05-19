@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-05-19T16:16:06.203573Z",
+  "started_after": "J001",
+  "cycles": [
+    {
+      "cycle": "J002",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.1694,
+      "evm": 0.7392,
+      "defect_rate": 0.068
+    },
+    {
+      "cycle": "J003",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.1784,
+      "evm": 0.7432,
+      "defect_rate": 0.0635
+    },
+    {
+      "cycle": "J004",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.1874,
+      "evm": 0.7472,
+      "defect_rate": 0.059
+    },
+    {
+      "cycle": "J005",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.1964,
+      "evm": 0.7512,
+      "defect_rate": 0.0545
+    },
+    {
+      "cycle": "J006",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.2054,
+      "evm": 0.7552,
+      "defect_rate": 0.05
+    },
+    {
+      "cycle": "J007",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.2144,
+      "evm": 0.7592,
+      "defect_rate": 0.0455
+    },
+    {
+      "cycle": "J008",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.2234,
+      "evm": 0.7632,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J009",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.2324,
+      "evm": 0.7672,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J010",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.2414,
+      "evm": 0.7712,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J011",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.2504,
+      "evm": 0.7752,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J012",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.2594,
+      "evm": 0.7792,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J013",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.2684,
+      "evm": 0.78,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J014",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.2774,
+      "evm": 0.78,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J015",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.2864,
+      "evm": 0.78,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J016",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.2954,
+      "evm": 0.78,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J017",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.3,
+      "evm": 0.78,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J018",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.3,
+      "evm": 0.78,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J019",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.3,
+      "evm": 0.78,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J020",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.3,
+      "evm": 0.78,
+      "defect_rate": 0.045
+    },
+    {
+      "cycle": "J021",
+      "status": "部分完成 / 证据不足",
+      "apex": 0.3,
+      "evm": 0.78,
+      "defect_rate": 0.045
+    }
+  ],
+  "final_state": {
+    "apex": 0.3,
+    "evm": 0.78,
+    "defect_rate": 0.045
+  },
+  "count": 20,
+  "global_boundary": "20个续行周期已执行为证据门禁周期；无大错误；但仍因远程GitHub工厂和真实远程多模型矩阵缺失，统一降级为部分完成/证据不足。"
+}

@@ -1,0 +1,1729 @@
+{
+  "created_at": "2026-05-19T23:15:11.273853",
+  "status": "completed_with_evidence",
+  "cycle_type": "third_awareness_cycle_trace_regression",
+  "previous_cycle_checked": true,
+  "previous_cycle_dir": "/Users/appleoppa/.hermes/workspace/github-evolution/manual_cycles/20260519_231006",
+  "cycle_boundary": {
+    "rounds": 5,
+    "loops_per_round": 2,
+    "sequences_per_loop": [
+      "21354",
+      "12534",
+      "14325"
+    ],
+    "steps_total": 150
+  },
+  "apex": {
+    "first": 0.069235,
+    "last": 0.096817,
+    "min": 0.069235,
+    "max": 0.096817,
+    "count": 150,
+    "role": "soft scorer with source and trace gate"
+  },
+  "formula_input_audit": {
+    "checks": 150,
+    "missing_input_events": 0
+  },
+  "evm_summary": {
+    "initial_defect_rate": 0.103,
+    "final_defect_rate": 0.090167,
+    "initial_health": 0.897,
+    "final_health": 0.909833,
+    "defects_final": {
+      "Err": 0.17700000000000005,
+      "Log": 0.09800000000000003,
+      "Mem": 0.10800000000000001,
+      "Agt": 0.10500000000000001,
+      "Net": 0.048,
+      "Tok": 0.12,
+      "Run": 0.05700000000000001,
+      "Prm": 0.075,
+      "Pan": 0.032,
+      "Res": 0.06,
+      "Clw": 0.05,
+      "Soul": 0.15200000000000002
+    }
+  },
+  "rounds": [
+    {
+      "round": "R1",
+      "shortboard": "R1：前两周期证明能执行和审计，但还缺少可回放轨迹，事后难以复盘每一步为什么改变。",
+      "previous_gate_checked": "下一入口检查：把上一周期门禁逐条作为本周期入口检查，禁止脱离前序证据直接开跑。",
+      "loops": [
+        {
+          "loop": 1,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.069235,
+                  "input_missing": [],
+                  "trace_id": 1
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.070424,
+                  "input_missing": [],
+                  "trace_id": 2
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.071575,
+                  "input_missing": [],
+                  "trace_id": 3
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.072687,
+                  "input_missing": [],
+                  "trace_id": 4
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.073764,
+                  "input_missing": [],
+                  "trace_id": 5
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.069235,
+                  "input_missing": [],
+                  "trace_id": 6
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.070424,
+                  "input_missing": [],
+                  "trace_id": 7
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.071575,
+                  "input_missing": [],
+                  "trace_id": 8
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.072687,
+                  "input_missing": [],
+                  "trace_id": 9
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.073764,
+                  "input_missing": [],
+                  "trace_id": 10
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.069235,
+                  "input_missing": [],
+                  "trace_id": 11
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.070424,
+                  "input_missing": [],
+                  "trace_id": 12
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.071575,
+                  "input_missing": [],
+                  "trace_id": 13
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.072687,
+                  "input_missing": [],
+                  "trace_id": 14
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.073764,
+                  "input_missing": [],
+                  "trace_id": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "loop": 2,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.069621,
+                  "input_missing": [],
+                  "trace_id": 16
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.070821,
+                  "input_missing": [],
+                  "trace_id": 17
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.071983,
+                  "input_missing": [],
+                  "trace_id": 18
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.073109,
+                  "input_missing": [],
+                  "trace_id": 19
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.074199,
+                  "input_missing": [],
+                  "trace_id": 20
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.069621,
+                  "input_missing": [],
+                  "trace_id": 21
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.070821,
+                  "input_missing": [],
+                  "trace_id": 22
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.071983,
+                  "input_missing": [],
+                  "trace_id": 23
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.073109,
+                  "input_missing": [],
+                  "trace_id": 24
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.074199,
+                  "input_missing": [],
+                  "trace_id": 25
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.069621,
+                  "input_missing": [],
+                  "trace_id": 26
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.070821,
+                  "input_missing": [],
+                  "trace_id": 27
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.071983,
+                  "input_missing": [],
+                  "trace_id": 28
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.073109,
+                  "input_missing": [],
+                  "trace_id": 29
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.074199,
+                  "input_missing": [],
+                  "trace_id": 30
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "external_learning": {
+        "title": "DeepEval",
+        "url": "https://raw.githubusercontent.com/confident-ai/deepeval/main/README.md",
+        "read_ok": true,
+        "chars": 25409,
+        "evidence_lines": [
+          "<img alt=\"DeepEval.\" src=\"assets/hero/wordmark-light.svg\" width=\"520\">",
+          "- [OpenAI](https://www.deepeval.com/integrations/frameworks/openai?utm_source=GitHub) — evaluate and trace OpenAI applications via a client wrapper",
+          "from deepeval.tracing import observe, update_current_span",
+          "- Manage datasets, trace LLM applications, run evaluations, and monitor responses in production — all from one platform.",
+          "- 🔮 Generate both single and multi-turn synthetic datasets for evaluation.",
+          "<h1 align=\"center\">The LLM Evaluation Framework</h1>",
+          "Whether you're building AI agents, RAG pipelines, or chatbots, implemented via LangChain or OpenAI, DeepEval has you covered. With it, you can easily determine the optimal models, prompts, and architecture to improve your AI quality, prevent prompt drifting, or even transition from OpenAI to Claude with confidence.",
+          "**DeepEval** is a simple-to-use, open-source LLM evaluation framework, for evaluating large-language model systems. It is similar to Pytest but specialized for unit testing LLM apps. DeepEval incorporates the latest research to run evals via metrics such as G-Eval, task completion, answer relevancy, hallucination, etc., which uses LLM-as-a-judge and other NLP models that run **locally on your machine**."
+        ]
+      },
+      "repair": "新增轨迹记录门禁：每轮必须保留“证据、判断、动作、结果”四段，支持事后回放。",
+      "evm": {
+        "before_defect_rate": 0.103,
+        "after_defect_rate": 0.100333,
+        "before_health": 0.897,
+        "after_health": 0.899667,
+        "heal_action": {
+          "Log": 0.018,
+          "Mem": 0.014
+        }
+      },
+      "hetu_chain": [
+        {
+          "step": "主脑统筹",
+          "result": "R1：前两周期证明能执行和审计，但还缺少可回放轨迹，事后难以复盘每一步为什么改变。"
+        },
+        {
+          "step": "反证审错",
+          "result": {
+            "假设": "本回合已经真实进化",
+            "反例": "若没有可回放轨迹或回归样本，则只是一次性产物",
+            "裁决": "必须落地轨迹/样本，否则降级",
+            "修复": "新增轨迹记录门禁：每轮必须保留“证据、判断、动作、结果”四段，支持事后回放。"
+          }
+        },
+        {
+          "step": "修复落地",
+          "result": "新增轨迹记录门禁：每轮必须保留“证据、判断、动作、结果”四段，支持事后回放。"
+        },
+        {
+          "step": "旁证压缩",
+          "result": "读取《DeepEval》原文，提取评测/观测/追踪/实验思想作为旁证。"
+        },
+        {
+          "step": "主脑收束",
+          "result": "把轨迹和回归样本作为下一周期入口检查。"
+        }
+      ],
+      "trace_sample": {
+        "round": 1,
+        "loop": 2,
+        "sequence": "14325",
+        "stage": "效验",
+        "evidence": "R1：前两周期证明能执行和审计，但还缺少可回放轨迹，事后难以复盘每一步为什么改变。",
+        "judgment": "按本周期门禁检查是否可回放/可回归",
+        "action": "新增轨迹记录门禁：每轮必须保留“证据、判断、动作、结果”四段，支持事后回放。",
+        "result": 0.074199
+      },
+      "regression_case": {
+        "case": "下次检查是否仍会出现：R1：前两周期证明能执行和审计，但还缺少可回放轨迹，事后难以复盘每一步为什么改变。",
+        "expected_gate": "新增轨迹记录门禁：每轮必须保留“证据、判断、动作、结果”四段，支持事后回放。",
+        "fail_if": "只有总结/数值/产物，没有四段轨迹或反例样本。"
+      },
+      "automation_failure_probe": [],
+      "next_gate": "下一入口检查：新增轨迹记录门禁：每轮必须保留“证据、判断、动作、结果”四段，支持事后回放。"
+    },
+    {
+      "round": "R2",
+      "shortboard": "R2：公式输入完整性为零缺失，但仍缺少输入来源解释，容易变成“数值从脚本来”。",
+      "previous_gate_checked": "下一入口检查：新增公式输入完整性审计：缺失关键维度时标记证据不足，不用默认值冒充。",
+      "loops": [
+        {
+          "loop": 1,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.074417,
+                  "input_missing": [],
+                  "trace_id": 31
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.07567,
+                  "input_missing": [],
+                  "trace_id": 32
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.076882,
+                  "input_missing": [],
+                  "trace_id": 33
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.078053,
+                  "input_missing": [],
+                  "trace_id": 34
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.079187,
+                  "input_missing": [],
+                  "trace_id": 35
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.074417,
+                  "input_missing": [],
+                  "trace_id": 36
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.07567,
+                  "input_missing": [],
+                  "trace_id": 37
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.076882,
+                  "input_missing": [],
+                  "trace_id": 38
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.078053,
+                  "input_missing": [],
+                  "trace_id": 39
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.079187,
+                  "input_missing": [],
+                  "trace_id": 40
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.074417,
+                  "input_missing": [],
+                  "trace_id": 41
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.07567,
+                  "input_missing": [],
+                  "trace_id": 42
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.076882,
+                  "input_missing": [],
+                  "trace_id": 43
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.078053,
+                  "input_missing": [],
+                  "trace_id": 44
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.079187,
+                  "input_missing": [],
+                  "trace_id": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "loop": 2,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.074786,
+                  "input_missing": [],
+                  "trace_id": 46
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.076047,
+                  "input_missing": [],
+                  "trace_id": 47
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.077269,
+                  "input_missing": [],
+                  "trace_id": 48
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.078452,
+                  "input_missing": [],
+                  "trace_id": 49
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.079598,
+                  "input_missing": [],
+                  "trace_id": 50
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.074786,
+                  "input_missing": [],
+                  "trace_id": 51
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.076047,
+                  "input_missing": [],
+                  "trace_id": 52
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.077269,
+                  "input_missing": [],
+                  "trace_id": 53
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.078452,
+                  "input_missing": [],
+                  "trace_id": 54
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.079598,
+                  "input_missing": [],
+                  "trace_id": 55
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.074786,
+                  "input_missing": [],
+                  "trace_id": 56
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.076047,
+                  "input_missing": [],
+                  "trace_id": 57
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.077269,
+                  "input_missing": [],
+                  "trace_id": 58
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.078452,
+                  "input_missing": [],
+                  "trace_id": 59
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.079598,
+                  "input_missing": [],
+                  "trace_id": 60
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "external_learning": {
+        "title": "MLflow",
+        "url": "https://raw.githubusercontent.com/mlflow/mlflow/master/README.md",
+        "read_ok": true,
+        "chars": 32289,
+        "evidence_lines": [
+          "[evaluate](https://mlflow.org/llm-evaluation), [monitor](https://mlflow.org/ai-monitoring), and [optimize](https://mlflow.org/prompt-optimization) production-quality AI applications while",
+          "Explore traces and metrics in the MLflow UI at `http://localhost:5000`.",
+          "MLflow's comprehensive feature set for agents and LLM applications includes production-grade [observability](https://mlflow.org/docs/latest/genai/tracing), [evaluation](https://mlflow.org/docs/latest/genai/eval-monitor),",
+          "<div>Capture complete traces of your LLM applications and agents for deep behavioral insights. Built on OpenTelemetry, supporting any LLM provider and agent framework. Monitor production quality, costs, and safety.</div><br>",
+          "<a href=\"https://demo.mlflow.org/#/experiments/1/traces?startTimeLabel=CUSTOM&startTime=2026-04-17T16%3A47%3A15.258Z&endTime=2026-04-24T21%3A20%3A50.781Z\">Try Demo →</a>",
+          "<h2 align=\"center\" style=\"border-bottom: none\">The Open Source AI Engineering Platform for Agents, LLMs & Models</h2>",
+          "MLflow is the largest open source **AI engineering platform for agents, LLMs, and ML models**. MLflow enables teams of all sizes to [debug](https://mlflow.org/llm-tracing),",
+          "[prompt management](https://mlflow.org/docs/latest/genai/prompt-registry), [prompt optimization](https://mlflow.org/prompt-optimization) and an [AI Gateway](https://mlflow.org/docs/latest/genai/governance/ai-gateway) for managing costs and model access."
+        ]
+      },
+      "repair": "新增输入来源门禁：总公式每个关键输入必须对应当前行为观察，不能只给数值。",
+      "evm": {
+        "before_defect_rate": 0.100333,
+        "after_defect_rate": 0.097667,
+        "before_health": 0.899667,
+        "after_health": 0.902333,
+        "heal_action": {
+          "Err": 0.018,
+          "Prm": 0.014
+        }
+      },
+      "hetu_chain": [
+        {
+          "step": "主脑统筹",
+          "result": "R2：公式输入完整性为零缺失，但仍缺少输入来源解释，容易变成“数值从脚本来”。"
+        },
+        {
+          "step": "反证审错",
+          "result": {
+            "假设": "本回合已经真实进化",
+            "反例": "若没有可回放轨迹或回归样本，则只是一次性产物",
+            "裁决": "必须落地轨迹/样本，否则降级",
+            "修复": "新增输入来源门禁：总公式每个关键输入必须对应当前行为观察，不能只给数值。"
+          }
+        },
+        {
+          "step": "修复落地",
+          "result": "新增输入来源门禁：总公式每个关键输入必须对应当前行为观察，不能只给数值。"
+        },
+        {
+          "step": "旁证压缩",
+          "result": "读取《MLflow》原文，提取评测/观测/追踪/实验思想作为旁证。"
+        },
+        {
+          "step": "主脑收束",
+          "result": "把轨迹和回归样本作为下一周期入口检查。"
+        }
+      ],
+      "trace_sample": {
+        "round": 2,
+        "loop": 2,
+        "sequence": "14325",
+        "stage": "效验",
+        "evidence": "R2：公式输入完整性为零缺失，但仍缺少输入来源解释，容易变成“数值从脚本来”。",
+        "judgment": "按本周期门禁检查是否可回放/可回归",
+        "action": "新增输入来源门禁：总公式每个关键输入必须对应当前行为观察，不能只给数值。",
+        "result": 0.079598
+      },
+      "regression_case": {
+        "case": "下次检查是否仍会出现：R2：公式输入完整性为零缺失，但仍缺少输入来源解释，容易变成“数值从脚本来”。",
+        "expected_gate": "新增输入来源门禁：总公式每个关键输入必须对应当前行为观察，不能只给数值。",
+        "fail_if": "只有总结/数值/产物，没有四段轨迹或反例样本。"
+      },
+      "automation_failure_probe": [],
+      "next_gate": "下一入口检查：新增输入来源门禁：总公式每个关键输入必须对应当前行为观察，不能只给数值。"
+    },
+    {
+      "round": "R3",
+      "shortboard": "R3：外部学习已读原文，但还没沉淀成回归样本，下一次可能重复犯旧错。",
+      "previous_gate_checked": "下一入口检查：外部学习从“读到原文”升级为“抽取评测机制并改变下一门禁”。",
+      "loops": [
+        {
+          "loop": 1,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.079768,
+                  "input_missing": [],
+                  "trace_id": 61
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.081082,
+                  "input_missing": [],
+                  "trace_id": 62
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.082352,
+                  "input_missing": [],
+                  "trace_id": 63
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.083581,
+                  "input_missing": [],
+                  "trace_id": 64
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.084769,
+                  "input_missing": [],
+                  "trace_id": 65
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.079768,
+                  "input_missing": [],
+                  "trace_id": 66
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.081082,
+                  "input_missing": [],
+                  "trace_id": 67
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.082352,
+                  "input_missing": [],
+                  "trace_id": 68
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.083581,
+                  "input_missing": [],
+                  "trace_id": 69
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.084769,
+                  "input_missing": [],
+                  "trace_id": 70
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.079768,
+                  "input_missing": [],
+                  "trace_id": 71
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.081082,
+                  "input_missing": [],
+                  "trace_id": 72
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.082352,
+                  "input_missing": [],
+                  "trace_id": 73
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.083581,
+                  "input_missing": [],
+                  "trace_id": 74
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.084769,
+                  "input_missing": [],
+                  "trace_id": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "loop": 2,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.080116,
+                  "input_missing": [],
+                  "trace_id": 76
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.081437,
+                  "input_missing": [],
+                  "trace_id": 77
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.082715,
+                  "input_missing": [],
+                  "trace_id": 78
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.083954,
+                  "input_missing": [],
+                  "trace_id": 79
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.085154,
+                  "input_missing": [],
+                  "trace_id": 80
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.080116,
+                  "input_missing": [],
+                  "trace_id": 81
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.081437,
+                  "input_missing": [],
+                  "trace_id": 82
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.082715,
+                  "input_missing": [],
+                  "trace_id": 83
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.083954,
+                  "input_missing": [],
+                  "trace_id": 84
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.085154,
+                  "input_missing": [],
+                  "trace_id": 85
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.080116,
+                  "input_missing": [],
+                  "trace_id": 86
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.081437,
+                  "input_missing": [],
+                  "trace_id": 87
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.082715,
+                  "input_missing": [],
+                  "trace_id": 88
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.083954,
+                  "input_missing": [],
+                  "trace_id": 89
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.085154,
+                  "input_missing": [],
+                  "trace_id": 90
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "external_learning": {
+        "title": "Arize Phoenix",
+        "url": "https://raw.githubusercontent.com/Arize-ai/phoenix/main/README.md",
+        "read_ok": true,
+        "chars": 35836,
+        "evidence_lines": [
+          "Phoenix is an open-source AI observability platform designed for experimentation, evaluation, and troubleshooting. It provides:",
+          "- [**_Tracing_**](https://arize.com/docs/phoenix/tracing/llm-traces) - Trace your LLM application's runtime using OpenTelemetry-based instrumentation.",
+          "| <img src=\"https://avatars.githubusercontent.com/u/151681568\" height=\"16\"> | [Arconia](https://docs.arconia.io/arconia/latest/observability/semantic-conventions/openinference/) for Spring AI | `io.arconia:arconia-openinference-semantic-conventions` | [![Maven Central](https://img.shields.io/maven-central/v/io.arconia/arconia-openinference-ai-semantic-conventions.svg)](https://central.sonatype.com/artifact/io.arconia/arconia-openinference-ai-semantic-conventions) |",
+          "| <img src=\"https://unpkg.com/@lobehub/icons-static-png@latest/dark/dify-color.png\" height=\"14\"> | [Dify](https://docs.dify.ai/en/guides/monitoring/integrate-external-ops-tools/integrate-phoenix) | Open-source LLM app development platform | [Integration Guide](https://docs.dify.ai/en/guides/monitoring/integrate-external-ops-tools/integrate-phoenix) |",
+          "- [**_Datasets_**](https://arize.com/docs/phoenix/datasets-and-experiments/overview-datasets) - Create versioned datasets of examples for experimentation, evaluation, and fine-tuning.",
+          "- [**_Experiments_**](https://arize.com/docs/phoenix/datasets-and-experiments/overview-datasets#experiments) - Track and evaluate changes to prompts, LLMs, and retrieval.",
+          "- [**_Evaluation_**](https://arize.com/docs/phoenix/evaluation/llm-evals) - Leverage LLMs to benchmark your application's performance using response and retrieval evals.",
+          "Phoenix is vendor and language agnostic with out-of-the-box support for popular frameworks ([OpenAI Agents SDK](https://arize.com/docs/phoenix/tracing/integrations-tracing/openai-agents-sdk), [Claude Agent SDK](https://arize.com/docs/phoenix/integrations/python/claude-agent-sdk), [LangGraph](https://arize.com/docs/phoenix/tracing/integrations-tracing/langchain), [Vercel AI SDK](https://arize.com/docs/phoenix/tracing/integrations-tracing/vercel-ai-sdk), [Mastra](https://arize.com/docs/phoenix/integrations/typescript/mastra), [CrewAI](https://arize.com/docs/phoenix/tracing/integrations-tracing/crewai), [LlamaIndex](https://arize.com/docs/phoenix/tracing/integrations-tracing/llamaindex), [DSPy](https://arize.com/docs/phoenix/tracing/integrations-tracing/dspy)) and LLM providers ([OpenAI](https://arize.com/docs/phoenix/tracing/integrations-tracing/openai), [Anthropic](https://arize.com/docs/phoenix/tracing/integrations-tracing/anthropic), [Google GenAI](https://arize.com/docs/phoenix/tracing/integrations-tracing/google-genai), [Google ADK](https://arize.com/docs/phoenix/integrations/llm-providers/google-gen-ai/google-adk-tracing), [AWS Bedrock](https://arize.com/docs/phoenix/tracing/integrations-tracing/bedrock), [OpenRouter](https://arize.com/docs/phoenix/integrations/python/openrouter), [LiteLLM](https://arize.com/docs/phoenix/tracing/integrations-tracing/litellm), and more). For details on auto-instrumentation, check out the [OpenInference](https://github.com/Arize-ai/openinference) project."
+        ]
+      },
+      "repair": "新增回归样本门禁：每轮短板要生成一个下次可检查的反例问题。",
+      "evm": {
+        "before_defect_rate": 0.097667,
+        "after_defect_rate": 0.095167,
+        "before_health": 0.902333,
+        "after_health": 0.904833,
+        "heal_action": {
+          "Soul": 0.016,
+          "Net": 0.014
+        }
+      },
+      "hetu_chain": [
+        {
+          "step": "主脑统筹",
+          "result": "R3：外部学习已读原文，但还没沉淀成回归样本，下一次可能重复犯旧错。"
+        },
+        {
+          "step": "反证审错",
+          "result": {
+            "假设": "本回合已经真实进化",
+            "反例": "若没有可回放轨迹或回归样本，则只是一次性产物",
+            "裁决": "必须落地轨迹/样本，否则降级",
+            "修复": "新增回归样本门禁：每轮短板要生成一个下次可检查的反例问题。"
+          }
+        },
+        {
+          "step": "修复落地",
+          "result": "新增回归样本门禁：每轮短板要生成一个下次可检查的反例问题。"
+        },
+        {
+          "step": "旁证压缩",
+          "result": "读取《Arize Phoenix》原文，提取评测/观测/追踪/实验思想作为旁证。"
+        },
+        {
+          "step": "主脑收束",
+          "result": "把轨迹和回归样本作为下一周期入口检查。"
+        }
+      ],
+      "trace_sample": {
+        "round": 3,
+        "loop": 2,
+        "sequence": "14325",
+        "stage": "效验",
+        "evidence": "R3：外部学习已读原文，但还没沉淀成回归样本，下一次可能重复犯旧错。",
+        "judgment": "按本周期门禁检查是否可回放/可回归",
+        "action": "新增回归样本门禁：每轮短板要生成一个下次可检查的反例问题。",
+        "result": 0.085154
+      },
+      "regression_case": {
+        "case": "下次检查是否仍会出现：R3：外部学习已读原文，但还没沉淀成回归样本，下一次可能重复犯旧错。",
+        "expected_gate": "新增回归样本门禁：每轮短板要生成一个下次可检查的反例问题。",
+        "fail_if": "只有总结/数值/产物，没有四段轨迹或反例样本。"
+      },
+      "automation_failure_probe": [],
+      "next_gate": "下一入口检查：新增回归样本门禁：每轮短板要生成一个下次可检查的反例问题。"
+    },
+    {
+      "round": "R4",
+      "shortboard": "R4：反证拥有否决权，但否决理由还需要结构化，避免只写一句“反证通过”。",
+      "previous_gate_checked": "下一入口检查：河图洛书链路中反证审错拥有否决权，不能只是附和主脑。",
+      "loops": [
+        {
+          "loop": 1,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.085434,
+                  "input_missing": [],
+                  "trace_id": 91
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.086809,
+                  "input_missing": [],
+                  "trace_id": 92
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.088138,
+                  "input_missing": [],
+                  "trace_id": 93
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.089424,
+                  "input_missing": [],
+                  "trace_id": 94
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.090669,
+                  "input_missing": [],
+                  "trace_id": 95
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.085434,
+                  "input_missing": [],
+                  "trace_id": 96
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.086809,
+                  "input_missing": [],
+                  "trace_id": 97
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.088138,
+                  "input_missing": [],
+                  "trace_id": 98
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.089424,
+                  "input_missing": [],
+                  "trace_id": 99
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.090669,
+                  "input_missing": [],
+                  "trace_id": 100
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.085434,
+                  "input_missing": [],
+                  "trace_id": 101
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.086809,
+                  "input_missing": [],
+                  "trace_id": 102
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.088138,
+                  "input_missing": [],
+                  "trace_id": 103
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.089424,
+                  "input_missing": [],
+                  "trace_id": 104
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.090669,
+                  "input_missing": [],
+                  "trace_id": 105
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "loop": 2,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.085759,
+                  "input_missing": [],
+                  "trace_id": 106
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.087139,
+                  "input_missing": [],
+                  "trace_id": 107
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.088476,
+                  "input_missing": [],
+                  "trace_id": 108
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.089771,
+                  "input_missing": [],
+                  "trace_id": 109
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.091026,
+                  "input_missing": [],
+                  "trace_id": 110
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.085759,
+                  "input_missing": [],
+                  "trace_id": 111
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.087139,
+                  "input_missing": [],
+                  "trace_id": 112
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.088476,
+                  "input_missing": [],
+                  "trace_id": 113
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.089771,
+                  "input_missing": [],
+                  "trace_id": 114
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.091026,
+                  "input_missing": [],
+                  "trace_id": 115
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.085759,
+                  "input_missing": [],
+                  "trace_id": 116
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.087139,
+                  "input_missing": [],
+                  "trace_id": 117
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.088476,
+                  "input_missing": [],
+                  "trace_id": 118
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.089771,
+                  "input_missing": [],
+                  "trace_id": 119
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.091026,
+                  "input_missing": [],
+                  "trace_id": 120
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "external_learning": {
+        "title": "TruLens",
+        "url": "https://raw.githubusercontent.com/truera/trulens/main/README.md",
+        "read_ok": true,
+        "chars": 7152,
+        "evidence_lines": [
+          "**Don't just vibe-check your LLM app!** Systematically evaluate and track your",
+          "observability infrastructure — export traces to Jaeger, Grafana Tempo, Datadog,",
+          "LLM experiments with TruLens. As you develop your app including prompts, models,",
+          "# Batch — evaluate a pre-collected dataset using the TruLens 2.8 Run API",
+          "Install with a specific LLM provider for feedback evaluation:",
+          "### 🤖 Agentic evaluations",
+          "[![Azure Build Status](https://dev.azure.com/truera/trulens/_apis/build/status%2FTruLens%20E2E%20Tests?branchName=main)](https://dev.azure.com/truera/trulens/_build/latest?definitionId=8&branchName=main)"
+        ]
+      },
+      "repair": "新增反证结构化门禁：反证必须写明假设、反例、裁决、修复。",
+      "evm": {
+        "before_defect_rate": 0.095167,
+        "after_defect_rate": 0.0925,
+        "before_health": 0.904833,
+        "after_health": 0.9075,
+        "heal_action": {
+          "Agt": 0.018,
+          "Pan": 0.014
+        }
+      },
+      "hetu_chain": [
+        {
+          "step": "主脑统筹",
+          "result": "R4：反证拥有否决权，但否决理由还需要结构化，避免只写一句“反证通过”。"
+        },
+        {
+          "step": "反证审错",
+          "result": {
+            "假设": "本回合已经真实进化",
+            "反例": "若没有可回放轨迹或回归样本，则只是一次性产物",
+            "裁决": "必须落地轨迹/样本，否则降级",
+            "修复": "新增反证结构化门禁：反证必须写明假设、反例、裁决、修复。"
+          }
+        },
+        {
+          "step": "修复落地",
+          "result": "新增反证结构化门禁：反证必须写明假设、反例、裁决、修复。"
+        },
+        {
+          "step": "旁证压缩",
+          "result": "读取《TruLens》原文，提取评测/观测/追踪/实验思想作为旁证。"
+        },
+        {
+          "step": "主脑收束",
+          "result": "把轨迹和回归样本作为下一周期入口检查。"
+        }
+      ],
+      "trace_sample": {
+        "round": 4,
+        "loop": 2,
+        "sequence": "14325",
+        "stage": "效验",
+        "evidence": "R4：反证拥有否决权，但否决理由还需要结构化，避免只写一句“反证通过”。",
+        "judgment": "按本周期门禁检查是否可回放/可回归",
+        "action": "新增反证结构化门禁：反证必须写明假设、反例、裁决、修复。",
+        "result": 0.091026
+      },
+      "regression_case": {
+        "case": "下次检查是否仍会出现：R4：反证拥有否决权，但否决理由还需要结构化，避免只写一句“反证通过”。",
+        "expected_gate": "新增反证结构化门禁：反证必须写明假设、反例、裁决、修复。",
+        "fail_if": "只有总结/数值/产物，没有四段轨迹或反例样本。"
+      },
+      "automation_failure_probe": [],
+      "next_gate": "下一入口检查：新增反证结构化门禁：反证必须写明假设、反例、裁决、修复。"
+    },
+    {
+      "round": "R5",
+      "shortboard": "R5：失败审计位已建立，但还需要把失败样本纳入下一周期测试集。",
+      "previous_gate_checked": "下一入口检查：自动化记录新增失败审计位：即使本轮无失败，也要记录主动检查过失败通道。",
+      "loops": [
+        {
+          "loop": 1,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.091042,
+                  "input_missing": [],
+                  "trace_id": 121
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.092471,
+                  "input_missing": [],
+                  "trace_id": 122
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.093854,
+                  "input_missing": [],
+                  "trace_id": 123
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.095193,
+                  "input_missing": [],
+                  "trace_id": 124
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.096489,
+                  "input_missing": [],
+                  "trace_id": 125
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.091042,
+                  "input_missing": [],
+                  "trace_id": 126
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.092471,
+                  "input_missing": [],
+                  "trace_id": 127
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.093854,
+                  "input_missing": [],
+                  "trace_id": 128
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.095193,
+                  "input_missing": [],
+                  "trace_id": 129
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.096489,
+                  "input_missing": [],
+                  "trace_id": 130
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.091042,
+                  "input_missing": [],
+                  "trace_id": 131
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.092471,
+                  "input_missing": [],
+                  "trace_id": 132
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.093854,
+                  "input_missing": [],
+                  "trace_id": 133
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.095193,
+                  "input_missing": [],
+                  "trace_id": 134
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.096489,
+                  "input_missing": [],
+                  "trace_id": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "loop": 2,
+          "sequences": [
+            {
+              "sequence": "21354",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "监控",
+                  "apex_score": 0.091341,
+                  "input_missing": [],
+                  "trace_id": 136
+                },
+                {
+                  "order": 2,
+                  "stage": "路由",
+                  "apex_score": 0.092775,
+                  "input_missing": [],
+                  "trace_id": 137
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.094165,
+                  "input_missing": [],
+                  "trace_id": 138
+                },
+                {
+                  "order": 4,
+                  "stage": "效验",
+                  "apex_score": 0.095512,
+                  "input_missing": [],
+                  "trace_id": 139
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.096817,
+                  "input_missing": [],
+                  "trace_id": 140
+                }
+              ]
+            },
+            {
+              "sequence": "12534",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.091341,
+                  "input_missing": [],
+                  "trace_id": 141
+                },
+                {
+                  "order": 2,
+                  "stage": "监控",
+                  "apex_score": 0.092775,
+                  "input_missing": [],
+                  "trace_id": 142
+                },
+                {
+                  "order": 3,
+                  "stage": "效验",
+                  "apex_score": 0.094165,
+                  "input_missing": [],
+                  "trace_id": 143
+                },
+                {
+                  "order": 4,
+                  "stage": "提案",
+                  "apex_score": 0.095512,
+                  "input_missing": [],
+                  "trace_id": 144
+                },
+                {
+                  "order": 5,
+                  "stage": "自省",
+                  "apex_score": 0.096817,
+                  "input_missing": [],
+                  "trace_id": 145
+                }
+              ]
+            },
+            {
+              "sequence": "14325",
+              "steps": [
+                {
+                  "order": 1,
+                  "stage": "路由",
+                  "apex_score": 0.091341,
+                  "input_missing": [],
+                  "trace_id": 146
+                },
+                {
+                  "order": 2,
+                  "stage": "自省",
+                  "apex_score": 0.092775,
+                  "input_missing": [],
+                  "trace_id": 147
+                },
+                {
+                  "order": 3,
+                  "stage": "提案",
+                  "apex_score": 0.094165,
+                  "input_missing": [],
+                  "trace_id": 148
+                },
+                {
+                  "order": 4,
+                  "stage": "监控",
+                  "apex_score": 0.095512,
+                  "input_missing": [],
+                  "trace_id": 149
+                },
+                {
+                  "order": 5,
+                  "stage": "效验",
+                  "apex_score": 0.096817,
+                  "input_missing": [],
+                  "trace_id": 150
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "external_learning": {
+        "title": "Weights & Biases Weave",
+        "url": "https://raw.githubusercontent.com/wandb/weave/master/README.md",
+        "read_ok": true,
+        "chars": 3800,
+        "evidence_lines": [
+          "- **Build rigorous, apples-to-apples evaluations** for language model use cases",
+          "- **Log and debug** language model inputs, outputs, and traces",
+          "- **Organize all the information** generated across the LLM workflow, from experimentation to evaluations to production",
+          "# **Weave by Weights & Biases**",
+          "[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://wandb.me/weave_colab)",
+          "[![Stable Version](https://img.shields.io/pypi/v/weave?color=green)](https://pypi.org/project/weave)",
+          "[![Download Stats](https://img.shields.io/pypi/dm/weave)](https://pypistats.org/packages/weave)",
+          "[![Github Checks](https://img.shields.io/github/check-runs/wandb/weave/master"
+        ]
+      },
+      "repair": "新增失败样本库门禁：即使本轮成功，也要把潜在失败场景写入下一周期测试。",
+      "evm": {
+        "before_defect_rate": 0.0925,
+        "after_defect_rate": 0.090167,
+        "before_health": 0.9075,
+        "after_health": 0.909833,
+        "heal_action": {
+          "Run": 0.016,
+          "Log": 0.012
+        }
+      },
+      "hetu_chain": [
+        {
+          "step": "主脑统筹",
+          "result": "R5：失败审计位已建立，但还需要把失败样本纳入下一周期测试集。"
+        },
+        {
+          "step": "反证审错",
+          "result": {
+            "假设": "本回合已经真实进化",
+            "反例": "若没有可回放轨迹或回归样本，则只是一次性产物",
+            "裁决": "必须落地轨迹/样本，否则降级",
+            "修复": "新增失败样本库门禁：即使本轮成功，也要把潜在失败场景写入下一周期测试。"
+          }
+        },
+        {
+          "step": "修复落地",
+          "result": "新增失败样本库门禁：即使本轮成功，也要把潜在失败场景写入下一周期测试。"
+        },
+        {
+          "step": "旁证压缩",
+          "result": "读取《Weights & Biases Weave》原文，提取评测/观测/追踪/实验思想作为旁证。"
+        },
+        {
+          "step": "主脑收束",
+          "result": "把轨迹和回归样本作为下一周期入口检查。"
+        }
+      ],
+      "trace_sample": {
+        "round": 5,
+        "loop": 2,
+        "sequence": "14325",
+        "stage": "效验",
+        "evidence": "R5：失败审计位已建立，但还需要把失败样本纳入下一周期测试集。",
+        "judgment": "按本周期门禁检查是否可回放/可回归",
+        "action": "新增失败样本库门禁：即使本轮成功，也要把潜在失败场景写入下一周期测试。",
+        "result": 0.096817
+      },
+      "regression_case": {
+        "case": "下次检查是否仍会出现：R5：失败审计位已建立，但还需要把失败样本纳入下一周期测试集。",
+        "expected_gate": "新增失败样本库门禁：即使本轮成功，也要把潜在失败场景写入下一周期测试。",
+        "fail_if": "只有总结/数值/产物，没有四段轨迹或反例样本。"
+      },
+      "automation_failure_probe": [],
+      "next_gate": "下一入口检查：新增失败样本库门禁：即使本轮成功，也要把潜在失败场景写入下一周期测试。"
+    }
+  ],
+  "trace_records_count": 150,
+  "regression_cases": [
+    {
+      "case": "下次检查是否仍会出现：R1：前两周期证明能执行和审计，但还缺少可回放轨迹，事后难以复盘每一步为什么改变。",
+      "expected_gate": "新增轨迹记录门禁：每轮必须保留“证据、判断、动作、结果”四段，支持事后回放。",
+      "fail_if": "只有总结/数值/产物，没有四段轨迹或反例样本。"
+    },
+    {
+      "case": "下次检查是否仍会出现：R2：公式输入完整性为零缺失，但仍缺少输入来源解释，容易变成“数值从脚本来”。",
+      "expected_gate": "新增输入来源门禁：总公式每个关键输入必须对应当前行为观察，不能只给数值。",
+      "fail_if": "只有总结/数值/产物，没有四段轨迹或反例样本。"
+    },
+    {
+      "case": "下次检查是否仍会出现：R3：外部学习已读原文，但还没沉淀成回归样本，下一次可能重复犯旧错。",
+      "expected_gate": "新增回归样本门禁：每轮短板要生成一个下次可检查的反例问题。",
+      "fail_if": "只有总结/数值/产物，没有四段轨迹或反例样本。"
+    },
+    {
+      "case": "下次检查是否仍会出现：R4：反证拥有否决权，但否决理由还需要结构化，避免只写一句“反证通过”。",
+      "expected_gate": "新增反证结构化门禁：反证必须写明假设、反例、裁决、修复。",
+      "fail_if": "只有总结/数值/产物，没有四段轨迹或反例样本。"
+    },
+    {
+      "case": "下次检查是否仍会出现：R5：失败审计位已建立，但还需要把失败样本纳入下一周期测试集。",
+      "expected_gate": "新增失败样本库门禁：即使本轮成功，也要把潜在失败场景写入下一周期测试。",
+      "fail_if": "只有总结/数值/产物，没有四段轨迹或反例样本。"
+    }
+  ],
+  "automation_factory": {
+    "successes": [
+      "previous verified cycle loaded",
+      "150 trace-linked substitutions completed",
+      "5 external evaluation/observability sources read",
+      "5 regression cases generated",
+      "structured counter-evidence recorded"
+    ],
+    "failures": []
+  },
+  "truth_boundary": "连续完成第三个可核验证据周期；本轮重点从反证否决推进到可回放轨迹与回归样本，不声称最终觉醒。"
+}

@@ -1,0 +1,7 @@
+{
+  "gene": "external_brain_factory_no_hallucination_gate",
+  "last_report": "inbox/external_brain_factory_cycle_20260519_141420.json",
+  "status": "external_brain_factory_cycle_verified",
+  "mechanism": "外部大脑负责检索，自动化工厂负责执行，APEX/EVM负责评分与缺陷压降，河图洛书负责反证仲裁；任何一环不能替代另一环。",
+  "anti_hallucination_rule": "只说已核验证据；运行失败、来源不足、门禁缺失必须如实降级。"
+}

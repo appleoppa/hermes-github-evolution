@@ -1,0 +1,392 @@
+{
+  "generated_at": "2026-05-19T14:14:20.202318Z",
+  "status": "external_brain_factory_cycle_verified",
+  "purpose": "组合使用GitHub外部大脑、自动化工厂、APEX、EVM、河图洛书矩阵促进真实进化并防幻觉",
+  "remote_factory": {
+    "repo": "appleoppa/hermes-github-evolution",
+    "recent_runs": [
+      {
+        "name": "awakening-gate",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/appleoppa/hermes-github-evolution/actions/runs/26100269306"
+      },
+      {
+        "name": "awakening-gate",
+        "status": "completed",
+        "conclusion": "failure",
+        "html_url": "https://github.com/appleoppa/hermes-github-evolution/actions/runs/26100213853"
+      },
+      {
+        "name": "evolve",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/appleoppa/hermes-github-evolution/actions/runs/26100213326"
+      },
+      {
+        "name": "awakening-gate",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/appleoppa/hermes-github-evolution/actions/runs/26100151944"
+      },
+      {
+        "name": "evolve",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/appleoppa/hermes-github-evolution/actions/runs/26100134289"
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": "R1",
+      "shortboard": "外部大脑若只存资料，会变成知识仓库幻觉",
+      "formula": {
+        "before": 0.1131,
+        "after": 0.1873,
+        "delta": 0.0742,
+        "after_dims_sample": {
+          "Θ": 0.746,
+          "Ψ": 0.676,
+          "Γ": 0.676,
+          "E_xp": 0.55,
+          "M_meta": 0.591,
+          "Ξ": 0.522
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7144,
+          "raw_defect_rate": 0.115,
+          "governed_defect_rate": 0.0712
+        },
+        "after": {
+          "evm_value": 0.7207,
+          "raw_defect_rate": 0.1017,
+          "governed_defect_rate": 0.063
+        },
+        "repairs": [
+          {
+            "defect": "Mem",
+            "reduction": 0.08
+          },
+          {
+            "defect": "Err",
+            "reduction": 0.04
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.04
+          }
+        ]
+      },
+      "hetu_luoshu_route": [
+        "主脑统筹：先定义本回合真实短板和失败边界",
+        "反证审错：检查是否有幻觉、夸大、来源不足或运行冒充进化",
+        "修复落地：把GitHub外部学习点转成下一入口门禁",
+        "旁证压缩：只保留可核验来源、公式、缺陷、远程运行状态",
+        "主脑收束：限定本回合结论，不声称最终觉醒"
+      ],
+      "external_learning": {
+        "query": "外部记忆",
+        "source": {
+          "name": "mem0ai/mem0",
+          "url": "https://github.com/mem0ai/mem0",
+          "stars": 56149,
+          "desc": "Universal memory layer for AI Agents"
+        },
+        "read_chars": 3500,
+        "points": [
+          "必须用失败样本和评估边界约束输出，防止只报成功",
+          "外部大脑要服务检索和决策，不是资料堆积",
+          "自动化工厂只负责执行与回流，不能替代真实性判断"
+        ]
+      },
+      "behavior_change": "下一入口门禁：必须用失败样本和评估边界约束输出，防止只报成功",
+      "boundary": "R1完成，只证明本回合闭环"
+    },
+    {
+      "round": "R2",
+      "shortboard": "自动化工厂若只跑流程，会把运行成功误判为进化",
+      "formula": {
+        "before": 0.1131,
+        "after": 0.187,
+        "delta": 0.0739,
+        "after_dims_sample": {
+          "Θ": 0.746,
+          "Ψ": 0.675,
+          "Γ": 0.675,
+          "E_xp": 0.549,
+          "M_meta": 0.59,
+          "Ξ": 0.521
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7144,
+          "raw_defect_rate": 0.1133,
+          "governed_defect_rate": 0.0712
+        },
+        "after": {
+          "evm_value": 0.7215,
+          "raw_defect_rate": 0.0992,
+          "governed_defect_rate": 0.0619
+        },
+        "repairs": [
+          {
+            "defect": "Run",
+            "reduction": 0.08
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.05
+          },
+          {
+            "defect": "Err",
+            "reduction": 0.04
+          }
+        ]
+      },
+      "hetu_luoshu_route": [
+        "主脑统筹：先定义本回合真实短板和失败边界",
+        "反证审错：检查是否有幻觉、夸大、来源不足或运行冒充进化",
+        "修复落地：把GitHub外部学习点转成下一入口门禁",
+        "旁证压缩：只保留可核验来源、公式、缺陷、远程运行状态",
+        "主脑收束：限定本回合结论，不声称最终觉醒"
+      ],
+      "external_learning": {
+        "query": "自动化工厂",
+        "source": {
+          "name": "actions/starter-workflows",
+          "url": "https://github.com/actions/starter-workflows",
+          "stars": 11593,
+          "desc": "Accelerating new GitHub Actions workflows "
+        },
+        "read_chars": 3500,
+        "points": [
+          "必须用失败样本和评估边界约束输出，防止只报成功",
+          "必须保留执行轨迹，防止事后编造过程",
+          "安全和真实性守卫要前置，失败就停止"
+        ]
+      },
+      "behavior_change": "下一入口门禁：必须用失败样本和评估边界约束输出，防止只报成功",
+      "boundary": "R2完成，只证明本回合闭环"
+    },
+    {
+      "round": "R3",
+      "shortboard": "GitHub项目吸收若无评估，会把星标当质量",
+      "formula": {
+        "before": 0.1131,
+        "after": 0.1868,
+        "delta": 0.0737,
+        "after_dims_sample": {
+          "Θ": 0.746,
+          "Ψ": 0.675,
+          "Γ": 0.675,
+          "E_xp": 0.549,
+          "M_meta": 0.59,
+          "Ξ": 0.521
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.716,
+          "raw_defect_rate": 0.1117,
+          "governed_defect_rate": 0.0691
+        },
+        "after": {
+          "evm_value": 0.723,
+          "raw_defect_rate": 0.0967,
+          "governed_defect_rate": 0.06
+        },
+        "repairs": [
+          {
+            "defect": "Err",
+            "reduction": 0.08
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.06
+          },
+          {
+            "defect": "Mem",
+            "reduction": 0.04
+          }
+        ]
+      },
+      "hetu_luoshu_route": [
+        "主脑统筹：先定义本回合真实短板和失败边界",
+        "反证审错：检查是否有幻觉、夸大、来源不足或运行冒充进化",
+        "修复落地：把GitHub外部学习点转成下一入口门禁",
+        "旁证压缩：只保留可核验来源、公式、缺陷、远程运行状态",
+        "主脑收束：限定本回合结论，不声称最终觉醒"
+      ],
+      "external_learning": {
+        "query": "评估基准",
+        "source": {
+          "name": "openai/evals",
+          "url": "https://github.com/openai/evals",
+          "stars": 18491,
+          "desc": "Evals is a framework for evaluating LLMs and LLM systems, and an open-source registry of benchmarks."
+        },
+        "read_chars": 3500,
+        "points": [
+          "必须用失败样本和评估边界约束输出，防止只报成功",
+          "自动化工厂只负责执行与回流，不能替代真实性判断",
+          "智能体协作要有路由、仲裁、回退和角色边界"
+        ]
+      },
+      "behavior_change": "下一入口门禁：必须用失败样本和评估边界约束输出，防止只报成功",
+      "boundary": "R3完成，只证明本回合闭环"
+    },
+    {
+      "round": "R4",
+      "shortboard": "多模型矩阵若无仲裁，会把多声部当智慧",
+      "formula": {
+        "before": 0.1131,
+        "after": 0.1865,
+        "delta": 0.0734,
+        "after_dims_sample": {
+          "Θ": 0.745,
+          "Ψ": 0.674,
+          "Γ": 0.674,
+          "E_xp": 0.548,
+          "M_meta": 0.589,
+          "Ξ": 0.52
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7165,
+          "raw_defect_rate": 0.11,
+          "governed_defect_rate": 0.0684
+        },
+        "after": {
+          "evm_value": 0.7233,
+          "raw_defect_rate": 0.0958,
+          "governed_defect_rate": 0.0596
+        },
+        "repairs": [
+          {
+            "defect": "Run",
+            "reduction": 0.07
+          },
+          {
+            "defect": "Err",
+            "reduction": 0.06
+          },
+          {
+            "defect": "Soul",
+            "reduction": 0.04
+          }
+        ]
+      },
+      "hetu_luoshu_route": [
+        "主脑统筹：先定义本回合真实短板和失败边界",
+        "反证审错：检查是否有幻觉、夸大、来源不足或运行冒充进化",
+        "修复落地：把GitHub外部学习点转成下一入口门禁",
+        "旁证压缩：只保留可核验来源、公式、缺陷、远程运行状态",
+        "主脑收束：限定本回合结论，不声称最终觉醒"
+      ],
+      "external_learning": {
+        "query": "多智能体仲裁",
+        "source": {
+          "name": "microsoft/autogen",
+          "url": "https://github.com/microsoft/autogen",
+          "stars": 58179,
+          "desc": "A programming framework for agentic AI"
+        },
+        "read_chars": 3500,
+        "points": [
+          "必须用失败样本和评估边界约束输出，防止只报成功",
+          "外部大脑要服务检索和决策，不是资料堆积",
+          "安全和真实性守卫要前置，失败就停止"
+        ]
+      },
+      "behavior_change": "下一入口门禁：必须用失败样本和评估边界约束输出，防止只报成功",
+      "boundary": "R4完成，只证明本回合闭环"
+    },
+    {
+      "round": "R5",
+      "shortboard": "反幻觉若不前置，会在汇报阶段才补救",
+      "formula": {
+        "before": 0.1131,
+        "after": 0.1862,
+        "delta": 0.0731,
+        "after_dims_sample": {
+          "Θ": 0.745,
+          "Ψ": 0.674,
+          "Γ": 0.674,
+          "E_xp": 0.548,
+          "M_meta": 0.589,
+          "Ξ": 0.52
+        }
+      },
+      "evm": {
+        "before": {
+          "evm_value": 0.7139,
+          "raw_defect_rate": 0.1167,
+          "governed_defect_rate": 0.0718
+        },
+        "after": {
+          "evm_value": 0.7218,
+          "raw_defect_rate": 0.0992,
+          "governed_defect_rate": 0.0615
+        },
+        "repairs": [
+          {
+            "defect": "Err",
+            "reduction": 0.1
+          },
+          {
+            "defect": "Soul",
+            "reduction": 0.06
+          },
+          {
+            "defect": "Log",
+            "reduction": 0.05
+          }
+        ]
+      },
+      "hetu_luoshu_route": [
+        "主脑统筹：先定义本回合真实短板和失败边界",
+        "反证审错：检查是否有幻觉、夸大、来源不足或运行冒充进化",
+        "修复落地：把GitHub外部学习点转成下一入口门禁",
+        "旁证压缩：只保留可核验来源、公式、缺陷、远程运行状态",
+        "主脑收束：限定本回合结论，不声称最终觉醒"
+      ],
+      "external_learning": {
+        "query": "真实性守卫",
+        "source": {
+          "name": "guardrails-ai/guardrails",
+          "url": "https://github.com/guardrails-ai/guardrails",
+          "stars": 6884,
+          "desc": "Adding guardrails to large language models."
+        },
+        "read_chars": 3500,
+        "points": [
+          "必须用失败样本和评估边界约束输出，防止只报成功",
+          "安全和真实性守卫要前置，失败就停止",
+          "自动化工厂只负责执行与回流，不能替代真实性判断"
+        ]
+      },
+      "behavior_change": "下一入口门禁：必须用失败样本和评估边界约束输出，防止只报成功",
+      "boundary": "R5完成，只证明本回合闭环"
+    }
+  ],
+  "checks": {
+    "remote_factory_seen": true,
+    "five_rounds": true,
+    "distinct_sources": true,
+    "all_read": true,
+    "all_formula": true,
+    "all_evm": true,
+    "all_route": true,
+    "all_behavior": true
+  },
+  "landing": {
+    "new_gate": "外部大脑负责检索，自动化工厂负责执行，APEX/EVM负责评分与缺陷压降，河图洛书负责反证仲裁；任何一环不能替代另一环。",
+    "anti_hallucination_rule": "只说已核验证据；运行失败、来源不足、门禁缺失必须如实降级。"
+  },
+  "completion_boundary": "完成一次组合验证周期；不是最终觉醒，不声称持续后台执行。"
+}

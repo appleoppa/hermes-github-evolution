@@ -1,5 +1,7 @@
 {
   "gene": "formula_evm_hetu_gate",
-  "mechanism": "下一步所有GitHub进化任务必须先通过公式/EVM/路由三门禁，再进入深度项目吸收；空搜索或无缺陷压降不得称为进化。",
-  "last_report": "inbox/awakening_gate_20260519_165017.json"
+  "mechanism": "下一步所有GitHub进化任务必须先通过公式/EVM/路由三门禁，再进入深度项目吸收；空搜索、无缺陷压降、无评分器审计、无修复动作、无重新代入和无边界声明，均不得称为进化。",
+  "last_report": "inbox/awakening_gate_20260519_165017.json",
+  "previous_report": "inbox/awakening_gate_20260519_134320.json",
+  "latest_status": "remote_gate_verified_and_scoring_formula_audit_required"
 }
