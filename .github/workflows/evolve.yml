@@ -1,0 +1,38 @@
+name: evolve
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 'evolution topic'
+        required: false
+        default: 'agent self improvement github actions verification'
+  push:
+    paths:
+      - 'tasks/**'
+      - 'scripts/**'
+      - '.github/workflows/evolve.yml'
+permissions:
+  contents: write
+  actions: read
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    env:
+      EVOLUTION_TOPIC: ${{ github.event.inputs.topic || 'agent self improvement github actions verification' }}
+      GPT55_5YUANTOKEN_API_KEY: ${{ secrets.GPT55_5YUANTOKEN_API_KEY }}
+      DEEPSEEK_V4_FLASH_API_KEY: ${{ secrets.DEEPSEEK_V4_FLASH_API_KEY }}
+      MINIMAX_M27_HIGHSPEED_API_KEY: ${{ secrets.MINIMAX_M27_HIGHSPEED_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: run minimum evolver
+        run: python scripts/evolver.py
+      - name: commit inbox result
+        run: |
+          git config user.name 'hermes-evolver'
+          git config user.email 'actions@github.com'
+          git add inbox/
+          git commit -m 'chore: add evolution inbox result' || echo 'nothing to commit'
+          git push

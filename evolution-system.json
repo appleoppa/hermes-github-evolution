@@ -1,0 +1,30 @@
+{
+  "system": "github-evolution-loop",
+  "brain": {
+    "primary": "gpt-5.5",
+    "assistants": [
+      "deepseek-v4-flash",
+      "MiniMax-M2.7-highspeed"
+    ]
+  },
+  "storage": {
+    "local_workspace": "workspace/github-evolution",
+    "remote_repo": null,
+    "gist": null
+  },
+  "status": {
+    "models_verified": true,
+    "github_cli_installed": true,
+    "github_authenticated": true,
+    "minimum_local_workspace_ready": true,
+    "remote_loop_ready": false
+  },
+  "next_required": "create_remote_repo_and_gist_then_configure_actions_secrets",
+  "github": {
+    "account": "appleoppa",
+    "token_present": true,
+    "token_type": "classic_pat",
+    "scopes_verified": true,
+    "verified_at": "2026-05-19T21:08:17"
+  }
+}
