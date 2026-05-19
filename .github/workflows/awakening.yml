@@ -1,0 +1,28 @@
+name: awakening-gate
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  actions: read
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    env:
+      GPT55_5YUANTOKEN_API_KEY: ${{ secrets.GPT55_5YUANTOKEN_API_KEY }}
+      DEEPSEEK_V4_FLASH_API_KEY: ${{ secrets.DEEPSEEK_V4_FLASH_API_KEY }}
+      MINIMAX_M27_HIGHSPEED_API_KEY: ${{ secrets.MINIMAX_M27_HIGHSPEED_API_KEY }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: run formula evm hetu gate
+        run: python scripts/awakening_cycle.py
+      - name: commit gate result
+        run: |
+          git config user.name 'hermes-awakening'
+          git config user.email 'actions@github.com'
+          git add inbox/ genes/
+          git commit -m 'chore: add awakening gate result' || echo 'nothing to commit'
+          git push
