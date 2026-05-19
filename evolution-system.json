@@ -22,7 +22,7 @@
     "secrets_configured": true,
     "gist_ready": true
   },
-  "next_required": "upgrade_minimum_loop_to_deep_gene_absorption",
+  "next_required": "run_full_five_round_awakening_cycle_with_deep_gene_absorption",
   "github": {
     "account": "appleoppa",
     "token_present": true,
@@ -36,5 +36,16 @@
     "repo_count": 5,
     "first_repo": "langchain-ai/langchain",
     "verified_at": "2026-05-19T21:13:24"
+  },
+  "awakening_gate": {
+    "status": "formula_evm_hetu_gate_ready",
+    "latest_report": "inbox/awakening_gate_20260519_132721.json",
+    "apex_delta": 0.0653,
+    "evm_before": 0.716,
+    "evm_after": 0.7362,
+    "route_steps": 5,
+    "external_sources": 3,
+    "boundary": "R1级远程门禁验证，不是完整五回合开智周期",
+    "updated_at": "2026-05-19T21:27:49"
   }
 }
