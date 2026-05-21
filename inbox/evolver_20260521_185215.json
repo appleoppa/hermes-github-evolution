@@ -1,0 +1,431 @@
+{
+  "run_id": "evolver_20260521_185215",
+  "generated_at": "2026-05-21T18:52:25Z",
+  "topic": "ai agent eval harness autonomous coding workflows github actions container",
+  "mode": "github_container_evolver_evomap",
+  "status": "completed",
+  "verification": {
+    "github_api_used": true,
+    "repo_count": 4,
+    "genes_count": 4,
+    "token_present_in_container": true,
+    "secret_values_printed": false,
+    "minimum_gene_gate": true
+  },
+  "evomap": {
+    "version": "1.0",
+    "generated_at": "2026-05-21T18:52:25Z",
+    "topic": "ai agent eval harness autonomous coding workflows github actions container",
+    "route": [
+      {
+        "node": "GitHub API",
+        "function": "获取真实仓库元数据/文件/工作流"
+      },
+      {
+        "node": "Actions container",
+        "function": "远程容器执行检索与基因抽取"
+      },
+      {
+        "node": "inbox",
+        "function": "结果回流主机复核"
+      },
+      {
+        "node": "genes",
+        "function": "可复用规则沉淀"
+      },
+      {
+        "node": "host evolver",
+        "function": "本地主脑验收、入库、技能更新"
+      }
+    ],
+    "trait_count": {
+      "evaluation_gate": 3,
+      "automated_test_gate": 4,
+      "agent_tooling_pattern": 4,
+      "container_reproducibility": 1
+    },
+    "dominant_traits": [
+      [
+        "agent_tooling_pattern",
+        4
+      ],
+      [
+        "automated_test_gate",
+        4
+      ],
+      [
+        "evaluation_gate",
+        3
+      ],
+      [
+        "container_reproducibility",
+        1
+      ]
+    ],
+    "host_reuse_rule": "只有含真实API元数据、采样文件路径、内容hash和边界声明的gene，才允许回流为Hermes进化素材。"
+  },
+  "genes": [
+    {
+      "repo": "raga-ai-hub/RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16165,
+      "language": "Python",
+      "traits": [
+        "evaluation_gate",
+        "automated_test_gate",
+        "agent_tooling_pattern"
+      ],
+      "mechanism": "参考 raga-ai-hub/RagaAI-Catalyst 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [
+          "README.md",
+          "pyproject.toml",
+          ".github/workflows/ci.yml"
+        ],
+        "workflow_files_seen": [
+          ".github/workflows/ci.yml"
+        ],
+        "text_hashes": {
+          "README.md": "7fcc08530415d430ecec8511b3ffa9cd50f81ecd20f3fadb1295e90e3cbba474",
+          "pyproject.toml": "24fb967a7ad40541b319a71a3f3255586634ab74dd1eba7e1439b235142144ee",
+          ".github/workflows/ci.yml": "3f8f7d7e0e3d2b4ab0b20976f25d6dfd5029f54418517d1c9e4ad1f8743c2e0c"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "openlit/openlit",
+      "url": "https://github.com/openlit/openlit",
+      "stars": 2459,
+      "language": "TypeScript",
+      "traits": [
+        "evaluation_gate",
+        "automated_test_gate",
+        "agent_tooling_pattern"
+      ],
+      "mechanism": "参考 openlit/openlit 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [
+          "README.md",
+          "CONTRIBUTING.md",
+          ".github/workflows/controller-release.yml",
+          ".github/workflows/controller-tests.yml"
+        ],
+        "workflow_files_seen": [
+          ".github/workflows/controller-release.yml",
+          ".github/workflows/controller-tests.yml"
+        ],
+        "text_hashes": {
+          "README.md": "2fd258547c9a8d761589a5319d21f23662e4429224a684f1f5a7ef7186fd5c5a",
+          "CONTRIBUTING.md": "f4a414c36dd8abca4b2e48b534d4bca32476511714c02086417f9d3861f8bd9a",
+          ".github/workflows/controller-release.yml": "62e1d29d994b6d21b1a3ea769cb31ea0365020db238c5e10cb8f3ccad4fc8545",
+          ".github/workflows/controller-tests.yml": "5b4d289bcbd163d201dbc71f0de2765361c3054af119157e55b6b6e5e7e7af08"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "mozilla-ai/any-agent",
+      "url": "https://github.com/mozilla-ai/any-agent",
+      "stars": 1168,
+      "language": "Python",
+      "traits": [
+        "automated_test_gate",
+        "agent_tooling_pattern"
+      ],
+      "mechanism": "参考 mozilla-ai/any-agent 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [
+          "README.md",
+          "pyproject.toml",
+          "AGENTS.md",
+          "CLAUDE.md",
+          "CONTRIBUTING.md"
+        ],
+        "workflow_files_seen": [],
+        "text_hashes": {
+          "README.md": "831d4bb0ccb284a73de93fc087ccb28ebb0e76a122c508b39a3df0dfa01affed",
+          "pyproject.toml": "8144549b34aae53b4cc8fea3493b0725a403e140ea9300ba889ace8c93b5fa51",
+          "AGENTS.md": "722632000217d2f27aa1ba7d1fe6cda305fc463325da804304c3038e383cc553",
+          "CLAUDE.md": "722632000217d2f27aa1ba7d1fe6cda305fc463325da804304c3038e383cc553",
+          "CONTRIBUTING.md": "72e62c2e6f59b1c02d07d95317136ae45d71b5ba2b485707fbc35f556374551d"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "microsoft/AIOpsLab",
+      "url": "https://github.com/microsoft/AIOpsLab",
+      "stars": 882,
+      "language": "Python",
+      "traits": [
+        "evaluation_gate",
+        "automated_test_gate",
+        "agent_tooling_pattern",
+        "container_reproducibility"
+      ],
+      "mechanism": "参考 microsoft/AIOpsLab 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [
+          "README.md",
+          "pyproject.toml",
+          "CLAUDE.md",
+          "CONTRIBUTING.md",
+          ".github/workflows/integration-test.yml"
+        ],
+        "workflow_files_seen": [
+          ".github/workflows/integration-test.yml"
+        ],
+        "text_hashes": {
+          "README.md": "f0a468d10d996c1b5f47eed1ae8c2637d9448857bfa324510cf686d0d7136d6e",
+          "pyproject.toml": "ba680fe13583ce7f1569cd9e83c41015b80fb11c2f431d349d16848216d7041d",
+          "CLAUDE.md": "5fa9408c75402938a94afc2db42ee34e827222ca432f72f252500aa9a1b6fad9",
+          "CONTRIBUTING.md": "198fe1f23542adb47b1f4ca318d050b9658e7fba274dd75a10c7ea66b722e346",
+          ".github/workflows/integration-test.yml": "12d5635744bababf000bb530fd99ed88ba916676eb142a6db97896b774cc9f3a"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    }
+  ],
+  "selected_repositories": [
+    {
+      "name": "raga-ai-hub/RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16165,
+      "description": "Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like agent, llm and tools tracing, debugging multi-agentic system, self-hosted dashboard and advanced analytics with timeline and execution graph view ",
+      "updated_at": "2026-05-21T07:52:48Z",
+      "signals": {
+        "languages": {
+          "Python": 902970,
+          "Jupyter Notebook": 205921
+        },
+        "root_signal_files": [
+          ".github",
+          ".gitignore",
+          ".gitmodules",
+          "LICENSE",
+          "Quickstart.md",
+          "README.md",
+          "docs",
+          "examples",
+          "pyproject.toml",
+          "quickstart.md",
+          "ragaai_catalyst",
+          "requirements.txt",
+          "test_report_20250407_183101.txt",
+          "tests",
+          "tests_requirements.txt"
+        ],
+        "sampled_paths": [
+          "README.md",
+          "pyproject.toml",
+          ".github/workflows/ci.yml"
+        ],
+        "sampled_text_hashes": {
+          "README.md": "7fcc08530415d430ecec8511b3ffa9cd50f81ecd20f3fadb1295e90e3cbba474",
+          "pyproject.toml": "24fb967a7ad40541b319a71a3f3255586634ab74dd1eba7e1439b235142144ee",
+          ".github/workflows/ci.yml": "3f8f7d7e0e3d2b4ab0b20976f25d6dfd5029f54418517d1c9e4ad1f8743c2e0c"
+        },
+        "sampled_text_excerpt": {
+          "README.md": "# RagaAI Catalyst&nbsp; ![GitHub release (latest by date)](https://img.shields.io/github/v/release/raga-ai-hub/ragaai-catalyst) ![GitHub stars](https://img.shields.io/github/stars/raga-ai-hub/ragaai-catalyst?style=social)  ![Issues](https://img.shields.io/github/issues/raga-ai-hub/ragaai-catalyst) \n\nRagaAI Catalyst is a comprehensive platform designed to enhance the management and optimization of LLM projects. It offers a wide range of features, including project management, dataset management, evaluation management, trace management, prompt management, synthetic data generation, and guardrail management. These functionalities enable you to efficiently evaluate, and safeguard your LLM applications.\n\n## Table of Contents\n\n- [RagaAI Catalyst](#ragaai-catalyst)\n  - [Installation](#installation)\n  - [Configuration](#configuration)\n  - [Usage](#usage)\n    - [Project Management](#project-manag",
+          "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=45\", \"wheel\", \"setuptools_scm>=6.2\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"ragaai_catalyst\"\ndescription = \"RAGA AI CATALYST\"\nreadme = \"README.md\"\nrequires-python = \">=3.10,<=3.13.2\"\n# license = {file = \"LICENSE\"}\nversion = \"2.1.7.4\"\nauthors = [\n    {name = \"Kiran Scaria\", email = \"kiran.scaria@raga.ai\"},\n    {name = \"Kedar Gaikwad\", email = \"kedar.gaikwad@raga.ai\"},\n    {name = \"Dushyant Mahajan\", email = \"dushyant.mahajan@raga.ai\"},\n    {name = \"Siddhartha Kosti\", email = \"siddhartha.kosti@raga.ai\"},\n    {name = \"Ritika Goel\", email = \"ritika.goel@raga.ai\"},\n    {name = \"Vijay Chaurasia\", email=\"vijay.chaurasia@raga.ai\"},\n    {name = \"Tushar Kumar\", email=\"tushar.kumar@raga.ai\"}\n]\n\ndependencies = [\n    \"aiohttp>=3.10.2\", # Ref: https://github.com/raga-ai-hub/ragaai-catalyst/security/dependabot/1\n    \"langchain-core>=0.2.11\",\n ",
+          ".github/workflows/ci.yml": "name: CI Pipeline\n\non:\n  push:\n    branches: [ main ]\n  pull_request:\n    branches: [ main ]\n\njobs:\n  code-quality:\n    runs-on: ubuntu-latest\n    continue-on-error: true\n    steps:\n      - uses: actions/checkout@v4\n      - name: Set up Python\n        uses: actions/setup-python@v5\n        with:\n          python-version: '3.10'\n      - name: Install dependencies\n        shell: bash\n        run: |\n          if [ \"$RUNNER_OS\" == \"Windows\" ]; then\n            python -m pip install --upgrade pip\n            pip install ruff\n            pip install -e \".[dev]\"\n          else\n            curl -LsSf https://astral.sh/uv/install.sh | sh\n            export PATH=\"$HOME/.cargo/bin:$PATH\"\n            uv pip install --system ruff\n            uv pip install --system -e \".[dev]\"\n          fi\n      - name: Format and lint with Ruff\n        run: |\n          # First run format to fix formatting issues\n    "
+        }
+      }
+    },
+    {
+      "name": "openlit/openlit",
+      "url": "https://github.com/openlit/openlit",
+      "stars": 2459,
+      "description": "Open source platform for AI Engineering: OpenTelemetry-native LLM Observability, GPU Monitoring, Guardrails, Evaluations, Prompt Management, Vault, Playground. 🚀💻 Integrates with 50+ LLM Providers, VectorDBs, Agent Frameworks and GPUs.",
+      "updated_at": "2026-05-20T19:02:32Z",
+      "signals": {
+        "languages": {
+          "TypeScript": 4448916,
+          "Python": 3269704,
+          "Go": 594028,
+          "Shell": 44817,
+          "JavaScript": 13265,
+          "C": 13222,
+          "Dockerfile": 8328,
+          "Makefile": 4576,
+          "CSS": 2176
+        },
+        "root_signal_files": [
+          ".cursor",
+          ".github",
+          ".gitignore",
+          ".gitmodules",
+          ".vale.ini",
+          "CODEOWNERS",
+          "CODE_OF_CONDUCT.md",
+          "CONTRIBUTING.md",
+          "LICENSE",
+          "OPAMP_DEPLOYMENT.md",
+          "README.md",
+          "SECURITY.md",
+          "assets",
+          "docker-compose.yml",
+          "docs",
+          "env.example",
+          "examples",
+          "openlit-controller",
+          "opentelemetry-gpu-collector",
+          "sdk",
+          "src",
+          "taskfile.yaml"
+        ],
+        "sampled_paths": [
+          "README.md",
+          "CONTRIBUTING.md",
+          ".github/workflows/controller-release.yml",
+          ".github/workflows/controller-tests.yml"
+        ],
+        "sampled_text_hashes": {
+          "README.md": "2fd258547c9a8d761589a5319d21f23662e4429224a684f1f5a7ef7186fd5c5a",
+          "CONTRIBUTING.md": "f4a414c36dd8abca4b2e48b534d4bca32476511714c02086417f9d3861f8bd9a",
+          ".github/workflows/controller-release.yml": "62e1d29d994b6d21b1a3ea769cb31ea0365020db238c5e10cb8f3ccad4fc8545",
+          ".github/workflows/controller-tests.yml": "5b4d289bcbd163d201dbc71f0de2765361c3054af119157e55b6b6e5e7e7af08"
+        },
+        "sampled_text_excerpt": {
+          "README.md": "<div align=\"center\">\n<img src=\"https://github.com/openlit/.github/blob/main/profile/assets/wide-logo-no-bg.png?raw=true\" alt=\"OpenLIT Logo\" width=\"30%\">\n\n#### Observability, Evaluations, Rule Engine, Guardrails, Prompts, Vault, Playground, FleetHub\n\n# Open Source Platform for AI Engineering\n\n**[Documentation](https://docs.openlit.io/) | [Quickstart](-getting-started-with-llm-observability) | [Python SDK](https://github.com/openlit/openlit/tree/main/sdk/python) | [Typescript SDK](https://github.com/openlit/openlit/tree/main/sdk/typescript) | [Go SDK](https://github.com/openlit/openlit/tree/main/sdk/go) |**\n\n**❤️ [Sponsor this project](https://opencollective.com/openlit) ❤️** \n\n[![OpenLIT](https://img.shields.io/badge/OpenLIT-orange)](https://openlit.io/)\n[![License](https://img.shields.io/github/license/openlit/openlit?label=License&logo=github&color=f80&logoColor=white)](https://github.c",
+          "CONTRIBUTING.md": "# Contributing to OpenLIT\n\nWe welcome contributions to the OpenLIT project and are grateful for every contribution from bug reports to new features. If you are looking to contribute to the codebase, improve documentation, report issues, or suggest new features, this document is a set of guidelines to help you get started.\n\n## Getting Started\n\nBefore you begin:\n- Ensure you have a [GitHub account](https://github.com/join).\n- Familiarize yourself with git commands in the [Git Documentation](https://git-scm.com/documentation).\n- Read the README for project setup instructions.\n- For Fleet Hub and OpAMP development, review the [OpAMP Deployment Guide](OPAMP_DEPLOYMENT.md) and [Certificate Management Guide](src/opamp-server/CERTIFICATES.md).\n\n## Contributing Workflow\n\nHere's how you can contribute to OpenLIT:\n\n1. **Fork the Repository**\n   - Click the \"Fork\" button at the top right corner of t",
+          ".github/workflows/controller-release.yml": "name: Release OpenLIT Controller\n\non:\n  push:\n    tags: [ 'controller-*.*.*' ]\n\nenv:\n  REGISTRY: ghcr.io\n  IMAGE_NAME: openlit/openlit-controller\n  BINARY_NAME: openlit-controller\n\npermissions:\n  contents: write\n\njobs:\n  # ── 1. Unit tests ──────────────────────────────────────────────────────────\n  test:\n    name: Test\n    runs-on: ubuntu-24.04\n    steps:\n      - uses: actions/checkout@v4\n\n      - uses: actions/setup-go@v5\n        with:\n          go-version-file: openlit-controller/go.mod\n          cache-dependency-path: openlit-controller/go.sum\n\n      - name: Install eBPF build dependencies\n        run: |\n          sudo apt-get update -q\n          sudo apt-get install -y clang llvm libbpf-dev\n          BPFTOOL_VERSION=$(curl -fsSL https://api.github.com/repos/libbpf/bpftool/releases/latest \\\n            | jq -r .tag_name)\n          curl -fsSL \"https://github.com/libbpf/bpftool/release",
+          ".github/workflows/controller-tests.yml": "name: OpenLIT Controller Tests\n\non:\n  push:\n    branches: [\"main\"]\n    paths:\n      - 'openlit-controller/**'\n  pull_request:\n    branches: [\"main\"]\n    paths:\n      - 'openlit-controller/**'\n\npermissions:\n  contents: read\n\njobs:\n  test:\n    name: Test\n    runs-on: ubuntu-24.04\n    steps:\n      - uses: actions/checkout@v4\n\n      - uses: actions/setup-go@v5\n        with:\n          go-version-file: openlit-controller/go.mod\n          cache-dependency-path: openlit-controller/go.sum\n\n      - name: Install eBPF build dependencies\n        # Pin bpftool rather than resolving \"latest\" via the unauthenticated\n        # GitHub API (60/hour shared with other runners, and the response is\n        # silent on rate-limit -- `jq -r .tag_name` returns \"null\" and the\n        # subsequent download 404s, taking the whole step down). Pinning\n        # also keeps tests reproducible against a known toolchain."
+        }
+      }
+    },
+    {
+      "name": "mozilla-ai/any-agent",
+      "url": "https://github.com/mozilla-ai/any-agent",
+      "stars": 1168,
+      "description": "A single interface to use and evaluate different agent frameworks ",
+      "updated_at": "2026-05-21T01:29:24Z",
+      "signals": {
+        "languages": {
+          "Python": 541766
+        },
+        "root_signal_files": [
+          ".codespellrc",
+          ".gitattributes",
+          ".gitbook-branch-readme.md",
+          ".gitbook.yaml",
+          ".github",
+          ".gitignore",
+          ".pre-commit-config.yaml",
+          "AGENTS.md",
+          "CLAUDE.md",
+          "CODE_OF_CONDUCT.md",
+          "CONTRIBUTING.md",
+          "LICENSE",
+          "README.md",
+          "demo",
+          "docs",
+          "mkdocs.yml",
+          "pyproject.toml",
+          "scripts",
+          "src",
+          "tests"
+        ],
+        "sampled_paths": [
+          "README.md",
+          "pyproject.toml",
+          "AGENTS.md",
+          "CLAUDE.md",
+          "CONTRIBUTING.md"
+        ],
+        "sampled_text_hashes": {
+          "README.md": "831d4bb0ccb284a73de93fc087ccb28ebb0e76a122c508b39a3df0dfa01affed",
+          "pyproject.toml": "8144549b34aae53b4cc8fea3493b0725a403e140ea9300ba889ace8c93b5fa51",
+          "AGENTS.md": "722632000217d2f27aa1ba7d1fe6cda305fc463325da804304c3038e383cc553",
+          "CLAUDE.md": "722632000217d2f27aa1ba7d1fe6cda305fc463325da804304c3038e383cc553",
+          "CONTRIBUTING.md": "72e62c2e6f59b1c02d07d95317136ae45d71b5ba2b485707fbc35f556374551d"
+        },
+        "sampled_text_excerpt": {
+          "README.md": "<p align=\"center\">\n  <picture>\n    <img src=\"https://raw.githubusercontent.com/mozilla-ai/any-agent/refs/heads/main/docs/images/any-agent-logo-mark.png\" width=\"20%\" alt=\"Project logo\"/>\n  </picture>\n</p>\n\n<div align=\"center\">\n\n# any-agent\n\n[![Docs](https://github.com/mozilla-ai/any-agent/actions/workflows/docs.yaml/badge.svg)](https://github.com/mozilla-ai/any-agent/actions/workflows/docs.yaml/)\n[![Tests](https://github.com/mozilla-ai/any-agent/actions/workflows/tests-integration.yaml/badge.svg)](https://github.com/mozilla-ai/any-agent/actions/workflows/tests-integration.yaml/)\n![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)\n[![PyPI](https://img.shields.io/pypi/v/any-agent)](https://pypi.org/project/any-agent/)\n<a href=\"https://discord.gg/4gf3zXrQUc\">\n    <img src=\"https://img.shields.io/static/v1?label=Chat%20on&message=Discord&color=blue&logo=Discord&style=flat-sq",
+          "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=48\", \"setuptools_scm[toml]>=6.3.1\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"any-agent\"\nreadme = \"README.md\"\nlicense = {text = \"Apache-2.0\"}\nrequires-python = \">=3.11,<3.14\"\ndynamic = [\"version\"]\ndependencies = [\n  \"any-llm-sdk>=1.0,<2\",\n  \"mcp>=1.5.0\",\n  \"mozilla-ai-tinyagent\",\n  \"opentelemetry-sdk\",\n  \"pydantic\",\n  \"requests\",\n  \"rich\",\n  \"tavily-python\",\n]\n\n[project.optional-dependencies]\nagno = [\n  \"agno>=1.7.0,<2\",\n]\n\ngoogle = [\n  \"google-adk>=1.14.0\"\n]\n\nlangchain = [\n  \"langchain\",\n  \"langchain-mcp-adapters>=0.0.3\",\n  \"langgraph\",\n]\n\nllama_index = [\n  \"llama-index>=0.12.52, <1\",\n  \"llama-index-tools-mcp>=0.2.5\",\n  \"platformdirs>=4.3.7\",\n]\n\nopenai = [\n  \"openai-agents>=0.3.0, <1\",\n]\n\nsmolagents = [\n  \"smolagents[mcp]>=1.20.0\",\n]\n\na2a = [\n  \"a2a-sdk>=0.3.0,<1.0.0\",\n  \"httpx\",\n]\n\ncomposio = [\n  \"composio>=0.8.14\"\n]\n\nall = [\n  \"",
+          "AGENTS.md": "# CLAUDE.md\n\nThis file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n`CLAUDE.md` is a symlink to this file. Always edit `AGENTS.md` directly; never modify `CLAUDE.md`.\n\n## Where to Look First\n\n- [README.md](README.md): high-level usage and supported frameworks.\n- [CONTRIBUTING.md](CONTRIBUTING.md): canonical dev setup, test matrix, and contribution workflow.\n- [pyproject.toml](pyproject.toml) and [.pre-commit-config.yaml](.pre-commit-config.yaml): formatting/lint/typecheck configuration.\n- [docs/](docs/): Astro/Starlight docs site (configured by [docs/astro.config.mjs](docs/astro.config.mjs)).\n\n## Project Structure & Module Organization\n\n- `src/any_agent/`: Core library. `AnyAgent` is the main entry point; `AgentConfig` and `AgentFramework` define config.\n- `src/any_agent/frameworks/`: One module per supported framework (agno, google, langc",
+          "CLAUDE.md": "# CLAUDE.md\n\nThis file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n`CLAUDE.md` is a symlink to this file. Always edit `AGENTS.md` directly; never modify `CLAUDE.md`.\n\n## Where to Look First\n\n- [README.md](README.md): high-level usage and supported frameworks.\n- [CONTRIBUTING.md](CONTRIBUTING.md): canonical dev setup, test matrix, and contribution workflow.\n- [pyproject.toml](pyproject.toml) and [.pre-commit-config.yaml](.pre-commit-config.yaml): formatting/lint/typecheck configuration.\n- [docs/](docs/): Astro/Starlight docs site (configured by [docs/astro.config.mjs](docs/astro.config.mjs)).\n\n## Project Structure & Module Organization\n\n- `src/any_agent/`: Core library. `AnyAgent` is the main entry point; `AgentConfig` and `AgentFramework` define config.\n- `src/any_agent/frameworks/`: One module per supported framework (agno, google, langc",
+          "CONTRIBUTING.md": "# Contributing to mozilla.ai Any Agent\n\nThank you for your interest in contributing to any-agent! 🎉\n\nWe're building a unified interface for working with multiple agent frameworks, supporting the mozilla.ai goal of empowering developers to integrate AI capabilities into their projects using open-source tools and models. We welcome contributions from developers of all experience levels—whether you're fixing a typo, adding a new framework integration, or improving our architecture, your help is appreciated.\n\n\n## Before You Start\n\n### Check for Duplicates\n\nBefore creating a new issue or starting work:\n- [ ] Search [existing issues](https://github.com/mozilla-ai/any-agent/issues) for duplicates\n- [ ] Check [open pull requests](https://github.com/mozilla-ai/any-agent/pulls) to see if someone is already working on it\n- [ ] For bugs, verify it still exists in the `main` branch\n\n### Discuss Major"
+        }
+      }
+    },
+    {
+      "name": "microsoft/AIOpsLab",
+      "url": "https://github.com/microsoft/AIOpsLab",
+      "stars": 882,
+      "description": "A holistic framework to enable the design, development, and evaluation of autonomous AIOps agents.",
+      "updated_at": "2026-05-20T13:28:52Z",
+      "signals": {
+        "languages": {
+          "Python": 597518,
+          "Mustache": 29684,
+          "Shell": 19275,
+          "HCL": 9305,
+          "Go Template": 7209,
+          "Makefile": 3437,
+          "C": 2221,
+          "Jinja": 198,
+          "Dockerfile": 114
+        },
+        "root_signal_files": [
+          ".env.example",
+          ".github",
+          ".gitignore",
+          ".gitmodules",
+          "CLAUDE.md",
+          "CODE_OF_CONDUCT.md",
+          "CONTRIBUTING.md",
+          "LICENSE.txt",
+          "NOTICE.txt",
+          "README.md",
+          "SECURITY.md",
+          "SUPPORT.md",
+          "TutorialSetup.md",
+          "aiopslab",
+          "aiopslab-applications",
+          "assessment.py",
+          "assets",
+          "cli.py",
+          "clients",
+          "kind",
+          "poetry.lock",
+          "pyproject.toml",
+          "scripts",
+          "service.py",
+          "tests"
+        ],
+        "sampled_paths": [
+          "README.md",
+          "pyproject.toml",
+          "CLAUDE.md",
+          "CONTRIBUTING.md",
+          ".github/workflows/integration-test.yml"
+        ],
+        "sampled_text_hashes": {
+          "README.md": "f0a468d10d996c1b5f47eed1ae8c2637d9448857bfa324510cf686d0d7136d6e",
+          "pyproject.toml": "ba680fe13583ce7f1569cd9e83c41015b80fb11c2f431d349d16848216d7041d",
+          "CLAUDE.md": "5fa9408c75402938a94afc2db42ee34e827222ca432f72f252500aa9a1b6fad9",
+          "CONTRIBUTING.md": "198fe1f23542adb47b1f4ca318d050b9658e7fba274dd75a10c7ea66b722e346",
+          ".github/workflows/integration-test.yml": "12d5635744bababf000bb530fd99ed88ba916676eb142a6db97896b774cc9f3a"
+        },
+        "sampled_text_excerpt": {
+          "README.md": "<div align=\"center\">\n\n<h1>AIOpsLab</h1>\n\n[🤖Overview](#🤖overview) | \n[🚀Quick Start](#🚀quickstart) | \n[📦Installation](#📦installation) | \n[⚙️Usage](#⚙️usage) | \n[📂Project Structure](#📂project-structure) |\n[📄How to Cite](#📄how-to-cite)\n\n[![ArXiv Link](https://img.shields.io/badge/arXiv-2501.06706-red?logo=arxiv)](https://arxiv.org/pdf/2501.06706)\n[![ArXiv Link](https://img.shields.io/badge/arXiv-2407.12165-red?logo=arxiv)](https://arxiv.org/pdf/2407.12165)\n</div>\n\n\n\n<h2 id=\"🤖overview\">🤖 Overview</h2>\n\n![alt text](./assets/images/aiopslab-arch-open-source.png)\n\n\nAIOpsLab is a holistic framework to enable the design, development, and evaluation of autonomous AIOps agents that, additionally, serve the purpose of building reproducible, standardized, interoperable and scalable benchmarks. AIOpsLab can deploy microservice cloud environments, inject faults, generate workloads, and export telemetry ",
+          "pyproject.toml": "[tool.poetry]\r\nname = \"aiopslab\"\r\nversion = \"0.1.0\"\r\ndescription = \"benchmark and eval framework for AI powered DevOps\"\r\nauthors = [\"Manish Shetty\", \"Yinfang Chen\"]\r\nreadme = \"README.md\"\r\n\r\n[tool.poetry.dependencies]\r\npython = \">=3.11,<3.13\"\r\nimportlib = \"^1.0.4\"\r\nblack = \"^24.4.2\"\r\npyright = \"^1.1.366\"\r\nopenai = \"^1.33.0\"\r\npydantic = \"^2.7.4\"\r\nkubernetes = \"^30.1.0\"\r\ncolorama = \"^0.4.6\"\r\nrich = \"^13.7.1\"\r\nprompt-toolkit = \"^3.0.47\"\r\nprometheus-api-client = \"^0.5.5\"\r\ntiktoken = \"^0.7.0\"\r\nelasticsearch = \"^8.16.0\"\r\nazure-identity = \"^1.19.0\"\r\nparamiko = \"^3.5.0\"\r\nwandb = \"^0.19.7\"\r\npython-dotenv = \"^1.0.1\"\r\nfastapi = \"^0.115.12\"\r\ndocker = \"^7.0\"\r\npandas = \"^2.0\"\r\npytz = \"^2024.0\"\r\nrequests = \"^2.33\"\r\npyyaml = \"^6.0\"\r\n\r\n# Client/agent packages that require CUDA or heavy ML runtimes.\r\n# These are installed by default (`poetry install`) but can be excluded in\r\n# environments that only need t",
+          "CLAUDE.md": "# CLAUDE.md\n\nThis file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n## Overview\n\nAIOpsLab is a holistic framework for evaluating autonomous AIOps agents in interactive cloud environments. It orchestrates microservice deployments, fault injection, workload generation, and telemetry collection to benchmark AI agents on detection, localization, analysis, and mitigation tasks.\n\n## Development Commands\n\n### Environment Setup\n```bash\n# Install dependencies using Poetry (recommended, requires Python >= 3.11)\npoetry env use python3.11\npoetry install\neval $(poetry env activate)\n\n# Alternative: pip install\npip install -e .\n```\n\n### Running Agents Locally\n```bash\n# Interactive CLI with human agent\npython3 cli.py\n# In the REPL:\n(aiopslab) $ start <problem_id>  # e.g., misconfig_app_hotel_res-detection-1\n(aiopslab) $ submit(\"Yes\")\n\n# Run baseline agent",
+          "CONTRIBUTING.md": "# Contributing\n\nThis project welcomes contributions and suggestions. Most contributions require you to\nagree to a Contributor License Agreement (CLA) declaring that you have the right to,\nand actually do, grant us the rights to use your contribution. For details, visit\nhttps://cla.microsoft.com.\n\nWhen you submit a pull request, a CLA-bot will automatically determine whether you need\nto provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the\ninstructions provided by the bot. You will only need to do this once across all repositories using our CLA.\n\nThis project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).\nFor more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)\nor contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional qu",
+          ".github/workflows/integration-test.yml": "name: Integration Smoke Test\n\n# Trigger on every push to main branch and on every pull request to main branch.\n# This ensures regressions are caught before merging to main.\non:\n  push:\n    branches: ['main']\n    paths-ignore:\n      - '**.md'\n      - '.env.example'\n      - 'assets/**'\n      - 'LICENSE.txt'\n      - 'NOTICE.txt'\n      - '.github/ISSUE_TEMPLATE/**'\n  pull_request:\n    branches: ['main']\n    paths-ignore:\n      - '**.md'\n      - '.env.example'\n      - 'assets/**'\n      - 'LICENSE.txt'\n      - 'NOTICE.txt'\n      - '.github/ISSUE_TEMPLATE/**'\n\nconcurrency:\n  group: ${{ github.workflow }}-${{ github.ref }}\n  cancel-in-progress: true\n\njobs:\n  smoke-test:\n    name: no-op hotel-reservation smoke test\n    runs-on: ubuntu-latest\n    # Full cluster setup + app deploy + workload + teardown typically takes 15-25 min.\n    timeout-minutes: 45\n\n    steps:\n      # --------------------------"
+        }
+      }
+    }
+  ],
+  "boundary": "本次完成远程容器检索、采样、基因抽取和回流；深度代码迁移需后续针对单仓库逐文件审计和测试。"
+}
