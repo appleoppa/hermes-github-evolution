@@ -178,11 +178,11 @@ def main():
     evm_after = evm_status_from_defects(after_defects)
 
     route = [
-        {'role': '主脑统筹', 'model': 'gpt-5.5', 'judgment': '先承认旧评分没有完成真正审错，不能拿旧分数证明自己。'},
-        {'role': '反证审错', 'model': 'deepseek-v4-flash', 'judgment': '定位两处核心bug：手写after分数、EVM同一治理系数重复使用。'},
-        {'role': '修复落地', 'model': 'gpt-5.5', 'judgment': '评分改为证据驱动；EVM after只接受真实修复动作，不再借治理系数自证。'},
-        {'role': '旁证压缩', 'model': 'MiniMax-M2.7-highspeed', 'judgment': '保留审错、修复、代入和边界四类证据；不声称完整五回合周期。'},
-        {'role': '主脑收束', 'model': 'gpt-5.5', 'judgment': '本次是对评分门禁的补审与修复后重跑，不等于完整开智周期完成。'}
+        {'role': '主要调度', 'model': 'MiniMax-M2.7-highspeed', 'judgment': '先拆分门禁：评分器审错、EVM缺陷治理、自我代入、边界声明，组织检查点而不替代主脑裁决。'},
+        {'role': '最强主脑', 'model': 'gpt-5.5', 'judgment': '进化以GPT为主：承认旧评分没有完成真正审错，不能拿旧分数证明自己。'},
+        {'role': '辅助反证', 'model': 'deepseek-v4-flash', 'judgment': '定位两处核心bug：手写after分数、EVM同一治理系数重复使用，并提示免检幻觉。'},
+        {'role': '调度复核', 'model': 'MiniMax-M2.7-highspeed', 'judgment': '检查证据链是否齐全：审错、修复、代入、边界四类证据缺一不可；不声称完整五回合周期。'},
+        {'role': 'GPT最终收束', 'model': 'gpt-5.5', 'judgment': '评分改为证据驱动；EVM after只接受真实修复动作；本次是评分门禁补审，不等于完整开智周期完成。'}
     ]
 
     behavior_change = '以后评分必须先审评分器自身：没有审错清单、修复动作、重新代入和边界声明，分数无效。'

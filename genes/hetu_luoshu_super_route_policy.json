@@ -1,0 +1,13 @@
+{
+  "gene": "hetu_luoshu_super_route_policy",
+  "status": "active",
+  "policy": "MiniMax负责主要调度，GPT-5.5作为最强主脑并主导进化，DeepSeek作为辅助脑负责反证审错。",
+  "decision_order": [
+    "MiniMax主要调度",
+    "GPT主脑推理",
+    "DeepSeek辅助反证",
+    "MiniMax调度复核",
+    "GPT最终收束"
+  ],
+  "updated_at": "2026-05-20T10:32:24"
+}

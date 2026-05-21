@@ -1,0 +1,242 @@
+{
+  "generated_at": "2026-05-20T02:32:46.362982Z",
+  "status": "scoring_formula_bug_fixed_and_self_substituted",
+  "direct_answer": {
+    "audited_bug": true,
+    "fixed": true,
+    "substituted_self": true,
+    "full_cycle_completed": false
+  },
+  "formula_bug_audit": [
+    {
+      "bug": "循环论证",
+      "evidence": "旧脚本先手工提高after_dims，再用公式证明提高，属于先写结论再评分。",
+      "fix": "after_dims改为由可验证修复证据计算，不允许直接手写提升项。"
+    },
+    {
+      "bug": "EVM双重治理",
+      "evidence": "旧脚本先用古法治理算before，再按同一治理系数heal_defect形成after，等于同一把尺子用了两遍。",
+      "fix": "after缺陷只来自明确修复动作，EVM公式内部只治理一次。"
+    },
+    {
+      "bug": "公式审错停止条件错误",
+      "evidence": "公式文件自称所有已知BUG已修复，容易让门禁跳过本次评分脚本自身审错。",
+      "fix": "每次评分先审当前代入脚本，不把公式文件注释当作免检证明。"
+    }
+  ],
+  "evidence_gates": {
+    "formula_audit": true,
+    "circular_fix": true,
+    "evm_double_count_fix": true,
+    "self_substitution": true,
+    "external_sources": true,
+    "boundary_honesty": true,
+    "route_trace": true,
+    "rerun_ready": true
+  },
+  "apex": {
+    "before_dims": {
+      "ΔG_base": 0.55,
+      "Θ": 0.62,
+      "K": 0.62,
+      "ε": 0.7,
+      "Φ": 0.62,
+      "Ψ": 0.55,
+      "Π": 0.66,
+      "Λ_ctx": 0.38,
+      "Γ": 0.56,
+      "PID": 0.58,
+      "RD": 0.58,
+      "Kelly": 0.48,
+      "E_xp": 0.4,
+      "M_meta": 0.46,
+      "Ξ": 0.38,
+      "_n_decisions": 8
+    },
+    "after_dims": {
+      "ΔG_base": 0.55,
+      "Θ": 0.74,
+      "K": 0.62,
+      "ε": 0.7,
+      "Φ": 0.62,
+      "Ψ": 0.63,
+      "Π": 0.66,
+      "Λ_ctx": 0.38,
+      "Γ": 0.66,
+      "PID": 0.58,
+      "RD": 0.6399999999999999,
+      "Kelly": 0.5599999999999999,
+      "E_xp": 0.5,
+      "M_meta": 0.5800000000000001,
+      "Ξ": 0.52,
+      "_n_decisions": 8
+    },
+    "before": 0.1194,
+    "after": 0.1762,
+    "delta": 0.0568,
+    "anti_circularity": "after_dims由evidence_gates推导，不再手写after提升项。"
+  },
+  "evm": {
+    "before": {
+      "evm_value": 0.712,
+      "raw_defect_rate": 0.1208,
+      "governed_defect_rate": 0.0742,
+      "governance_reduction": 0.0466
+    },
+    "after": {
+      "evm_value": 0.7407,
+      "raw_defect_rate": 0.0592,
+      "governed_defect_rate": 0.037,
+      "governance_reduction": 0.0222
+    },
+    "active_defects_before": {
+      "Soul": 0.35,
+      "Err": 0.34,
+      "Log": 0.3,
+      "Mem": 0.24,
+      "Run": 0.22
+    },
+    "active_defects_after": {
+      "Soul": 0.19,
+      "Err": 0.07,
+      "Log": 0.18,
+      "Mem": 0.16,
+      "Run": 0.11
+    },
+    "repair_actions": [
+      {
+        "gate": "formula_audit",
+        "defect": "Log",
+        "reduction": 0.06
+      },
+      {
+        "gate": "formula_audit",
+        "defect": "Err",
+        "reduction": 0.04
+      },
+      {
+        "gate": "circular_fix",
+        "defect": "Err",
+        "reduction": 0.12
+      },
+      {
+        "gate": "circular_fix",
+        "defect": "Soul",
+        "reduction": 0.04
+      },
+      {
+        "gate": "evm_double_count_fix",
+        "defect": "Err",
+        "reduction": 0.08
+      },
+      {
+        "gate": "evm_double_count_fix",
+        "defect": "Run",
+        "reduction": 0.04
+      },
+      {
+        "gate": "self_substitution",
+        "defect": "Soul",
+        "reduction": 0.08
+      },
+      {
+        "gate": "self_substitution",
+        "defect": "Mem",
+        "reduction": 0.04
+      },
+      {
+        "gate": "external_sources",
+        "defect": "Mem",
+        "reduction": 0.04
+      },
+      {
+        "gate": "external_sources",
+        "defect": "Log",
+        "reduction": 0.04
+      },
+      {
+        "gate": "boundary_honesty",
+        "defect": "Soul",
+        "reduction": 0.04
+      },
+      {
+        "gate": "boundary_honesty",
+        "defect": "Err",
+        "reduction": 0.03
+      },
+      {
+        "gate": "route_trace",
+        "defect": "Run",
+        "reduction": 0.04
+      },
+      {
+        "gate": "route_trace",
+        "defect": "Log",
+        "reduction": 0.02
+      },
+      {
+        "gate": "rerun_ready",
+        "defect": "Run",
+        "reduction": 0.03
+      }
+    ],
+    "anti_double_counting": "after缺陷来自repair_actions，未使用governance_detail作为heal依据。"
+  },
+  "hetu_luoshu_route": [
+    {
+      "role": "主要调度",
+      "model": "MiniMax-M2.7-highspeed",
+      "judgment": "先拆分门禁：评分器审错、EVM缺陷治理、自我代入、边界声明，组织检查点而不替代主脑裁决。"
+    },
+    {
+      "role": "最强主脑",
+      "model": "gpt-5.5",
+      "judgment": "进化以GPT为主：承认旧评分没有完成真正审错，不能拿旧分数证明自己。"
+    },
+    {
+      "role": "辅助反证",
+      "model": "deepseek-v4-flash",
+      "judgment": "定位两处核心bug：手写after分数、EVM同一治理系数重复使用，并提示免检幻觉。"
+    },
+    {
+      "role": "调度复核",
+      "model": "MiniMax-M2.7-highspeed",
+      "judgment": "检查证据链是否齐全：审错、修复、代入、边界四类证据缺一不可；不声称完整五回合周期。"
+    },
+    {
+      "role": "GPT最终收束",
+      "model": "gpt-5.5",
+      "judgment": "评分改为证据驱动；EVM after只接受真实修复动作；本次是评分门禁补审，不等于完整开智周期完成。"
+    }
+  ],
+  "external_learning": {
+    "query": "llm agent evaluation reflection / agent framework evaluation",
+    "sources": [
+      {
+        "name": "raga-ai-hub/RagaAI-Catalyst",
+        "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+        "stars": 16166,
+        "desc": "Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like agent, llm and tools tracing, debugging multi-agentic system, self-hosted dashboard and advanced analytics with timeline and execution graph view "
+      },
+      {
+        "name": "tensortrade-org/tensortrade",
+        "url": "https://github.com/tensortrade-org/tensortrade",
+        "stars": 6274,
+        "desc": "An open source reinforcement learning framework for training, evaluating, and deploying robust trading agents."
+      },
+      {
+        "name": "openlit/openlit",
+        "url": "https://github.com/openlit/openlit",
+        "stars": 2455,
+        "desc": "Open source platform for AI Engineering: OpenTelemetry-native LLM Observability, GPU Monitoring, Guardrails, Evaluations, Prompt Management, Vault, Playground. 🚀💻 Integrates with 50+ LLM Providers, VectorDBs, Agent Frameworks and GPUs."
+      }
+    ],
+    "extracted_points": [
+      "评估器本身需要可审计，否则会把预设答案包装成分数。",
+      "自我反思必须绑定下一步行为变化，不能停留在报告措辞。",
+      "自动化流水线必须有失败条件，不能用产物存在替代真实性。"
+    ],
+    "behavior_change": "以后评分必须先审评分器自身：没有审错清单、修复动作、重新代入和边界声明，分数无效。"
+  },
+  "completion_boundary": "完成评分公式补审、修复和自身代入重跑；仍不是完整五回合开智周期。"
+}

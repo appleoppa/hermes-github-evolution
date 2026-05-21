@@ -18,7 +18,7 @@
 8. 本地 Hermes 拉取并复核
 
 Secrets：
-- GITHUB_TOKEN：GitHub 自动令牌或细粒度令牌
+- GITHUB_TOKEN：GitHub 自动令牌或细粒度令牌（GitHub API / Actions 用）
 - GPT55_5YUANTOKEN_API_KEY：主脑密钥
 - DEEPSEEK_V4_FLASH_API_KEY：辅助脑密钥
 - MINIMAX_M27_HIGHSPEED_API_KEY：辅助脑密钥

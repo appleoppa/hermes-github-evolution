@@ -1,0 +1,23 @@
+{
+  "cycle": 1,
+  "audited_at": "2026-05-21T16:59:02Z",
+  "status": "阻塞",
+  "rounds_found": 5,
+  "issues": [
+    "C01R1 缺两个循环loops证据",
+    "C01R1 下一回合入口门禁缺失",
+    "C01R2 缺两个循环loops证据",
+    "C01R2 下一回合入口门禁缺失",
+    "C01R3 缺两个循环loops证据",
+    "C01R3 下一回合入口门禁缺失",
+    "C01R4 缺两个循环loops证据",
+    "C01R4 下一回合入口门禁缺失",
+    "C01R5 缺两个循环loops证据",
+    "5个短板完全相同或模板化",
+    "外部学习来源全部相同"
+  ],
+  "shortboard_unique_count": 1,
+  "source_unique_count": 1,
+  "full_true_cycle_allowed": false,
+  "boundary": "GitHub工厂缺失或河图洛书非远程多模型时不能标完整真实周期；缺loops/next_gate等硬证据则审计不通过。"
+}

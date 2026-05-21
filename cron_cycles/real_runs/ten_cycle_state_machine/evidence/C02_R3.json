@@ -1,0 +1,350 @@
+{
+  "generated_at": "2026-05-21T16:58:41Z",
+  "cycle": 2,
+  "round": 3,
+  "state_before": {
+    "cycle": 2,
+    "current_round": 3,
+    "total_cycles": 10,
+    "rounds_per_cycle": 5,
+    "status": "running",
+    "created_at": "2026-05-19T17:34:54Z",
+    "history": [
+      {
+        "cycle": 1,
+        "round": 1,
+        "status": "部分完成或证据不足",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R1.json",
+        "at": "2026-05-19T17:34:54Z",
+        "blocked": true
+      },
+      {
+        "cycle": 1,
+        "round": 1,
+        "status": "部分完成或证据不足",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R1.json",
+        "at": "2026-05-19T18:41:14Z",
+        "blocked": true
+      },
+      {
+        "cycle": 1,
+        "round": 1,
+        "status": "部分完成或证据不足",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R1.json",
+        "at": "2026-05-19T19:16:30Z",
+        "blocked": true
+      },
+      {
+        "cycle": 1,
+        "round": 1,
+        "status": "部分完成或证据不足",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R1.json",
+        "at": "2026-05-19T19:47:25Z",
+        "blocked": true
+      },
+      {
+        "cycle": 1,
+        "round": 1,
+        "status": "部分完成或证据不足",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R1.json",
+        "at": "2026-05-19T20:20:29Z",
+        "blocked": true
+      },
+      {
+        "cycle": 1,
+        "round": 1,
+        "status": "部分完成或证据不足",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R1.json",
+        "at": "2026-05-19T20:52:26Z",
+        "blocked": true
+      },
+      {
+        "cycle": 1,
+        "round": 1,
+        "status": "部分完成或证据不足",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R1.json",
+        "at": "2026-05-19T21:23:20Z",
+        "blocked": true
+      },
+      {
+        "cycle": 1,
+        "round": 1,
+        "status": "部分完成或证据不足",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R1.json",
+        "at": "2026-05-19T21:55:55Z",
+        "blocked": true
+      },
+      {
+        "cycle": 1,
+        "round": 1,
+        "status": "部分完成或证据不足",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R1.json",
+        "at": "2026-05-19T22:29:14Z",
+        "blocked": true
+      },
+      {
+        "cycle": 1,
+        "round": 1,
+        "status": "部分完成或证据不足",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R1.json",
+        "at": "2026-05-19T23:00:15Z",
+        "blocked": true
+      },
+      {
+        "cycle": 1,
+        "round": 1,
+        "status": "完整真实回合",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R1.json",
+        "at": "2026-05-19T23:32:16Z"
+      },
+      {
+        "cycle": 1,
+        "round": 2,
+        "status": "完整真实回合",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R2.json",
+        "at": "2026-05-20T00:25:24Z"
+      },
+      {
+        "cycle": 1,
+        "round": 3,
+        "status": "完整真实回合",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R3.json",
+        "at": "2026-05-20T00:25:28Z"
+      },
+      {
+        "cycle": 1,
+        "round": 4,
+        "status": "完整真实回合",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R4.json",
+        "at": "2026-05-20T00:25:31Z"
+      },
+      {
+        "cycle": 1,
+        "round": 5,
+        "status": "完整真实回合",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C01_R5.json",
+        "at": "2026-05-20T00:25:34Z"
+      },
+      {
+        "cycle": 2,
+        "round": 1,
+        "status": "完整真实回合",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C02_R1.json",
+        "at": "2026-05-21T16:52:52Z"
+      },
+      {
+        "cycle": 2,
+        "round": 2,
+        "status": "完整真实回合",
+        "evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C02_R2.json",
+        "at": "2026-05-21T16:58:37Z"
+      }
+    ],
+    "last_evidence": "cron_cycles/real_runs/ten_cycle_state_machine/evidence/C02_R2.json",
+    "updated_at": "2026-05-21T16:58:37Z",
+    "invalidated_at": "2026-05-19T23:53:18Z",
+    "invalidated_reason": "C01_R2-R5 were generated in seconds by a local rapid runner; they do not satisfy authentic awakening-loop evidence requirements.",
+    "last_cycle_completed": 1,
+    "last_cycle_completed_at": "2026-05-20T00:25:37Z",
+    "next_cycle_not_before": "2026-05-20T00:40:37Z",
+    "last_cycle_audit": "cron_cycles/real_runs/ten_cycle_state_machine/cycle_01_audit.json",
+    "last_cycle_audit_status": "阻塞"
+  },
+  "failure_premortem": "最可能被判假：把git远程可达、文件写入或一次查询尝试冒充GitHub工厂真实参与。已用Actions门禁降级避免。",
+  "apex_total_formula": {
+    "entry": "formulas/apex_v2_1_fixed.py:dg_v2_3",
+    "inputs": {
+      "ΔG_base": 0.58,
+      "Θ": 0.72,
+      "K": 0.7,
+      "ε": 0.78,
+      "Φ": 0.66,
+      "Ψ": 0.62,
+      "Π": 0.55,
+      "Λ_ctx": 0.64,
+      "Γ": 0.58,
+      "PID": 0.61,
+      "RD": 0.6,
+      "Kelly": 0.42,
+      "E_xp": 0.36,
+      "M_meta": 0.52,
+      "Ξ": 0.4,
+      "_n_decisions": 5
+    },
+    "result": 0.129154,
+    "shortboard_exposed": "本回合暴露的短板是：远程仓库可达不等于Actions工厂已执行，证据粒度仍需下钻到run/job/step。",
+    "impact": "APEX输入按Actions工厂真实可见性调整；判断结果决定是否推进。"
+  },
+  "shortboard_source": "由本回合实际读取state、探测git远程、查询GitHub Actions和阅读外部文档后暴露，不是预设短板。",
+  "external_learning": {
+    "source_title": "GitHub Docs: Use workflow run logs",
+    "url": "https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/using-workflow-run-logs",
+    "access": "opened_html_content",
+    "sha256": "f1928a60e6a1a8c7b10e701d6e17673633d94a7dcbe7dcdb1af6c1d10d22c19b",
+    "read_snippets": [
+      "Viewing logs to diagnose failures Searching logs Downloading logs Deleting logs Viewing logs with GitHub CLI You can see whether a workflow run is in progress or complete from the workflow run page. You must be logged in to a GitHub account to view workflow run information, including for public repositories. For more i",
+      "download logs and build artifacts. GitHub Actions use the Checks API to output statuses, results, and logs for a workflow. GitHub creates a new check suite for each workflow run. The check suite contains a check run for each job in the workflow, and each job includes steps. GitHub Actions are run as a step in a workflo",
+      "failed step's build logs to troubleshoot. You can see the time it took for each step to run. You can also copy a permalink to a specific line in the log file to share with your team. Read access to the repository is required to perform these steps. In addition to the steps configured in the workflow file, GitHub adds t"
+    ],
+    "extracted_points": [
+      "工作流运行页可区分运行中、完成、成功、失败、取消或中性结果。",
+      "失败时应进入具体job或step日志定位失败步骤，不能只用工作流存在或接口可达证明演化。",
+      "日志和产物可下载，证据应记录run、job、step、结论与失败原因。"
+    ],
+    "behavior_change": "本回合把git远程可达与Actions运行记录分开；Actions不可见时只记为工厂部分参与或证据不足。"
+  },
+  "evm": {
+    "entry": "formulas/EVM_FORMULA.py:EVMCore",
+    "status": "真实EVM入口已调用",
+    "before": {
+      "evm_value": 0.722941,
+      "raw_defect_rate": 0.0925,
+      "governed_defect_rate": 0.060042,
+      "governance_reduction": 0.032458
+    },
+    "after": {
+      "evm_value": 0.7271,
+      "raw_defect_rate": 0.084167,
+      "governed_defect_rate": 0.054633,
+      "governance_reduction": 0.029533
+    },
+    "defects_before": {
+      "Err": 0.27,
+      "Log": 0.22,
+      "Run": 0.2,
+      "Prm": 0.16,
+      "Net": 0.08,
+      "Soul": 0.18
+    },
+    "defects_after": {
+      "Err": 0.24000000000000002,
+      "Log": 0.18,
+      "Run": 0.19,
+      "Prm": 0.14,
+      "Net": 0.08,
+      "Soul": 0.18
+    },
+    "repair_actions": [
+      {
+        "defect": "Log",
+        "before": 0.22,
+        "after": 0.18,
+        "reason": "证据中拆分git远程、Actions、学习来源，降低日志溯源缺陷"
+      },
+      {
+        "defect": "Err",
+        "before": 0.27,
+        "after": 0.24000000000000002,
+        "reason": "明确Actions不可见不能称完整，降低幻觉缺陷"
+      },
+      {
+        "defect": "Prm",
+        "before": 0.16,
+        "after": 0.14,
+        "reason": "按状态机只推进当前回合，降低提示执行偏差"
+      },
+      {
+        "defect": "Run",
+        "before": 0.2,
+        "after": 0.19,
+        "reason": "实际执行远程探测和外部阅读，降低运行缺陷"
+      }
+    ],
+    "boundary": "缺陷压降来自本回合实际拆分和降级动作；不把EVM治理系数当作二次自证。"
+  },
+  "hetu_luoshu_matrix": {
+    "status": "本地五段路由；远程多模型未参与",
+    "route": [
+      {
+        "step": "主脑统筹",
+        "participant": "本地主脑",
+        "input": "状态指向C02R3，本次只准推进一回合",
+        "output": "执行当前回合，先探测远程与门禁，不生成未来回合"
+      },
+      {
+        "step": "反证审错",
+        "participant": "本地反证代理",
+        "input": "远程git可达但Actions接口不可见时是否可称工厂完成",
+        "output": "不可称完整；必须降级为工厂证据不足"
+      },
+      {
+        "step": "修复落地",
+        "participant": "本地修复代理",
+        "input": "外部学习指出要看run/job/step日志",
+        "output": "证据结构拆分为git远程探测、Actions探测、文档阅读和边界声明"
+      },
+      {
+        "step": "旁证压缩",
+        "participant": "本地旁证代理",
+        "input": "APEX、EVM、学习、远程探测结果",
+        "output": "保留可核验字段，拒绝用分数或文件存在替代真实性"
+      },
+      {
+        "step": "主脑收束",
+        "participant": "本地主脑",
+        "input": "Actions工厂状态",
+        "output": "按真实查询结果定级，不生成未来回合"
+      }
+    ]
+  },
+  "github_factory": {
+    "participation": "已查询远程Actions运行记录",
+    "detail": {
+      "git_remote_probe": {
+        "status": "ok",
+        "refs": [
+          {
+            "sha": "99db8863a712e9de3dda40ddd67c22821abbc148",
+            "ref": "refs/heads/main"
+          }
+        ]
+      },
+      "actions_probe": {
+        "participation": "已查询远程GitHub Actions",
+        "http": "ok",
+        "total_count": 11,
+        "runs": [
+          {
+            "id": 26112172026,
+            "name": "evolve",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-05-19T16:55:34Z"
+          },
+          {
+            "id": 26111926156,
+            "name": "evolve",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-05-19T16:51:00Z"
+          },
+          {
+            "id": 26111877332,
+            "name": "awakening-gate",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-05-19T16:50:07Z"
+          },
+          {
+            "id": 26100269306,
+            "name": "awakening-gate",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-05-19T13:27:10Z"
+          },
+          {
+            "id": 26100213853,
+            "name": "awakening-gate",
+            "status": "completed",
+            "conclusion": "failure",
+            "created_at": "2026-05-19T13:26:11Z"
+          }
+        ]
+      }
+    },
+    "boundary": "Git远程可达不等于工厂运行；工作流成功也不能单独证明进化。"
+  },
+  "status_grade": "完整真实回合",
+  "advance_state": true,
+  "boundary": "文件、分数、missing、git远程可达或工作流成功均不等于完整真实周期。"
+}

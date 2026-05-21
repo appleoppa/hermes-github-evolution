@@ -1,0 +1,17 @@
+{
+  "cycle": 3,
+  "audited_at": "2026-05-21T16:59:30Z",
+  "status": "阻塞",
+  "rounds_found": 0,
+  "issues": [
+    "缺回合证据 C03R1",
+    "缺回合证据 C03R2",
+    "缺回合证据 C03R3",
+    "缺回合证据 C03R4",
+    "缺回合证据 C03R5"
+  ],
+  "shortboard_unique_count": 0,
+  "source_unique_count": 0,
+  "full_true_cycle_allowed": false,
+  "boundary": "GitHub工厂缺失或河图洛书非远程多模型时不能标完整真实周期；缺loops/next_gate等硬证据则审计不通过。"
+}
