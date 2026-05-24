@@ -17,6 +17,13 @@ INBOX = WORKSPACE / "inbox"
 def run():
     os.chdir(WORKSPACE)
     
+    # 设置 GitHub token 环境变量用于 git push
+    env = os.environ.copy()
+    gh_token = env.get('GITHUB_TOKEN') or env.get('GH_TOKEN')
+    if not gh_token:
+        print("❌ 缺少 GITHUB_TOKEN 或 GH_TOKEN 环境变量")
+        sys.exit(1)
+    
     # 记录执行前 inbox 文件数
     before = len(list(INBOX.glob("evolver_*.json")))
     
@@ -25,18 +32,30 @@ def run():
         ["python3", str(EVOLVER_SCRIPT)],
         capture_output=True,
         text=True,
-        timeout=300
+        timeout=300,
+        env=env
     )
     
     # 记录执行后 inbox 文件数
     after = len(list(INBOX.glob("evolver_*.json")))
     new_genes = after - before
     
-    # git add + commit + push
+    # git add + commit
     subprocess.run(["git", "add", "."], check=False)
     commit_msg = f"chore: evolver auto cycle {datetime.now().strftime('%Y%m%d_%H%M%S')}"
-    subprocess.run(["git", "commit", "-m", commit_msg], check=False)
-    subprocess.run(["git", "push"], check=False)
+    commit_result = subprocess.run(["git", "commit", "-m", commit_msg], capture_output=True, text=True)
+    
+    # 只在有新提交时才 push
+    if commit_result.returncode == 0:
+        # 使用 gh CLI 推送（自动使用 GH_TOKEN）
+        push_result = subprocess.run(
+            ["bash", "-c", f"source ~/.hermes/.env && export GH_TOKEN && git push https://${{GH_TOKEN}}@github.com/appleoppa/hermes-github-evolution.git main"],
+            capture_output=True,
+            text=True,
+            env=env
+        )
+        if push_result.returncode != 0:
+            print(f"⚠️  推送失败: {push_result.stderr}")
     
     # silent watchdog: 只在有新基因或错误时输出
     if result.returncode != 0:
