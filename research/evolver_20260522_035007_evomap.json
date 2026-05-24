@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-22T03:50:39Z",
+  "topic": "human in the loop decision classification autonomous agent approval gates",
+  "route": [
+    {
+      "node": "GitHub API",
+      "function": "获取真实仓库元数据/文件/工作流"
+    },
+    {
+      "node": "Actions container",
+      "function": "远程容器执行检索与基因抽取"
+    },
+    {
+      "node": "inbox",
+      "function": "结果回流主机复核"
+    },
+    {
+      "node": "genes",
+      "function": "可复用规则沉淀"
+    },
+    {
+      "node": "host evolver",
+      "function": "本地主脑验收、入库、技能更新"
+    }
+  ],
+  "trait_count": {
+    "evaluation_gate": 3,
+    "automated_test_gate": 4,
+    "agent_tooling_pattern": 4,
+    "container_reproducibility": 1
+  },
+  "dominant_traits": [
+    [
+      "agent_tooling_pattern",
+      4
+    ],
+    [
+      "automated_test_gate",
+      4
+    ],
+    [
+      "evaluation_gate",
+      3
+    ],
+    [
+      "container_reproducibility",
+      1
+    ]
+  ],
+  "host_reuse_rule": "只有含真实API元数据、采样文件路径、内容hash和边界声明的gene，才允许回流为Hermes进化素材。"
+}

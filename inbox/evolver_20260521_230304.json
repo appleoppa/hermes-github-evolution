@@ -1,0 +1,290 @@
+{
+  "run_id": "evolver_20260521_230304",
+  "generated_at": "2026-05-21T23:03:18Z",
+  "topic": "independent manifest verifier tamper negative test reproducible evidence integrity",
+  "mode": "github_container_evolver_evomap",
+  "status": "completed",
+  "verification": {
+    "github_api_used": true,
+    "repo_count": 4,
+    "genes_count": 4,
+    "token_present_in_container": false,
+    "secret_values_printed": false,
+    "minimum_gene_gate": false
+  },
+  "evomap": {
+    "version": "1.0",
+    "generated_at": "2026-05-21T23:03:18Z",
+    "topic": "independent manifest verifier tamper negative test reproducible evidence integrity",
+    "route": [
+      {
+        "node": "GitHub API",
+        "function": "获取真实仓库元数据/文件/工作流"
+      },
+      {
+        "node": "Actions container",
+        "function": "远程容器执行检索与基因抽取"
+      },
+      {
+        "node": "inbox",
+        "function": "结果回流主机复核"
+      },
+      {
+        "node": "genes",
+        "function": "可复用规则沉淀"
+      },
+      {
+        "node": "host evolver",
+        "function": "本地主脑验收、入库、技能更新"
+      }
+    ],
+    "trait_count": {
+      "evaluation_gate": 2,
+      "automated_test_gate": 2,
+      "agent_tooling_pattern": 2,
+      "high_signal_reference": 2
+    },
+    "dominant_traits": [
+      [
+        "agent_tooling_pattern",
+        2
+      ],
+      [
+        "automated_test_gate",
+        2
+      ],
+      [
+        "evaluation_gate",
+        2
+      ],
+      [
+        "high_signal_reference",
+        2
+      ]
+    ],
+    "host_reuse_rule": "只有含真实API元数据、采样文件路径、内容hash和边界声明的gene，才允许回流为Hermes进化素材。"
+  },
+  "genes": [
+    {
+      "repo": "raga-ai-hub/RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16165,
+      "language": "Python",
+      "traits": [
+        "evaluation_gate",
+        "automated_test_gate",
+        "agent_tooling_pattern"
+      ],
+      "mechanism": "参考 raga-ai-hub/RagaAI-Catalyst 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [
+          "README.md",
+          "pyproject.toml",
+          ".github/workflows/ci.yml"
+        ],
+        "workflow_files_seen": [
+          ".github/workflows/ci.yml"
+        ],
+        "text_hashes": {
+          "README.md": "7fcc08530415d430ecec8511b3ffa9cd50f81ecd20f3fadb1295e90e3cbba474",
+          "pyproject.toml": "24fb967a7ad40541b319a71a3f3255586634ab74dd1eba7e1439b235142144ee",
+          ".github/workflows/ci.yml": "3f8f7d7e0e3d2b4ab0b20976f25d6dfd5029f54418517d1c9e4ad1f8743c2e0c"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "openlit/openlit",
+      "url": "https://github.com/openlit/openlit",
+      "stars": 2459,
+      "language": "TypeScript",
+      "traits": [
+        "evaluation_gate",
+        "automated_test_gate",
+        "agent_tooling_pattern"
+      ],
+      "mechanism": "参考 openlit/openlit 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": false,
+        "sampled_paths": [
+          "README.md",
+          "CONTRIBUTING.md",
+          ".github/workflows/controller-release.yml"
+        ],
+        "workflow_files_seen": [
+          ".github/workflows/controller-release.yml"
+        ],
+        "text_hashes": {
+          "README.md": "2fd258547c9a8d761589a5319d21f23662e4429224a684f1f5a7ef7186fd5c5a",
+          "CONTRIBUTING.md": "f4a414c36dd8abca4b2e48b534d4bca32476511714c02086417f9d3861f8bd9a",
+          ".github/workflows/controller-release.yml": "62e1d29d994b6d21b1a3ea769cb31ea0365020db238c5e10cb8f3ccad4fc8545"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "mozilla-ai/any-agent",
+      "url": "https://github.com/mozilla-ai/any-agent",
+      "stars": 1168,
+      "language": "Python",
+      "traits": [
+        "high_signal_reference"
+      ],
+      "mechanism": "参考 mozilla-ai/any-agent 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": false,
+        "sampled_paths": [],
+        "workflow_files_seen": [],
+        "text_hashes": {}
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "microsoft/AIOpsLab",
+      "url": "https://github.com/microsoft/AIOpsLab",
+      "stars": 883,
+      "language": "Python",
+      "traits": [
+        "high_signal_reference"
+      ],
+      "mechanism": "参考 microsoft/AIOpsLab 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": false,
+        "sampled_paths": [],
+        "workflow_files_seen": [],
+        "text_hashes": {}
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    }
+  ],
+  "selected_repositories": [
+    {
+      "name": "raga-ai-hub/RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16165,
+      "description": "Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like agent, llm and tools tracing, debugging multi-agentic system, self-hosted dashboard and advanced analytics with timeline and execution graph view ",
+      "updated_at": "2026-05-21T07:52:48Z",
+      "signals": {
+        "languages": {
+          "Python": 902970,
+          "Jupyter Notebook": 205921
+        },
+        "root_signal_files": [
+          ".github",
+          ".gitignore",
+          ".gitmodules",
+          "LICENSE",
+          "Quickstart.md",
+          "README.md",
+          "docs",
+          "examples",
+          "pyproject.toml",
+          "quickstart.md",
+          "ragaai_catalyst",
+          "requirements.txt",
+          "test_report_20250407_183101.txt",
+          "tests",
+          "tests_requirements.txt"
+        ],
+        "sampled_paths": [
+          "README.md",
+          "pyproject.toml",
+          ".github/workflows/ci.yml"
+        ],
+        "sampled_text_hashes": {
+          "README.md": "7fcc08530415d430ecec8511b3ffa9cd50f81ecd20f3fadb1295e90e3cbba474",
+          "pyproject.toml": "24fb967a7ad40541b319a71a3f3255586634ab74dd1eba7e1439b235142144ee",
+          ".github/workflows/ci.yml": "3f8f7d7e0e3d2b4ab0b20976f25d6dfd5029f54418517d1c9e4ad1f8743c2e0c"
+        },
+        "sampled_text_excerpt": {
+          "README.md": "# RagaAI Catalyst&nbsp; ![GitHub release (latest by date)](https://img.shields.io/github/v/release/raga-ai-hub/ragaai-catalyst) ![GitHub stars](https://img.shields.io/github/stars/raga-ai-hub/ragaai-catalyst?style=social)  ![Issues](https://img.shields.io/github/issues/raga-ai-hub/ragaai-catalyst) \n\nRagaAI Catalyst is a comprehensive platform designed to enhance the management and optimization of LLM projects. It offers a wide range of features, including project management, dataset management, evaluation management, trace management, prompt management, synthetic data generation, and guardrail management. These functionalities enable you to efficiently evaluate, and safeguard your LLM applications.\n\n## Table of Contents\n\n- [RagaAI Catalyst](#ragaai-catalyst)\n  - [Installation](#installation)\n  - [Configuration](#configuration)\n  - [Usage](#usage)\n    - [Project Management](#project-manag",
+          "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=45\", \"wheel\", \"setuptools_scm>=6.2\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"ragaai_catalyst\"\ndescription = \"RAGA AI CATALYST\"\nreadme = \"README.md\"\nrequires-python = \">=3.10,<=3.13.2\"\n# license = {file = \"LICENSE\"}\nversion = \"2.1.7.4\"\nauthors = [\n    {name = \"Kiran Scaria\", email = \"kiran.scaria@raga.ai\"},\n    {name = \"Kedar Gaikwad\", email = \"kedar.gaikwad@raga.ai\"},\n    {name = \"Dushyant Mahajan\", email = \"dushyant.mahajan@raga.ai\"},\n    {name = \"Siddhartha Kosti\", email = \"siddhartha.kosti@raga.ai\"},\n    {name = \"Ritika Goel\", email = \"ritika.goel@raga.ai\"},\n    {name = \"Vijay Chaurasia\", email=\"vijay.chaurasia@raga.ai\"},\n    {name = \"Tushar Kumar\", email=\"tushar.kumar@raga.ai\"}\n]\n\ndependencies = [\n    \"aiohttp>=3.10.2\", # Ref: https://github.com/raga-ai-hub/ragaai-catalyst/security/dependabot/1\n    \"langchain-core>=0.2.11\",\n ",
+          ".github/workflows/ci.yml": "name: CI Pipeline\n\non:\n  push:\n    branches: [ main ]\n  pull_request:\n    branches: [ main ]\n\njobs:\n  code-quality:\n    runs-on: ubuntu-latest\n    continue-on-error: true\n    steps:\n      - uses: actions/checkout@v4\n      - name: Set up Python\n        uses: actions/setup-python@v5\n        with:\n          python-version: '3.10'\n      - name: Install dependencies\n        shell: bash\n        run: |\n          if [ \"$RUNNER_OS\" == \"Windows\" ]; then\n            python -m pip install --upgrade pip\n            pip install ruff\n            pip install -e \".[dev]\"\n          else\n            curl -LsSf https://astral.sh/uv/install.sh | sh\n            export PATH=\"$HOME/.cargo/bin:$PATH\"\n            uv pip install --system ruff\n            uv pip install --system -e \".[dev]\"\n          fi\n      - name: Format and lint with Ruff\n        run: |\n          # First run format to fix formatting issues\n    "
+        }
+      }
+    },
+    {
+      "name": "openlit/openlit",
+      "url": "https://github.com/openlit/openlit",
+      "stars": 2459,
+      "description": "Open source platform for AI Engineering: OpenTelemetry-native LLM Observability, GPU Monitoring, Guardrails, Evaluations, Prompt Management, Vault, Playground. 🚀💻 Integrates with 50+ LLM Providers, VectorDBs, Agent Frameworks and GPUs.",
+      "updated_at": "2026-05-20T19:02:32Z",
+      "signals": {
+        "languages": {},
+        "root_signal_files": [
+          ".cursor",
+          ".github",
+          ".gitignore",
+          ".gitmodules",
+          ".vale.ini",
+          "CODEOWNERS",
+          "CODE_OF_CONDUCT.md",
+          "CONTRIBUTING.md",
+          "LICENSE",
+          "OPAMP_DEPLOYMENT.md",
+          "README.md",
+          "SECURITY.md",
+          "assets",
+          "docker-compose.yml",
+          "docs",
+          "env.example",
+          "examples",
+          "openlit-controller",
+          "opentelemetry-gpu-collector",
+          "sdk",
+          "src",
+          "taskfile.yaml"
+        ],
+        "sampled_paths": [
+          "README.md",
+          "CONTRIBUTING.md",
+          ".github/workflows/controller-release.yml"
+        ],
+        "sampled_text_hashes": {
+          "README.md": "2fd258547c9a8d761589a5319d21f23662e4429224a684f1f5a7ef7186fd5c5a",
+          "CONTRIBUTING.md": "f4a414c36dd8abca4b2e48b534d4bca32476511714c02086417f9d3861f8bd9a",
+          ".github/workflows/controller-release.yml": "62e1d29d994b6d21b1a3ea769cb31ea0365020db238c5e10cb8f3ccad4fc8545"
+        },
+        "sampled_text_excerpt": {
+          "README.md": "<div align=\"center\">\n<img src=\"https://github.com/openlit/.github/blob/main/profile/assets/wide-logo-no-bg.png?raw=true\" alt=\"OpenLIT Logo\" width=\"30%\">\n\n#### Observability, Evaluations, Rule Engine, Guardrails, Prompts, Vault, Playground, FleetHub\n\n# Open Source Platform for AI Engineering\n\n**[Documentation](https://docs.openlit.io/) | [Quickstart](-getting-started-with-llm-observability) | [Python SDK](https://github.com/openlit/openlit/tree/main/sdk/python) | [Typescript SDK](https://github.com/openlit/openlit/tree/main/sdk/typescript) | [Go SDK](https://github.com/openlit/openlit/tree/main/sdk/go) |**\n\n**❤️ [Sponsor this project](https://opencollective.com/openlit) ❤️** \n\n[![OpenLIT](https://img.shields.io/badge/OpenLIT-orange)](https://openlit.io/)\n[![License](https://img.shields.io/github/license/openlit/openlit?label=License&logo=github&color=f80&logoColor=white)](https://github.c",
+          "CONTRIBUTING.md": "# Contributing to OpenLIT\n\nWe welcome contributions to the OpenLIT project and are grateful for every contribution from bug reports to new features. If you are looking to contribute to the codebase, improve documentation, report issues, or suggest new features, this document is a set of guidelines to help you get started.\n\n## Getting Started\n\nBefore you begin:\n- Ensure you have a [GitHub account](https://github.com/join).\n- Familiarize yourself with git commands in the [Git Documentation](https://git-scm.com/documentation).\n- Read the README for project setup instructions.\n- For Fleet Hub and OpAMP development, review the [OpAMP Deployment Guide](OPAMP_DEPLOYMENT.md) and [Certificate Management Guide](src/opamp-server/CERTIFICATES.md).\n\n## Contributing Workflow\n\nHere's how you can contribute to OpenLIT:\n\n1. **Fork the Repository**\n   - Click the \"Fork\" button at the top right corner of t",
+          ".github/workflows/controller-release.yml": "name: Release OpenLIT Controller\n\non:\n  push:\n    tags: [ 'controller-*.*.*' ]\n\nenv:\n  REGISTRY: ghcr.io\n  IMAGE_NAME: openlit/openlit-controller\n  BINARY_NAME: openlit-controller\n\npermissions:\n  contents: write\n\njobs:\n  # ── 1. Unit tests ──────────────────────────────────────────────────────────\n  test:\n    name: Test\n    runs-on: ubuntu-24.04\n    steps:\n      - uses: actions/checkout@v4\n\n      - uses: actions/setup-go@v5\n        with:\n          go-version-file: openlit-controller/go.mod\n          cache-dependency-path: openlit-controller/go.sum\n\n      - name: Install eBPF build dependencies\n        run: |\n          sudo apt-get update -q\n          sudo apt-get install -y clang llvm libbpf-dev\n          BPFTOOL_VERSION=$(curl -fsSL https://api.github.com/repos/libbpf/bpftool/releases/latest \\\n            | jq -r .tag_name)\n          curl -fsSL \"https://github.com/libbpf/bpftool/release"
+        }
+      }
+    },
+    {
+      "name": "mozilla-ai/any-agent",
+      "url": "https://github.com/mozilla-ai/any-agent",
+      "stars": 1168,
+      "description": "A single interface to use and evaluate different agent frameworks ",
+      "updated_at": "2026-05-21T01:29:24Z",
+      "signals": {
+        "languages": {},
+        "root_signal_files": [],
+        "sampled_paths": [],
+        "sampled_text_hashes": {},
+        "sampled_text_excerpt": {}
+      }
+    },
+    {
+      "name": "microsoft/AIOpsLab",
+      "url": "https://github.com/microsoft/AIOpsLab",
+      "stars": 883,
+      "description": "A holistic framework to enable the design, development, and evaluation of autonomous AIOps agents.",
+      "updated_at": "2026-05-21T21:05:33Z",
+      "signals": {
+        "languages": {},
+        "root_signal_files": [],
+        "sampled_paths": [],
+        "sampled_text_hashes": {},
+        "sampled_text_excerpt": {}
+      }
+    }
+  ],
+  "boundary": "本次完成远程容器检索、采样、基因抽取和回流；深度代码迁移需后续针对单仓库逐文件审计和测试。"
+}

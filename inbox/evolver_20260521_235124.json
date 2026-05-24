@@ -1,0 +1,185 @@
+{
+  "run_id": "evolver_20260521_235124",
+  "generated_at": "2026-05-21T23:51:34Z",
+  "topic": "manifest self reference checksum attestation subject provenance reproducible build verification",
+  "mode": "github_container_evolver_evomap",
+  "status": "completed",
+  "verification": {
+    "github_api_used": true,
+    "repo_count": 4,
+    "genes_count": 4,
+    "token_present_in_container": false,
+    "secret_values_printed": false,
+    "minimum_gene_gate": false
+  },
+  "evomap": {
+    "version": "1.0",
+    "generated_at": "2026-05-21T23:51:34Z",
+    "topic": "manifest self reference checksum attestation subject provenance reproducible build verification",
+    "route": [
+      {
+        "node": "GitHub API",
+        "function": "获取真实仓库元数据/文件/工作流"
+      },
+      {
+        "node": "Actions container",
+        "function": "远程容器执行检索与基因抽取"
+      },
+      {
+        "node": "inbox",
+        "function": "结果回流主机复核"
+      },
+      {
+        "node": "genes",
+        "function": "可复用规则沉淀"
+      },
+      {
+        "node": "host evolver",
+        "function": "本地主脑验收、入库、技能更新"
+      }
+    ],
+    "trait_count": {
+      "high_signal_reference": 4
+    },
+    "dominant_traits": [
+      [
+        "high_signal_reference",
+        4
+      ]
+    ],
+    "host_reuse_rule": "只有含真实API元数据、采样文件路径、内容hash和边界声明的gene，才允许回流为Hermes进化素材。"
+  },
+  "genes": [
+    {
+      "repo": "raga-ai-hub/RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16165,
+      "language": "Python",
+      "traits": [
+        "high_signal_reference"
+      ],
+      "mechanism": "参考 raga-ai-hub/RagaAI-Catalyst 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": false,
+        "sampled_paths": [],
+        "workflow_files_seen": [],
+        "text_hashes": {}
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "openlit/openlit",
+      "url": "https://github.com/openlit/openlit",
+      "stars": 2459,
+      "language": "TypeScript",
+      "traits": [
+        "high_signal_reference"
+      ],
+      "mechanism": "参考 openlit/openlit 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": false,
+        "sampled_paths": [],
+        "workflow_files_seen": [],
+        "text_hashes": {}
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "mozilla-ai/any-agent",
+      "url": "https://github.com/mozilla-ai/any-agent",
+      "stars": 1168,
+      "language": "Python",
+      "traits": [
+        "high_signal_reference"
+      ],
+      "mechanism": "参考 mozilla-ai/any-agent 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": false,
+        "sampled_paths": [],
+        "workflow_files_seen": [],
+        "text_hashes": {}
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "microsoft/AIOpsLab",
+      "url": "https://github.com/microsoft/AIOpsLab",
+      "stars": 883,
+      "language": "Python",
+      "traits": [
+        "high_signal_reference"
+      ],
+      "mechanism": "参考 microsoft/AIOpsLab 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": false,
+        "sampled_paths": [],
+        "workflow_files_seen": [],
+        "text_hashes": {}
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    }
+  ],
+  "selected_repositories": [
+    {
+      "name": "raga-ai-hub/RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16165,
+      "description": "Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like agent, llm and tools tracing, debugging multi-agentic system, self-hosted dashboard and advanced analytics with timeline and execution graph view ",
+      "updated_at": "2026-05-21T07:52:48Z",
+      "signals": {
+        "languages": {},
+        "root_signal_files": [],
+        "sampled_paths": [],
+        "sampled_text_hashes": {},
+        "sampled_text_excerpt": {}
+      }
+    },
+    {
+      "name": "openlit/openlit",
+      "url": "https://github.com/openlit/openlit",
+      "stars": 2459,
+      "description": "Open source platform for AI Engineering: OpenTelemetry-native LLM Observability, GPU Monitoring, Guardrails, Evaluations, Prompt Management, Vault, Playground. 🚀💻 Integrates with 50+ LLM Providers, VectorDBs, Agent Frameworks and GPUs.",
+      "updated_at": "2026-05-20T19:02:32Z",
+      "signals": {
+        "languages": {},
+        "root_signal_files": [],
+        "sampled_paths": [],
+        "sampled_text_hashes": {},
+        "sampled_text_excerpt": {}
+      }
+    },
+    {
+      "name": "mozilla-ai/any-agent",
+      "url": "https://github.com/mozilla-ai/any-agent",
+      "stars": 1168,
+      "description": "A single interface to use and evaluate different agent frameworks ",
+      "updated_at": "2026-05-21T01:29:24Z",
+      "signals": {
+        "languages": {},
+        "root_signal_files": [],
+        "sampled_paths": [],
+        "sampled_text_hashes": {},
+        "sampled_text_excerpt": {}
+      }
+    },
+    {
+      "name": "microsoft/AIOpsLab",
+      "url": "https://github.com/microsoft/AIOpsLab",
+      "stars": 883,
+      "description": "A holistic framework to enable the design, development, and evaluation of autonomous AIOps agents.",
+      "updated_at": "2026-05-21T21:05:33Z",
+      "signals": {
+        "languages": {},
+        "root_signal_files": [],
+        "sampled_paths": [],
+        "sampled_text_hashes": {},
+        "sampled_text_excerpt": {}
+      }
+    }
+  ],
+  "boundary": "本次完成远程容器检索、采样、基因抽取和回流；深度代码迁移需后续针对单仓库逐文件审计和测试。"
+}
