@@ -1,0 +1,389 @@
+{
+  "run_id": "evolver_20260526_170024",
+  "source_inbox": "inbox/evolver_20260526_170024.json",
+  "generated_at": "2026-05-26T17:01:59Z",
+  "secret_values_printed": false,
+  "input_summary": {
+    "run_id": "evolver_20260526_170024",
+    "generated_at": "2026-05-26T17:01:04Z",
+    "topic": "agent self improvement github actions verification",
+    "requested_topic": "ai agent eval harness autonomous coding workflows",
+    "mode": "gist_to_github_actions_evolver_evomap",
+    "verification": {
+      "gist_queue_used": true,
+      "gist_queue_count": 1,
+      "gist_error": null,
+      "github_api_used": true,
+      "repo_count": 5,
+      "genes_count": 5,
+      "token_present_in_container": true,
+      "secret_values_printed": false,
+      "minimum_gene_gate": true
+    },
+    "evomap_route": [
+      "Gist queue",
+      "GitHub Actions container",
+      "GitHub API",
+      "repository inbox",
+      "genes",
+      "host evolver"
+    ],
+    "dominant_traits": [
+      [
+        "agent_tooling_pattern",
+        5
+      ],
+      [
+        "automated_test_gate",
+        5
+      ],
+      [
+        "evaluation_gate",
+        4
+      ],
+      [
+        "container_reproducibility",
+        1
+      ]
+    ],
+    "repositories": [
+      {
+        "name": "raga-ai-hub/RagaAI-Catalyst",
+        "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+        "stars": 16165,
+        "signals": {
+          "languages": {
+            "Python": 902970,
+            "Jupyter Notebook": 205921
+          },
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            ".github/workflows/ci.yml"
+          ],
+          "workflow_files": null
+        }
+      },
+      {
+        "name": "openlit/openlit",
+        "url": "https://github.com/openlit/openlit",
+        "stars": 2470,
+        "signals": {
+          "languages": {
+            "TypeScript": 4600930,
+            "Python": 3269704,
+            "Go": 594028,
+            "Shell": 44817,
+            "JavaScript": 13265,
+            "C": 13222,
+            "Dockerfile": 8328,
+            "Makefile": 4576,
+            "CSS": 2176
+          },
+          "sampled_paths": [
+            "README.md",
+            "CONTRIBUTING.md",
+            ".github/workflows/controller-release.yml"
+          ],
+          "workflow_files": null
+        }
+      },
+      {
+        "name": "IBM/AssetOpsBench",
+        "url": "https://github.com/IBM/AssetOpsBench",
+        "stars": 1632,
+        "signals": {
+          "languages": {
+            "Python": 542187,
+            "Shell": 1783
+          },
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "CONTRIBUTING.md",
+            ".github/workflows/stale.yml"
+          ],
+          "workflow_files": null
+        }
+      },
+      {
+        "name": "mozilla-ai/any-agent",
+        "url": "https://github.com/mozilla-ai/any-agent",
+        "stars": 1171,
+        "signals": {
+          "languages": {
+            "Python": 541766
+          },
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "AGENTS.md",
+            "CLAUDE.md",
+            "CONTRIBUTING.md"
+          ],
+          "workflow_files": null
+        }
+      },
+      {
+        "name": "microsoft/AIOpsLab",
+        "url": "https://github.com/microsoft/AIOpsLab",
+        "stars": 885,
+        "signals": {
+          "languages": {
+            "Python": 597518,
+            "Mustache": 29684,
+            "Shell": 19275,
+            "HCL": 9305,
+            "Go Template": 7209,
+            "Makefile": 3437,
+            "C": 2221,
+            "Jinja": 198,
+            "Dockerfile": 114
+          },
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "CLAUDE.md",
+            "CONTRIBUTING.md",
+            ".github/workflows/integration-test.yml"
+          ],
+          "workflow_files": null
+        }
+      }
+    ],
+    "genes": [
+      {
+        "repo": "raga-ai-hub/RagaAI-Catalyst",
+        "traits": [
+          "evaluation_gate",
+          "automated_test_gate",
+          "agent_tooling_pattern"
+        ],
+        "verification": {
+          "api_repo_metadata": true,
+          "languages_fetched": true,
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            ".github/workflows/ci.yml"
+          ],
+          "workflow_files_seen": [
+            ".github/workflows/ci.yml"
+          ],
+          "text_hashes": {
+            "README.md": "7fcc08530415d430ecec8511b3ffa9cd50f81ecd20f3fadb1295e90e3cbba474",
+            "pyproject.toml": "24fb967a7ad40541b319a71a3f3255586634ab74dd1eba7e1439b235142144ee",
+            ".github/workflows/ci.yml": "3f8f7d7e0e3d2b4ab0b20976f25d6dfd5029f54418517d1c9e4ad1f8743c2e0c"
+          }
+        },
+        "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+      },
+      {
+        "repo": "openlit/openlit",
+        "traits": [
+          "evaluation_gate",
+          "automated_test_gate",
+          "agent_tooling_pattern"
+        ],
+        "verification": {
+          "api_repo_metadata": true,
+          "languages_fetched": true,
+          "sampled_paths": [
+            "README.md",
+            "CONTRIBUTING.md",
+            ".github/workflows/controller-release.yml"
+          ],
+          "workflow_files_seen": [
+            ".github/workflows/controller-release.yml"
+          ],
+          "text_hashes": {
+            "README.md": "2fd258547c9a8d761589a5319d21f23662e4429224a684f1f5a7ef7186fd5c5a",
+            "CONTRIBUTING.md": "f4a414c36dd8abca4b2e48b534d4bca32476511714c02086417f9d3861f8bd9a",
+            ".github/workflows/controller-release.yml": "62e1d29d994b6d21b1a3ea769cb31ea0365020db238c5e10cb8f3ccad4fc8545"
+          }
+        },
+        "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+      },
+      {
+        "repo": "IBM/AssetOpsBench",
+        "traits": [
+          "evaluation_gate",
+          "automated_test_gate",
+          "agent_tooling_pattern"
+        ],
+        "verification": {
+          "api_repo_metadata": true,
+          "languages_fetched": true,
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "CONTRIBUTING.md",
+            ".github/workflows/stale.yml"
+          ],
+          "workflow_files_seen": [
+            ".github/workflows/stale.yml"
+          ],
+          "text_hashes": {
+            "README.md": "f586144eb6c0b715c4975a99a06103987d2aa3e024324d5f33f5f3ef9b3e510d",
+            "pyproject.toml": "e681df5eecd0a3f2a7854f10f516409236d6e67c53295dc5ff17559a25dbe8ee",
+            "CONTRIBUTING.md": "1635ecbf3f091a86315cab89b809551df4ef8d5888e9f1f399584aeb080b6856",
+            ".github/workflows/stale.yml": "1cf7b7ce07c7c7d31e3f4401f57167dde9a94ee7b2de119f6ca901a084e29cfc"
+          }
+        },
+        "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+      },
+      {
+        "repo": "mozilla-ai/any-agent",
+        "traits": [
+          "automated_test_gate",
+          "agent_tooling_pattern"
+        ],
+        "verification": {
+          "api_repo_metadata": true,
+          "languages_fetched": true,
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "AGENTS.md",
+            "CLAUDE.md",
+            "CONTRIBUTING.md"
+          ],
+          "workflow_files_seen": [],
+          "text_hashes": {
+            "README.md": "831d4bb0ccb284a73de93fc087ccb28ebb0e76a122c508b39a3df0dfa01affed",
+            "pyproject.toml": "8144549b34aae53b4cc8fea3493b0725a403e140ea9300ba889ace8c93b5fa51",
+            "AGENTS.md": "722632000217d2f27aa1ba7d1fe6cda305fc463325da804304c3038e383cc553",
+            "CLAUDE.md": "722632000217d2f27aa1ba7d1fe6cda305fc463325da804304c3038e383cc553",
+            "CONTRIBUTING.md": "72e62c2e6f59b1c02d07d95317136ae45d71b5ba2b485707fbc35f556374551d"
+          }
+        },
+        "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+      },
+      {
+        "repo": "microsoft/AIOpsLab",
+        "traits": [
+          "evaluation_gate",
+          "automated_test_gate",
+          "agent_tooling_pattern",
+          "container_reproducibility"
+        ],
+        "verification": {
+          "api_repo_metadata": true,
+          "languages_fetched": true,
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "CLAUDE.md",
+            "CONTRIBUTING.md",
+            ".github/workflows/integration-test.yml"
+          ],
+          "workflow_files_seen": [
+            ".github/workflows/integration-test.yml"
+          ],
+          "text_hashes": {
+            "README.md": "f0a468d10d996c1b5f47eed1ae8c2637d9448857bfa324510cf686d0d7136d6e",
+            "pyproject.toml": "ba680fe13583ce7f1569cd9e83c41015b80fb11c2f431d349d16848216d7041d",
+            "CLAUDE.md": "5fa9408c75402938a94afc2db42ee34e827222ca432f72f252500aa9a1b6fad9",
+            "CONTRIBUTING.md": "198fe1f23542adb47b1f4ca318d050b9658e7fba274dd75a10c7ea66b722e346",
+            ".github/workflows/integration-test.yml": "12d5635744bababf000bb530fd99ed88ba916676eb142a6db97896b774cc9f3a"
+          }
+        },
+        "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+      }
+    ],
+    "boundary": "本次完成 Gist 队列读取、GitHub Actions/本地容器等价检索、GitHub API采样、基因抽取和回流；深度代码迁移需后续针对单仓库逐文件审计和测试。"
+  },
+  "gpt55_analysis": {
+    "status": "ok",
+    "verified_facts": [
+      "本轮 run_id 为 evolver_20260526_170024，生成时间为 2026-05-26T17:01:04Z。",
+      "本轮 requested_topic 为 ai agent eval harness autonomous coding workflows，实际 topic 为 agent self improvement github actions verification。",
+      "已使用 Gist 队列，gist_queue_count 为 1，gist_error 为 null。",
+      "已使用 GitHub API，repo_count 为 5，genes_count 为 5，minimum_gene_gate 为 true。",
+      "容器中检测到 token_present_in_container 为 true，但 secret_values_printed 为 false；输入中未提供任何密钥明文。",
+      "evomap_route 已覆盖 Gist queue、GitHub Actions container、GitHub API、repository inbox、genes、host evolver。",
+      "本轮采样仓库为 raga-ai-hub/RagaAI-Catalyst、openlit/openlit、IBM/AssetOpsBench、mozilla-ai/any-agent、microsoft/AIOpsLab。",
+      "dominant_traits 中 agent_tooling_pattern 出现 5 次，automated_test_gate 出现 5 次，evaluation_gate 出现 4 次，container_reproducibility 出现 1 次。",
+      "5 个仓库均验证了 api_repo_metadata 为 true、languages_fetched 为 true，并记录了 sampled_paths 与 text_hashes。",
+      "raga-ai-hub/RagaAI-Catalyst 采样到 .github/workflows/ci.yml，提取 traits 为 evaluation_gate、automated_test_gate、agent_tooling_pattern。",
+      "openlit/openlit 采样到 .github/workflows/controller-release.yml，提取 traits 为 evaluation_gate、automated_test_gate、agent_tooling_pattern。",
+      "IBM/AssetOpsBench 采样到 .github/workflows/stale.yml，提取 traits 为 evaluation_gate、automated_test_gate、agent_tooling_pattern。",
+      "mozilla-ai/any-agent 采样到 README.md、pyproject.toml、AGENTS.md、CLAUDE.md、CONTRIBUTING.md，workflow_files_seen 为空，提取 traits 为 automated_test_gate、agent_tooling_pattern。",
+      "microsoft/AIOpsLab 采样到 .github/workflows/integration-test.yml，提取 traits 为 evaluation_gate、automated_test_gate、agent_tooling_pattern、container_reproducibility。",
+      "本轮边界声明为公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库；深度代码迁移需后续针对单仓库逐文件审计和测试。"
+    ],
+    "candidate_genes": [
+      {
+        "name": "CI 驱动的自动化测试闸门",
+        "source_repo": "raga-ai-hub/RagaAI-Catalyst; openlit/openlit; IBM/AssetOpsBench; mozilla-ai/any-agent; microsoft/AIOpsLab",
+        "reuse_rule": "在 Hermes evolver 中将每次自进化产物进入主分支或长期记忆前，强制经过最小自动化测试闸门；先复用抽象模式，不直接复制工作流内容。建议实现为：采样任务生成后运行单元测试、schema 校验、JSON 严格输出校验、失败即阻断回流。",
+        "evidence": [
+          "dominant_traits 显示 automated_test_gate 出现 5 次。",
+          "5 个 genes 均包含 automated_test_gate。",
+          "raga-ai-hub/RagaAI-Catalyst、openlit/openlit、IBM/AssetOpsBench、microsoft/AIOpsLab 均采样到 GitHub workflow 文件。",
+          "mozilla-ai/any-agent 虽 workflow_files_seen 为空，但 traits 中仍记录 automated_test_gate；该 traits 的具体来源需要后续逐文件验证。"
+        ],
+        "risk": "已验证的是 traits 计数与采样路径，不等于已验证各仓库测试策略的具体实现细节；直接迁移 workflow 可能引入环境、依赖、权限和许可风险。"
+      },
+      {
+        "name": "评估闸门优先于代码合并",
+        "source_repo": "raga-ai-hub/RagaAI-Catalyst; openlit/openlit; IBM/AssetOpsBench; microsoft/AIOpsLab",
+        "reuse_rule": "将 evaluation_gate 抽象为 evolver 输出质量门：每轮候选基因必须附带来源、证据、风险、边界和可复验路径；未满足证据字段完整性时标记为 partial，不进入自动采纳。",
+        "evidence": [
+          "dominant_traits 显示 evaluation_gate 出现 4 次。",
+          "raga-ai-hub/RagaAI-Catalyst、openlit/openlit、IBM/AssetOpsBench、microsoft/AIOpsLab 的 genes 均包含 evaluation_gate。",
+          "本轮 required_schema 已要求 verified_facts、candidate_genes、risks、boundary 等字段，可直接作为评估闸门的结构化基础。"
+        ],
+        "risk": "evaluation_gate 目前仅为抽取到的 trait，未验证各仓库真实评估指标、阈值和失败处理策略；下一轮需读取具体 workflow 与配置内容后再细化。"
+      },
+      {
+        "name": "Agent 工具约定文件吸收",
+        "source_repo": "mozilla-ai/any-agent; microsoft/AIOpsLab",
+        "reuse_rule": "优先分析 AGENTS.md、CLAUDE.md、CONTRIBUTING.md 等人机协作约定文件，提取 agent 可执行边界、命令入口、代码风格与禁止事项；只吸收规则，不吸收私有上下文或凭据。",
+        "evidence": [
+          "mozilla-ai/any-agent sampled_paths 包含 AGENTS.md、CLAUDE.md、CONTRIBUTING.md。",
+          "microsoft/AIOpsLab sampled_paths 包含 CLAUDE.md、CONTRIBUTING.md。",
+          "dominant_traits 显示 agent_tooling_pattern 出现 5 次，5 个 genes 均包含 agent_tooling_pattern。"
+        ],
+        "risk": "已验证存在相关文件路径与哈希，但未验证文件全文语义；AGENTS.md 与 CLAUDE.md 可能包含项目特定规则，不能未经适配直接套用到 Hermes。"
+      },
+      {
+        "name": "容器可复现进化任务",
+        "source_repo": "microsoft/AIOpsLab",
+        "reuse_rule": "将下一轮单仓库深挖任务封装为容器内可复现实验：固定输入 JSON、固定采样路径、输出哈希、记录 workflow 文件哈希，并确保不打印 token 或 secret。",
+        "evidence": [
+          "microsoft/AIOpsLab gene 包含 container_reproducibility。",
+          "microsoft/AIOpsLab sampled_paths 包含 .github/workflows/integration-test.yml。",
+          "本轮 verification 显示 GitHub Actions/本地容器等价检索已完成，并记录 token_present_in_container 为 true、secret_values_printed 为 false。"
+        ],
+        "risk": "container_reproducibility 仅出现 1 次，证据较弱；不能假设该仓库完整容器方案已被理解。需要下一轮针对 integration-test.yml 与相关 Dockerfile/脚本做逐文件审计。"
+      },
+      {
+        "name": "仓库信号到基因的可追溯哈希记录",
+        "source_repo": "all sampled repositories",
+        "reuse_rule": "每条进化基因必须绑定 repo、sampled_paths、text_hashes、traits 和 boundary；下一轮回放时先比较哈希，哈希变化则重新审查，不使用旧结论覆盖新状态。",
+        "evidence": [
+          "5 个 genes 均包含 verification.text_hashes。",
+          "5 个 genes 均包含 sampled_paths。",
+          "每个 gene 均有 boundary 声明：公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+        ],
+        "risk": "哈希证明的是采样文本版本，不证明内容已被完整解析；若 GitHub 仓库后续更新，旧哈希对应的结论可能失效。"
+      }
+    ],
+    "risks": [
+      "未验证假设：traits 名称代表可复用工程模式，但输入未包含各文件全文，因此不能断言具体实现细节、命令、阈值或依赖。",
+      "未验证假设：mozilla-ai/any-agent 的 automated_test_gate 来源可靠；当前 workflow_files_seen 为空，需要后续检查 pyproject.toml、README.md 或 CI 配置来源。",
+      "token_present_in_container 为 true，虽 secret_values_printed 为 false，但后续任务必须继续禁止打印环境变量、请求头、token、secret 或完整凭据。",
+      "workflow_files 字段在 repositories 层为 null，而 genes.verification.workflow_files_seen 有具体路径；需要确认这是采样器字段设计差异，不应解读为矛盾前提下的完整 workflow 清单。",
+      "本轮只完成公开仓库采样和基因抽取，未做逐文件审计、依赖安装、测试运行或许可证兼容性评估。",
+      "高 star 数与工程质量相关性未被验证，不能作为自动采纳依据。",
+      "跨仓库复用 GitHub Actions 可能引入权限过大、供应链 action pinning 不足、第三方依赖漂移和运行成本风险。",
+      "从公开仓库吸收 agent 约定文件时，可能误吸收项目特定流程、品牌命名、目录假设或不适合 Hermes 的上下文。"
+    ],
+    "next_gist_topic": "单仓库深挖 microsoft/AIOpsLab 的 integration-test.yml、pyproject.toml、CLAUDE.md、CONTRIBUTING.md 与容器/脚本入口，验证 evaluation_gate、automated_test_gate、container_reproducibility 的具体可复用模式，并输出可复现 Hermes CI 质量门草案；要求记录文件哈希、禁止打印 secret、区分已验证事实与未验证假设。",
+    "phi_ratio_note": "输入未提供明确 phi_ratio 指标或计算公式，因此不能编造数值。可观察到的比例是：5 个仓库生成 5 个 genes，minimum_gene_gate 为 true；dominant_traits 中 agent_tooling_pattern 与 automated_test_gate 覆盖 5/5，evaluation_gate 覆盖 4/5，container_reproducibility 覆盖 1/5。若将 phi 临时定义为高置信可复用基因占候选基因比例，本轮只能给出待定义状态，不能给出已验证 phi 数值。",
+    "boundary": "本分析仅基于输入 JSON 中的公开仓库采样元数据、traits、路径、哈希和边界声明；未访问外部网络，未读取文件全文，未运行测试，未复制密钥，未声称完整理解任何仓库。所有可执行建议均为下一轮验证任务或抽象复用规则，而非已完成迁移。",
+    "provider": "gpt55_5yuantoken",
+    "model": "gpt-5.5"
+  }
+}
