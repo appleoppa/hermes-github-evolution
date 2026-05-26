@@ -6,6 +6,8 @@ on:
         description: 'evolution topic'
         required: false
         default: 'ai agent eval harness autonomous coding workflows'
+  schedule:
+    - cron: '*/15 * * * *'
   push:
     paths:
       - 'tasks/**'
@@ -31,11 +33,15 @@ jobs:
           python-version: '3.11'
       - name: run evolver evomap
         run: python scripts/evolver.py
+      - name: run GPT-5.5 analysis
+        run: python scripts/gpt55_analyze.py
+      - name: backup latest result to Gist and sync PHI_RATIO
+        run: python scripts/gist_backup.py
       - name: commit inbox genes research result
         run: |
           git config user.name 'hermes-evolver'
           git config user.email 'actions@github.com'
-          git add inbox/ genes/ research/
+          git add inbox/ genes/ research/ logs/
           git commit -m 'chore: add evolver evomap result' || echo 'nothing to commit'
           git pull --rebase
           git push

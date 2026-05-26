@@ -219,6 +219,10 @@ def build_evomap(genes: list[dict[str, Any]], topic: str) -> dict[str, Any]:
         'generated_at': now(),
         'topic': topic,
         'route': route,
+        'schedule': '*/15 * * * *',
+        'analysis_node': 'GPT-5.5 analysis',
+        'gist_backup_node': 'Gist backup',
+        'phi_ratio_rule': 'PHI_RATIO 每轮按实验参数增加 5%，仅作节奏字段，不代表能力自动提升。',
         'trait_count': trait_count,
         'dominant_traits': sorted(trait_count.items(), key=lambda x: (-x[1], x[0]))[:8],
         'host_reuse_rule': '只有含Gist任务证据、真实API元数据、采样文件路径、内容hash和边界声明的gene，才允许回流为Hermes进化素材。'
