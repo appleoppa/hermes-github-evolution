@@ -99,6 +99,21 @@ def topic_from_gist(default_topic: str, gist_queue: dict[str, Any]) -> str:
             return str(item['topic'])
     return default_topic
 
+
+def sanitize_search_topic(topic: str) -> str:
+    """Keep GitHub search query stable even when GPT suggests long natural-language tasks."""
+    topic = ' '.join(str(topic or '').replace('\n', ' ').split())
+    if not topic:
+        return 'ai agent evaluation framework'
+    stop = {'the','and','for','with','from','that','this','into','using','use','基于','通过','围绕','进行','实现','验证','提升'}
+    words = [w.strip('，。；:：,.()[]{}') for w in topic.split()]
+    words = [w for w in words if w and len(w) > 1 and w.lower() not in stop]
+    compact = ' '.join(words[:8])
+    if len(compact) > 90:
+        compact = compact[:90]
+    return compact or 'ai agent evaluation framework'
+
+
 def search_repositories(query: str, limit: int = 8) -> list[dict[str, Any]]:
     q = urllib.parse.quote(query)
     url = f'https://api.github.com/search/repositories?q={q}&sort=stars&order=desc&per_page={limit}'
@@ -232,7 +247,11 @@ def build_evomap(genes: list[dict[str, Any]], topic: str) -> dict[str, Any]:
 def main() -> None:
     gist_queue = load_gist_queue(GIST_ID)
     active_topic = topic_from_gist(TOPIC, gist_queue)
-    repos = search_repositories(active_topic + ' stars:>500', limit=8)
+    search_topic = sanitize_search_topic(active_topic)
+    try:
+        repos = search_repositories(search_topic + ' stars:>500', limit=8)
+    except Exception:
+        repos = []
     if len(repos) < 3:
         repos = search_repositories('ai agent evaluation framework stars:>500', limit=8)
     selected = []
@@ -255,6 +274,7 @@ def main() -> None:
         'run_id': RUN_ID,
         'generated_at': now(),
         'topic': active_topic,
+        'search_topic': search_topic,
         'requested_topic': TOPIC,
         'mode': 'gist_to_github_actions_evolver_evomap',
         'status': 'completed' if genes else 'no_genes',
