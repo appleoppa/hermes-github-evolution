@@ -21,6 +21,21 @@ def run():
     env = os.environ.copy()
     gh_token = env.get('GITHUB_TOKEN') or env.get('GH_TOKEN')
     if not gh_token:
+        env_path = Path.home() / ".hermes/.env"
+        if env_path.exists():
+            for line in env_path.read_text(encoding="utf-8", errors="ignore").splitlines():
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                key, value = line.split("=", 1)
+                key = key.strip().removeprefix("export ").strip()
+                value = value.strip().strip('"').strip("'")
+                if key in {"GITHUB_TOKEN", "GH_TOKEN"} and value:
+                    gh_token = value
+                    env[key] = value
+                    env.setdefault("GH_TOKEN", value)
+                    break
+    if not gh_token:
         print("❌ 缺少 GITHUB_TOKEN 或 GH_TOKEN 环境变量")
         sys.exit(1)
     
@@ -47,12 +62,12 @@ def run():
     
     # 只在有新提交时才 push
     if commit_result.returncode == 0:
-        # 使用 gh CLI 推送（自动使用 GH_TOKEN）
+        # 优先使用仓库自身 origin，避免硬编码 URL 与认证方式漂移。
         push_result = subprocess.run(
-            ["bash", "-c", f"source ~/.hermes/.env && export GH_TOKEN && git push https://${{GH_TOKEN}}@github.com/appleoppa/hermes-github-evolution.git main"],
+            ["git", "push", "origin", "main"],
             capture_output=True,
             text=True,
-            env=env
+            env=env,
         )
         if push_result.returncode != 0:
             print(f"⚠️  推送失败: {push_result.stderr}")
