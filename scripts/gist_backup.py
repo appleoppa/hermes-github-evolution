@@ -89,7 +89,8 @@ def main() -> None:
         'step': PHI_STEP,
         'boundary': 'PHI_RATIO 是实验节奏参数，不代表真实能力自动提升；真实提升需评估中心或任务验证。',
     }
-    phi_file.write_text(json.dumps(phi_state, ensure_ascii=False, indent=2), encoding='utf-8')
+    # 不写固定状态文件，避免多路 Actions / 本地 cron 并发时产生 rebase 冲突。
+    # 每轮 PHI_RATIO 证据写入独立 gist_backup 结果文件，并同步到 Gist。
     backup = {
         'name': 'hermes-github-evolution-queue',
         'purpose': 'Gist 中转站：轻量任务队列、远程闭环回流索引与最新结果备份',
