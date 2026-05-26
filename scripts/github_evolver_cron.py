@@ -69,8 +69,23 @@ def run():
             text=True,
             env=env,
         )
+        if push_result.returncode != 0 and "fetch first" in (push_result.stderr or ""):
+            pull_result = subprocess.run(
+                ["git", "pull", "--rebase", "origin", "main"],
+                capture_output=True,
+                text=True,
+                env=env,
+            )
+            if pull_result.returncode == 0:
+                push_result = subprocess.run(
+                    ["git", "push", "origin", "main"],
+                    capture_output=True,
+                    text=True,
+                    env=env,
+                )
         if push_result.returncode != 0:
             print(f"⚠️  推送失败: {push_result.stderr}")
+            sys.exit(1)
     
     # silent watchdog: 只在有新基因或错误时输出
     if result.returncode != 0:
