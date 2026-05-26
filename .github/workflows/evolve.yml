@@ -13,6 +13,10 @@ on:
       - 'tasks/**'
       - 'scripts/**'
       - '.github/workflows/evolve.yml'
+concurrency:
+  group: evolve-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
   actions: read
@@ -41,7 +45,7 @@ jobs:
         run: |
           git config user.name 'hermes-evolver'
           git config user.email 'actions@github.com'
+          git pull --rebase
           git add inbox/ genes/ research/ logs/
           git commit -m 'chore: add evolver evomap result' || echo 'nothing to commit'
-          git pull --rebase
           git push
