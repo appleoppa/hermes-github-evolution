@@ -1,0 +1,392 @@
+{
+  "run_id": "evolver_20260527_115102",
+  "source_inbox": "inbox/evolver_20260527_115102.json",
+  "generated_at": "2026-05-27T11:53:16Z",
+  "secret_values_printed": false,
+  "input_summary": {
+    "run_id": "evolver_20260527_115102",
+    "generated_at": "2026-05-27T11:51:11Z",
+    "topic": "对 microsoft/AIOpsLab 与 mozilla-ai/any-agent 执行真正的正文级二阶段审计：1) 使用 GitHub API 完整列出 .github/workflows/*，逐文件读取 workflow 正文；2) 读取 pyproject.toml、AGENTS.md、CLAUDE.md、CONTRIBUTING.md，如文件不存在则记录 missing；3) 输出严格 JSON 表格，逐文件字段包含 triggers、permissions、jobs、runner、container、services、dependency pinning、cache、test commands、eval commands、metrics、artifact paths、failure thresholds、required secrets names only、autonomous coding constraints、可迁移 CI/eval gate、不可迁移原因、evidence_file_path、text_hash；4) 明确区分 verified_facts 与 unverified_assumptions；5) 不输出任何 secret 值，不回显 token，不上传含凭据 artifact。",
+    "requested_topic": "ai agent eval harness autonomous coding workflows",
+    "mode": "gist_to_github_actions_evolver_evomap",
+    "verification": {
+      "gist_queue_used": true,
+      "gist_queue_count": 1,
+      "gist_error": null,
+      "github_api_used": true,
+      "repo_count": 5,
+      "genes_count": 5,
+      "token_present_in_container": true,
+      "secret_values_printed": false,
+      "minimum_gene_gate": true
+    },
+    "evomap_route": [
+      "Gist queue",
+      "GitHub Actions container",
+      "GitHub API",
+      "repository inbox",
+      "genes",
+      "host evolver"
+    ],
+    "dominant_traits": [
+      [
+        "agent_tooling_pattern",
+        5
+      ],
+      [
+        "automated_test_gate",
+        5
+      ],
+      [
+        "evaluation_gate",
+        4
+      ],
+      [
+        "container_reproducibility",
+        1
+      ]
+    ],
+    "repositories": [
+      {
+        "name": "raga-ai-hub/RagaAI-Catalyst",
+        "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+        "stars": 16167,
+        "signals": {
+          "languages": {
+            "Python": 902970,
+            "Jupyter Notebook": 205921
+          },
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            ".github/workflows/ci.yml"
+          ],
+          "workflow_files": null
+        }
+      },
+      {
+        "name": "openlit/openlit",
+        "url": "https://github.com/openlit/openlit",
+        "stars": 2471,
+        "signals": {
+          "languages": {
+            "TypeScript": 4600930,
+            "Python": 3269704,
+            "Go": 594028,
+            "Shell": 44817,
+            "JavaScript": 13265,
+            "C": 13222,
+            "Dockerfile": 8328,
+            "Makefile": 4576,
+            "CSS": 2176
+          },
+          "sampled_paths": [
+            "README.md",
+            "CONTRIBUTING.md",
+            ".github/workflows/controller-release.yml",
+            ".github/workflows/controller-tests.yml"
+          ],
+          "workflow_files": null
+        }
+      },
+      {
+        "name": "IBM/AssetOpsBench",
+        "url": "https://github.com/IBM/AssetOpsBench",
+        "stars": 1639,
+        "signals": {
+          "languages": {
+            "Python": 542187,
+            "Shell": 1783
+          },
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "CONTRIBUTING.md",
+            ".github/workflows/stale.yml"
+          ],
+          "workflow_files": null
+        }
+      },
+      {
+        "name": "mozilla-ai/any-agent",
+        "url": "https://github.com/mozilla-ai/any-agent",
+        "stars": 1171,
+        "signals": {
+          "languages": {
+            "Python": 541766
+          },
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "AGENTS.md",
+            "CLAUDE.md",
+            "CONTRIBUTING.md"
+          ],
+          "workflow_files": null
+        }
+      },
+      {
+        "name": "microsoft/AIOpsLab",
+        "url": "https://github.com/microsoft/AIOpsLab",
+        "stars": 886,
+        "signals": {
+          "languages": {
+            "Python": 597518,
+            "Mustache": 29684,
+            "Shell": 19275,
+            "HCL": 9305,
+            "Go Template": 7209,
+            "Makefile": 3437,
+            "C": 2221,
+            "Jinja": 198,
+            "Dockerfile": 114
+          },
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "CLAUDE.md",
+            "CONTRIBUTING.md",
+            ".github/workflows/integration-test.yml"
+          ],
+          "workflow_files": null
+        }
+      }
+    ],
+    "genes": [
+      {
+        "repo": "raga-ai-hub/RagaAI-Catalyst",
+        "traits": [
+          "evaluation_gate",
+          "automated_test_gate",
+          "agent_tooling_pattern"
+        ],
+        "verification": {
+          "api_repo_metadata": true,
+          "languages_fetched": true,
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            ".github/workflows/ci.yml"
+          ],
+          "workflow_files_seen": [
+            ".github/workflows/ci.yml"
+          ],
+          "text_hashes": {
+            "README.md": "7fcc08530415d430ecec8511b3ffa9cd50f81ecd20f3fadb1295e90e3cbba474",
+            "pyproject.toml": "24fb967a7ad40541b319a71a3f3255586634ab74dd1eba7e1439b235142144ee",
+            ".github/workflows/ci.yml": "3f8f7d7e0e3d2b4ab0b20976f25d6dfd5029f54418517d1c9e4ad1f8743c2e0c"
+          }
+        },
+        "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+      },
+      {
+        "repo": "openlit/openlit",
+        "traits": [
+          "evaluation_gate",
+          "automated_test_gate",
+          "agent_tooling_pattern"
+        ],
+        "verification": {
+          "api_repo_metadata": true,
+          "languages_fetched": true,
+          "sampled_paths": [
+            "README.md",
+            "CONTRIBUTING.md",
+            ".github/workflows/controller-release.yml",
+            ".github/workflows/controller-tests.yml"
+          ],
+          "workflow_files_seen": [
+            ".github/workflows/controller-release.yml",
+            ".github/workflows/controller-tests.yml"
+          ],
+          "text_hashes": {
+            "README.md": "2fd258547c9a8d761589a5319d21f23662e4429224a684f1f5a7ef7186fd5c5a",
+            "CONTRIBUTING.md": "f4a414c36dd8abca4b2e48b534d4bca32476511714c02086417f9d3861f8bd9a",
+            ".github/workflows/controller-release.yml": "62e1d29d994b6d21b1a3ea769cb31ea0365020db238c5e10cb8f3ccad4fc8545",
+            ".github/workflows/controller-tests.yml": "5b4d289bcbd163d201dbc71f0de2765361c3054af119157e55b6b6e5e7e7af08"
+          }
+        },
+        "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+      },
+      {
+        "repo": "IBM/AssetOpsBench",
+        "traits": [
+          "evaluation_gate",
+          "automated_test_gate",
+          "agent_tooling_pattern"
+        ],
+        "verification": {
+          "api_repo_metadata": true,
+          "languages_fetched": true,
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "CONTRIBUTING.md",
+            ".github/workflows/stale.yml"
+          ],
+          "workflow_files_seen": [
+            ".github/workflows/stale.yml"
+          ],
+          "text_hashes": {
+            "README.md": "f586144eb6c0b715c4975a99a06103987d2aa3e024324d5f33f5f3ef9b3e510d",
+            "pyproject.toml": "e681df5eecd0a3f2a7854f10f516409236d6e67c53295dc5ff17559a25dbe8ee",
+            "CONTRIBUTING.md": "1635ecbf3f091a86315cab89b809551df4ef8d5888e9f1f399584aeb080b6856",
+            ".github/workflows/stale.yml": "1cf7b7ce07c7c7d31e3f4401f57167dde9a94ee7b2de119f6ca901a084e29cfc"
+          }
+        },
+        "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+      },
+      {
+        "repo": "mozilla-ai/any-agent",
+        "traits": [
+          "automated_test_gate",
+          "agent_tooling_pattern"
+        ],
+        "verification": {
+          "api_repo_metadata": true,
+          "languages_fetched": true,
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "AGENTS.md",
+            "CLAUDE.md",
+            "CONTRIBUTING.md"
+          ],
+          "workflow_files_seen": [],
+          "text_hashes": {
+            "README.md": "831d4bb0ccb284a73de93fc087ccb28ebb0e76a122c508b39a3df0dfa01affed",
+            "pyproject.toml": "8144549b34aae53b4cc8fea3493b0725a403e140ea9300ba889ace8c93b5fa51",
+            "AGENTS.md": "722632000217d2f27aa1ba7d1fe6cda305fc463325da804304c3038e383cc553",
+            "CLAUDE.md": "722632000217d2f27aa1ba7d1fe6cda305fc463325da804304c3038e383cc553",
+            "CONTRIBUTING.md": "72e62c2e6f59b1c02d07d95317136ae45d71b5ba2b485707fbc35f556374551d"
+          }
+        },
+        "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+      },
+      {
+        "repo": "microsoft/AIOpsLab",
+        "traits": [
+          "evaluation_gate",
+          "automated_test_gate",
+          "agent_tooling_pattern",
+          "container_reproducibility"
+        ],
+        "verification": {
+          "api_repo_metadata": true,
+          "languages_fetched": true,
+          "sampled_paths": [
+            "README.md",
+            "pyproject.toml",
+            "CLAUDE.md",
+            "CONTRIBUTING.md",
+            ".github/workflows/integration-test.yml"
+          ],
+          "workflow_files_seen": [
+            ".github/workflows/integration-test.yml"
+          ],
+          "text_hashes": {
+            "README.md": "f0a468d10d996c1b5f47eed1ae8c2637d9448857bfa324510cf686d0d7136d6e",
+            "pyproject.toml": "ba680fe13583ce7f1569cd9e83c41015b80fb11c2f431d349d16848216d7041d",
+            "CLAUDE.md": "5fa9408c75402938a94afc2db42ee34e827222ca432f72f252500aa9a1b6fad9",
+            "CONTRIBUTING.md": "198fe1f23542adb47b1f4ca318d050b9658e7fba274dd75a10c7ea66b722e346",
+            ".github/workflows/integration-test.yml": "12d5635744bababf000bb530fd99ed88ba916676eb142a6db97896b774cc9f3a"
+          }
+        },
+        "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+      }
+    ],
+    "boundary": "本次完成 Gist 队列读取、GitHub Actions/本地容器等价检索、GitHub API采样、基因抽取和回流；深度代码迁移需后续针对单仓库逐文件审计和测试。"
+  },
+  "gpt55_analysis": {
+    "status": "partial",
+    "verified_facts": [
+      "本轮 run_id 为 evolver_20260527_115102，generated_at 为 2026-05-27T11:51:11Z。",
+      "本轮使用了 Gist queue，gist_queue_count 为 1，gist_error 为 null。",
+      "本轮记录 github_api_used 为 true，repo_count 为 5，genes_count 为 5，minimum_gene_gate 为 true。",
+      "本轮容器中存在 token 的事实被记录为 token_present_in_container=true，但 verification 同时记录 secret_values_printed=false。",
+      "evomap_route 为 Gist queue -> GitHub Actions container -> GitHub API -> repository inbox -> genes -> host evolver。",
+      "dominant_traits 统计为 agent_tooling_pattern=5，automated_test_gate=5，evaluation_gate=4，container_reproducibility=1。",
+      "本轮涉及仓库包括 raga-ai-hub/RagaAI-Catalyst、openlit/openlit、IBM/AssetOpsBench、mozilla-ai/any-agent、microsoft/AIOpsLab。",
+      "mozilla-ai/any-agent 已验证 api_repo_metadata=true、languages_fetched=true，sampled_paths 包含 README.md、pyproject.toml、AGENTS.md、CLAUDE.md、CONTRIBUTING.md。",
+      "mozilla-ai/any-agent 的 workflow_files_seen 为空数组，payload 中 repositories.workflow_files 为 null。",
+      "mozilla-ai/any-agent 记录的 text_hashes 包含 README.md、pyproject.toml、AGENTS.md、CLAUDE.md、CONTRIBUTING.md；其中 AGENTS.md 与 CLAUDE.md hash 相同。",
+      "microsoft/AIOpsLab 已验证 api_repo_metadata=true、languages_fetched=true，sampled_paths 包含 README.md、pyproject.toml、CLAUDE.md、CONTRIBUTING.md、.github/workflows/integration-test.yml。",
+      "microsoft/AIOpsLab 的 workflow_files_seen 包含 .github/workflows/integration-test.yml，payload 中 repositories.workflow_files 为 null。",
+      "microsoft/AIOpsLab 记录的 traits 为 evaluation_gate、automated_test_gate、agent_tooling_pattern、container_reproducibility。",
+      "payload 未提供 workflow 正文字段级解析结果，例如 triggers、permissions、jobs、runner、container、services、test commands、eval commands、metrics、artifact paths、failure thresholds、required secrets names only 等结构化明细。",
+      "payload 的边界声明为公开仓库信号吸收，未复制密钥，未声称已完整理解全仓库；深度代码迁移需后续针对单仓库逐文件审计和测试。"
+    ],
+    "candidate_genes": [
+      {
+        "name": "正文级 workflow 清单与哈希审计门",
+        "source_repo": "microsoft/AIOpsLab",
+        "reuse_rule": "下一轮只在 GitHub API 成功列出 .github/workflows/* 并逐文件读取正文、记录 evidence_file_path 与 text_hash 后，才允许抽取 CI/eval gate；若 workflow_files 为 null 或仅 sampled_paths 命中，则标记为未完成而不是迁移。",
+        "evidence": [
+          "microsoft/AIOpsLab workflow_files_seen 包含 .github/workflows/integration-test.yml。",
+          "microsoft/AIOpsLab 已记录 .github/workflows/integration-test.yml 的 text_hash 为 12d5635744bababf000bb530fd99ed88ba916676eb142a6db97896b774cc9f3a。",
+          "repositories 中 microsoft/AIOpsLab 的 workflow_files 为 null，说明完整 workflow 列表未在 payload 中验证。"
+        ],
+        "risk": "当前证据只能证明 sampled workflow 文件被读取或记录 hash，不能证明完整列出 .github/workflows/*；若直接复用会把采样结果误当成全量审计。"
+      },
+      {
+        "name": "Agent 约束文档双入口审计",
+        "source_repo": "mozilla-ai/any-agent",
+        "reuse_rule": "对 AGENTS.md、CLAUDE.md、CONTRIBUTING.md 建立 autonomous coding constraints 抽取步骤；只有当文件存在并有 text_hash 时进入约束解析，缺失时必须写 missing，且不得推断未读到的约束。",
+        "evidence": [
+          "mozilla-ai/any-agent sampled_paths 包含 AGENTS.md、CLAUDE.md、CONTRIBUTING.md。",
+          "mozilla-ai/any-agent text_hashes 中 AGENTS.md 与 CLAUDE.md 均为 722632000217d2f27aa1ba7d1fe6cda305fc463325da804304c3038e383cc553。",
+          "mozilla-ai/any-agent traits 包含 automated_test_gate 与 agent_tooling_pattern。"
+        ],
+        "risk": "payload 未提供 AGENTS.md、CLAUDE.md、CONTRIBUTING.md 正文摘要或约束字段，不能验证具体自主编码规则；hash 相同只证明文本相同或内容快照相同，不证明其语义。"
+      },
+      {
+        "name": "Eval gate 与 automated test gate 分离标注",
+        "source_repo": "microsoft/AIOpsLab",
+        "reuse_rule": "CI 审计输出中将 test commands 与 eval commands 分栏：测试门只记录单元、集成、lint、typecheck 等命令；评测门只记录 benchmark、scenario、metric、threshold、artifact 等命令和产物，未在正文看到则置 null 或 missing。",
+        "evidence": [
+          "dominant_traits 中 automated_test_gate=5，evaluation_gate=4。",
+          "microsoft/AIOpsLab traits 同时包含 evaluation_gate 与 automated_test_gate。",
+          "microsoft/AIOpsLab sampled_paths 包含 .github/workflows/integration-test.yml 与 pyproject.toml。"
+        ],
+        "risk": "本轮未提供 integration-test.yml 正文字段，无法验证具体 test commands、eval commands、metrics 或 failure thresholds；该基因是流程规则，不能声称来自已解析命令。"
+      },
+      {
+        "name": "容器可复现性单独迁移门",
+        "source_repo": "microsoft/AIOpsLab",
+        "reuse_rule": "当仓库 traits 出现 container_reproducibility 时，下一轮必须从 workflow、Dockerfile、compose、devcontainer 或 pyproject 中验证 runner、container、services、镜像版本、依赖 pinning 与 cache；未验证镜像与服务配置不得迁移。",
+        "evidence": [
+          "dominant_traits 中 container_reproducibility=1。",
+          "microsoft/AIOpsLab 是唯一记录 container_reproducibility trait 的仓库。",
+          "microsoft/AIOpsLab languages 包含 Dockerfile=114。"
+        ],
+        "risk": "Dockerfile 语言计数和 trait 不能替代 Dockerfile 或 workflow 正文审计；当前不能确认具体镜像、服务、版本 pinning 或可复现实验环境。"
+      },
+      {
+        "name": "无密钥回显与 secret 名称白名单",
+        "source_repo": "host-evolver",
+        "reuse_rule": "审计器只允许输出 required secrets 的名称，不输出 secret 值；如果检测到 token_present_in_container=true，必须在日志、artifact 与 JSON 输出中执行 secret 值屏蔽，并显式记录 secret_values_printed=false。",
+        "evidence": [
+          "verification.token_present_in_container 为 true。",
+          "verification.secret_values_printed 为 false。",
+          "topic 要求不输出任何 secret 值，不回显 token，不上传含凭据 artifact。"
+        ],
+        "risk": "容器中存在 token 是供应链与日志泄露风险；必须持续验证日志、artifact、debug 输出和异常栈不会泄露凭据。"
+      }
+    ],
+    "risks": [
+      "任务目标要求对 microsoft/AIOpsLab 与 mozilla-ai/any-agent 执行真正的正文级二阶段审计，但 payload 显示本轮扩展到 5 个仓库且 workflow_files 多为 null，未证明已完整列出目标仓库 .github/workflows/*。",
+      "payload 只提供 sampled_paths、workflow_files_seen 和 text_hashes，未提供 workflow 正文级字段解析，因此 triggers、permissions、jobs、runner、container、services、dependency pinning、cache、test commands、eval commands、metrics、artifact paths、failure thresholds、required secrets names only 等仍未验证。",
+      "mozilla-ai/any-agent 的 workflow_files_seen 为空，不能据此断言仓库没有 workflow；只能说本轮未看到或未记录 workflow 文件。",
+      "microsoft/AIOpsLab 只看到 .github/workflows/integration-test.yml，不能证明该仓库没有其他 workflow。",
+      "dominant_traits 是抽象分类信号，不能替代可迁移 CI/eval gate 的逐文件证据。",
+      "token_present_in_container=true 表示运行环境中存在凭据，需要继续防止日志、artifact、错误输出、调试信息泄露。",
+      "如果下一轮继续以采样替代全量审计，会导致假阳性迁移基因和不可复现实验结论。",
+      "当前无法验证 required secrets names only，因为没有提供 workflow permissions/env/secrets 引用正文。"
+    ],
+    "next_gist_topic": "对 microsoft/AIOpsLab 与 mozilla-ai/any-agent 重新执行严格正文级二阶段审计：仅限这两个仓库；先用 GitHub API contents/tree 完整列出 .github/workflows/* 并逐文件读取正文，若目录不存在记录 missing；再读取 pyproject.toml、AGENTS.md、CLAUDE.md、CONTRIBUTING.md 并记录存在或 missing；输出严格 JSON，逐文件提取 triggers、permissions、jobs、runner、container、services、dependency pinning、cache、test commands、eval commands、metrics、artifact paths、failure thresholds、required secrets names only、autonomous coding constraints、可迁移 CI/eval gate、不可迁移原因、evidence_file_path、text_hash；必须分开 verified_facts 与 unverified_assumptions；不得输出 secret 值、token 或含凭据 artifact。",
+    "phi_ratio_note": "本轮 genes_count/repo_count 为 5/5，表面达到 1.0 的最小基因覆盖；但正文级字段覆盖不足，dominant_traits 中 agent_tooling_pattern 与 automated_test_gate 均为 5/5，evaluation_gate 为 4/5，container_reproducibility 为 1/5。可将下一轮目标设为降低广度、提高验证密度：2 个目标仓库、100% workflow 列表验证、100% 指定文件存在性或 missing 记录、0 secret 值输出。",
+    "boundary": "仅基于输入 JSON 分析；已验证事实限于 payload 明确记录的 API 使用、采样路径、workflow_files_seen、text_hashes、traits 和边界声明。未读取外部 GitHub 内容，未验证 workflow 正文，未推断未提供的命令、权限、secret、指标或阈值。",
+    "provider": "gpt55_5yuantoken",
+    "model": "gpt-5.5"
+  }
+}
