@@ -1,0 +1,60 @@
+{
+  "version": "1.1",
+  "generated_at": "2026-05-28T04:01:01Z",
+  "topic": "严格白名单重跑：仅允许 microsoft/AIOpsLab 与 mozilla-ai/any-agent。使用 GitHub API contents/tree 完整枚举每个仓库的 .github/workflows；若目录不存在输出 missing，若存在但为空输出 empty，若 API 失败输出 error。逐 workflow 读取正文并输出 path、text_hash、triggers、permissions、jobs、runner、container、services、dependency_pinning、cache、test_commands、eval_commands、metrics、artifact_paths、failure_thresholds、required_secrets_names_only。再读取 pyproject.toml、AGENTS.md、CLAUDE.md、CONTRIBUTING.md，输出 exists/missing、text_hash、自主编码约束、可迁移 CI/eval gate、不可迁移原因。严格分离 verified_facts 与 unverified_assumptions；禁止访问、记录或输出任何其他仓库；禁止输出 secret 值、token 或含凭据 artifact。",
+  "route": [
+    {
+      "node": "Gist queue",
+      "function": "读取轻量任务队列/主题中转"
+    },
+    {
+      "node": "GitHub Actions container",
+      "function": "远程容器执行检索与基因抽取"
+    },
+    {
+      "node": "GitHub API",
+      "function": "获取真实仓库元数据/文件/工作流"
+    },
+    {
+      "node": "repository inbox",
+      "function": "结果提交回仓库，供主机拉取复核"
+    },
+    {
+      "node": "genes",
+      "function": "可复用规则沉淀"
+    },
+    {
+      "node": "host evolver",
+      "function": "本地主脑验收、入库、技能更新"
+    }
+  ],
+  "schedule": "*/15 * * * *",
+  "analysis_node": "GPT-5.5 analysis",
+  "gist_backup_node": "Gist backup",
+  "phi_ratio_rule": "PHI_RATIO 每轮按实验参数增加 5%，仅作节奏字段，不代表能力自动提升。",
+  "trait_count": {
+    "evaluation_gate": 4,
+    "automated_test_gate": 5,
+    "agent_tooling_pattern": 5,
+    "container_reproducibility": 1
+  },
+  "dominant_traits": [
+    [
+      "agent_tooling_pattern",
+      5
+    ],
+    [
+      "automated_test_gate",
+      5
+    ],
+    [
+      "evaluation_gate",
+      4
+    ],
+    [
+      "container_reproducibility",
+      1
+    ]
+  ],
+  "host_reuse_rule": "只有含Gist任务证据、真实API元数据、采样文件路径、内容hash和边界声明的gene，才允许回流为Hermes进化素材。"
+}
