@@ -1,0 +1,110 @@
+{
+  "run_id": "evolver_20260529_071508",
+  "genes": [
+    {
+      "repo": "raga-ai-hub/RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16168,
+      "language": "Python",
+      "traits": [
+        "evaluation_gate",
+        "automated_test_gate"
+      ],
+      "mechanism": "参考 raga-ai-hub/RagaAI-Catalyst 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [
+          "README.md"
+        ],
+        "workflow_files_seen": [],
+        "text_hashes": {
+          "README.md": "7fcc08530415d430ecec8511b3ffa9cd50f81ecd20f3fadb1295e90e3cbba474"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "openlit/openlit",
+      "url": "https://github.com/openlit/openlit",
+      "stars": 2477,
+      "language": "TypeScript",
+      "traits": [
+        "high_signal_reference"
+      ],
+      "mechanism": "参考 openlit/openlit 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [],
+        "workflow_files_seen": [],
+        "text_hashes": {}
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "IBM/AssetOpsBench",
+      "url": "https://github.com/IBM/AssetOpsBench",
+      "stars": 1651,
+      "language": "Python",
+      "traits": [
+        "evaluation_gate",
+        "automated_test_gate",
+        "agent_tooling_pattern"
+      ],
+      "mechanism": "参考 IBM/AssetOpsBench 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [
+          "README.md",
+          "pyproject.toml",
+          "CONTRIBUTING.md"
+        ],
+        "workflow_files_seen": [],
+        "text_hashes": {
+          "README.md": "f586144eb6c0b715c4975a99a06103987d2aa3e024324d5f33f5f3ef9b3e510d",
+          "pyproject.toml": "e681df5eecd0a3f2a7854f10f516409236d6e67c53295dc5ff17559a25dbe8ee",
+          "CONTRIBUTING.md": "1635ecbf3f091a86315cab89b809551df4ef8d5888e9f1f399584aeb080b6856"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "mozilla-ai/any-agent",
+      "url": "https://github.com/mozilla-ai/any-agent",
+      "stars": 1171,
+      "language": "Python",
+      "traits": [
+        "high_signal_reference"
+      ],
+      "mechanism": "参考 mozilla-ai/any-agent 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": false,
+        "sampled_paths": [],
+        "workflow_files_seen": [],
+        "text_hashes": {}
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "microsoft/AIOpsLab",
+      "url": "https://github.com/microsoft/AIOpsLab",
+      "stars": 886,
+      "language": "Python",
+      "traits": [
+        "high_signal_reference"
+      ],
+      "mechanism": "参考 microsoft/AIOpsLab 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [],
+        "workflow_files_seen": [],
+        "text_hashes": {}
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    }
+  ]
+}
