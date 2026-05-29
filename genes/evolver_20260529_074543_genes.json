@@ -1,0 +1,125 @@
+{
+  "run_id": "evolver_20260529_074543",
+  "genes": [
+    {
+      "repo": "raga-ai-hub/RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16168,
+      "language": "Python",
+      "traits": [
+        "automated_test_gate"
+      ],
+      "mechanism": "参考 raga-ai-hub/RagaAI-Catalyst 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": false,
+        "sampled_paths": [
+          ".github/workflows/ci.yml"
+        ],
+        "workflow_files_seen": [
+          ".github/workflows/ci.yml"
+        ],
+        "text_hashes": {
+          ".github/workflows/ci.yml": "3f8f7d7e0e3d2b4ab0b20976f25d6dfd5029f54418517d1c9e4ad1f8743c2e0c"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "openlit/openlit",
+      "url": "https://github.com/openlit/openlit",
+      "stars": 2477,
+      "language": "TypeScript",
+      "traits": [
+        "high_signal_reference"
+      ],
+      "mechanism": "参考 openlit/openlit 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [],
+        "workflow_files_seen": [],
+        "text_hashes": {}
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "IBM/AssetOpsBench",
+      "url": "https://github.com/IBM/AssetOpsBench",
+      "stars": 1651,
+      "language": "Python",
+      "traits": [
+        "evaluation_gate",
+        "automated_test_gate",
+        "agent_tooling_pattern"
+      ],
+      "mechanism": "参考 IBM/AssetOpsBench 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [
+          "pyproject.toml",
+          "CONTRIBUTING.md"
+        ],
+        "workflow_files_seen": [],
+        "text_hashes": {
+          "pyproject.toml": "e681df5eecd0a3f2a7854f10f516409236d6e67c53295dc5ff17559a25dbe8ee",
+          "CONTRIBUTING.md": "1635ecbf3f091a86315cab89b809551df4ef8d5888e9f1f399584aeb080b6856"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "mozilla-ai/any-agent",
+      "url": "https://github.com/mozilla-ai/any-agent",
+      "stars": 1171,
+      "language": "Python",
+      "traits": [
+        "automated_test_gate"
+      ],
+      "mechanism": "参考 mozilla-ai/any-agent 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [
+          ".github/workflows/docs.yaml"
+        ],
+        "workflow_files_seen": [
+          ".github/workflows/docs.yaml"
+        ],
+        "text_hashes": {
+          ".github/workflows/docs.yaml": "5e99838629ba0a86e4184ea857cdfe3f1bda57388f7052458a374df7c0ce365d"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    },
+    {
+      "repo": "microsoft/AIOpsLab",
+      "url": "https://github.com/microsoft/AIOpsLab",
+      "stars": 886,
+      "language": "Python",
+      "traits": [
+        "evaluation_gate",
+        "agent_tooling_pattern",
+        "container_reproducibility"
+      ],
+      "mechanism": "参考 microsoft/AIOpsLab 的公开工程信号；先抽取可验证文件/工作流/测试门禁，再沉淀为本地基因；没有读到真实文件内容时不得声称吸收代码能力",
+      "verification": {
+        "api_repo_metadata": true,
+        "languages_fetched": true,
+        "sampled_paths": [
+          "pyproject.toml",
+          "CLAUDE.md",
+          "CONTRIBUTING.md"
+        ],
+        "workflow_files_seen": [],
+        "text_hashes": {
+          "pyproject.toml": "ba680fe13583ce7f1569cd9e83c41015b80fb11c2f431d349d16848216d7041d",
+          "CLAUDE.md": "5fa9408c75402938a94afc2db42ee34e827222ca432f72f252500aa9a1b6fad9",
+          "CONTRIBUTING.md": "198fe1f23542adb47b1f4ca318d050b9658e7fba274dd75a10c7ea66b722e346"
+        }
+      },
+      "boundary": "公开仓库信号吸收；未复制密钥、未声称已完整理解全仓库。"
+    }
+  ]
+}
