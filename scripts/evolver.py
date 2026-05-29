@@ -45,8 +45,12 @@ def request_json(url: str) -> dict[str, Any]:
     if GH_TOKEN:
         headers['Authorization'] = 'Bearer ' + GH_TOKEN
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=45) as resp:
-        return json.load(resp)
+    try:
+        with urllib.request.urlopen(req, timeout=45) as resp:
+            return json.load(resp)
+    except Exception:
+        # Network/SSL failures: return empty structure, callers handle gracefully
+        return {}
 
 
 def request_text(url: str) -> str:
@@ -54,8 +58,11 @@ def request_text(url: str) -> str:
     if GH_TOKEN:
         headers['Authorization'] = 'Bearer ' + GH_TOKEN
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=45) as resp:
-        return resp.read().decode('utf-8', errors='ignore')
+    try:
+        with urllib.request.urlopen(req, timeout=45) as resp:
+            return resp.read().decode('utf-8', errors='ignore')
+    except Exception:
+        return ''
 
 
 def load_gist_queue(gist_id: str) -> dict[str, Any]:
