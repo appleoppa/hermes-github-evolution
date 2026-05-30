@@ -1,0 +1,60 @@
+{
+  "version": "1.1",
+  "generated_at": "2026-05-30T03:17:10Z",
+  "topic": "ai agent eval harness autonomous coding workflows",
+  "route": [
+    {
+      "node": "Gist queue",
+      "function": "读取轻量任务队列/主题中转"
+    },
+    {
+      "node": "GitHub Actions container",
+      "function": "远程容器执行检索与基因抽取"
+    },
+    {
+      "node": "GitHub API",
+      "function": "获取真实仓库元数据/文件/工作流"
+    },
+    {
+      "node": "repository inbox",
+      "function": "结果提交回仓库，供主机拉取复核"
+    },
+    {
+      "node": "genes",
+      "function": "可复用规则沉淀"
+    },
+    {
+      "node": "host evolver",
+      "function": "本地主脑验收、入库、技能更新"
+    }
+  ],
+  "schedule": "*/15 * * * *",
+  "analysis_node": "GPT-5.5 analysis",
+  "gist_backup_node": "Gist backup",
+  "phi_ratio_rule": "PHI_RATIO 每轮按实验参数增加 5%，仅作节奏字段，不代表能力自动提升。",
+  "trait_count": {
+    "evaluation_gate": 4,
+    "automated_test_gate": 5,
+    "agent_tooling_pattern": 5,
+    "container_reproducibility": 1
+  },
+  "dominant_traits": [
+    [
+      "agent_tooling_pattern",
+      5
+    ],
+    [
+      "automated_test_gate",
+      5
+    ],
+    [
+      "evaluation_gate",
+      4
+    ],
+    [
+      "container_reproducibility",
+      1
+    ]
+  ],
+  "host_reuse_rule": "只有含Gist任务证据、真实API元数据、采样文件路径、内容hash和边界声明的gene，才允许回流为Hermes进化素材。"
+}
