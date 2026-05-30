@@ -1,0 +1,70 @@
+{
+  "run_id": "evolver_20260530_104526",
+  "generated_at": "2026-05-30T10:45:41Z",
+  "topic": "ai agent eval harness autonomous coding workflows",
+  "search_topic": "ai agent eval harness autonomous coding workflows",
+  "requested_topic": "ai agent eval harness autonomous coding workflows",
+  "mode": "gist_to_github_actions_evolver_evomap",
+  "status": "no_genes",
+  "verification": {
+    "gist_queue_used": true,
+    "gist_queue_count": 0,
+    "gist_error": null,
+    "github_api_used": true,
+    "repo_count": 0,
+    "genes_count": 0,
+    "token_present_in_container": true,
+    "secret_values_printed": false,
+    "minimum_gene_gate": false
+  },
+  "gist_queue": {
+    "enabled": true,
+    "gist_id": "a3537d1e1b113bd4ef215463cc80c760",
+    "html_url": null,
+    "files": [],
+    "queue": [],
+    "queue_count": 0,
+    "fetched_at": "2026-05-30T10:45:31Z"
+  },
+  "evomap": {
+    "version": "1.1",
+    "generated_at": "2026-05-30T10:45:41Z",
+    "topic": "ai agent eval harness autonomous coding workflows",
+    "route": [
+      {
+        "node": "Gist queue",
+        "function": "读取轻量任务队列/主题中转"
+      },
+      {
+        "node": "GitHub Actions container",
+        "function": "远程容器执行检索与基因抽取"
+      },
+      {
+        "node": "GitHub API",
+        "function": "获取真实仓库元数据/文件/工作流"
+      },
+      {
+        "node": "repository inbox",
+        "function": "结果提交回仓库，供主机拉取复核"
+      },
+      {
+        "node": "genes",
+        "function": "可复用规则沉淀"
+      },
+      {
+        "node": "host evolver",
+        "function": "本地主脑验收、入库、技能更新"
+      }
+    ],
+    "schedule": "*/15 * * * *",
+    "analysis_node": "GPT-5.5 analysis",
+    "gist_backup_node": "Gist backup",
+    "phi_ratio_rule": "PHI_RATIO 每轮按实验参数增加 5%，仅作节奏字段，不代表能力自动提升。",
+    "trait_count": {},
+    "dominant_traits": [],
+    "host_reuse_rule": "只有含Gist任务证据、真实API元数据、采样文件路径、内容hash和边界声明的gene，才允许回流为Hermes进化素材。"
+  },
+  "genes": [],
+  "selected_repositories": [],
+  "boundary": "本次完成 Gist 队列读取、GitHub Actions/本地容器等价检索、GitHub API采样、基因抽取和回流；深度代码迁移需后续针对单仓库逐文件审计和测试。"
+}
