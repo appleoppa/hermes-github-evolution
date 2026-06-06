@@ -1,0 +1,8 @@
+{
+  "mode": "fail",
+  "result": {
+    "status": "failed_recorded",
+    "found": false
+  },
+  "secret_values_printed": false
+}
