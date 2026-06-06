@@ -113,6 +113,16 @@ def default_queue(obj: dict[str, Any]) -> list[dict[str, Any]]:
     }]
 
 
+def ensure_queue_policy(obj: dict[str, Any]) -> None:
+    obj["queue_policy"] = {
+        "states": ["ready", "claimed", "running", "completed", "failed", "backoff", "quarantined"],
+        "lease_minutes": LEASE_MINUTES,
+        "max_attempts": MAX_ATTEMPTS,
+        "backoff_minutes": "15 * 2^(attempt-1), capped at 360",
+        "boundary": "Gist queue state carries metadata only; no secrets, no full prompts, no trusted DB semantics.",
+    }
+
+
 def claim() -> dict[str, Any]:
     obj, before = fetch_queue()
     q = default_queue(obj)
@@ -147,12 +157,7 @@ def claim() -> dict[str, Any]:
     selected["attempt"] = int(selected.get("attempt", 0) or 0) + 1
     selected["last_claimed_at"] = iso(current)
     obj["queue"] = q
-    obj["queue_policy"] = {
-        "states": ["ready", "claimed", "running", "completed", "failed", "backoff", "quarantined"],
-        "lease_minutes": LEASE_MINUTES,
-        "max_attempts": MAX_ATTEMPTS,
-        "boundary": "Gist queue state carries metadata only; no secrets, no full prompts, no trusted DB semantics.",
-    }
+    ensure_queue_policy(obj)
     patch_queue(obj)
     return {"status": "claimed", "task": selected, "queue_hash_before": str(abs(hash(before)))}
 
@@ -183,6 +188,7 @@ def complete(success: bool) -> dict[str, Any]:
             item["lease_until"] = None
             break
     obj["queue"] = q
+    ensure_queue_policy(obj)
     patch_queue(obj)
     return {"status": "completed" if success else "failed_recorded", "found": found}
 
