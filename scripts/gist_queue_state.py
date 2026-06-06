@@ -11,6 +11,8 @@ import json
 import os
 import pathlib
 import sys
+import time
+import urllib.error
 import urllib.request
 from typing import Any
 
@@ -71,7 +73,21 @@ def fetch_queue() -> tuple[dict[str, Any], str]:
 def patch_queue(obj: dict[str, Any]) -> dict[str, Any]:
     obj["queue_state_updated_at"] = iso(now())
     payload = {"files": {"hermes-evolution-gist.json": {"content": json.dumps(obj, ensure_ascii=False, indent=2)}}}
-    return request_json(f"https://api.github.com/gists/{GIST_ID}", method="PATCH", payload=payload)
+    last_error = None
+    for attempt in range(1, 4):
+        try:
+            return request_json(f"https://api.github.com/gists/{GIST_ID}", method="PATCH", payload=payload)
+        except urllib.error.HTTPError as exc:
+            body = exc.read().decode("utf-8", errors="ignore")[:500]
+            last_error = RuntimeError(f"HTTPError {exc.code}: {body}")
+            if exc.code in {409, 429, 500, 502, 503, 504}:
+                time.sleep(attempt * 2)
+                continue
+            raise last_error
+        except Exception as exc:
+            last_error = exc
+            time.sleep(attempt * 2)
+    raise RuntimeError(f"patch_queue_failed_after_retries: {last_error}")
 
 
 def parse_time(value: Any) -> dt.datetime | None:

@@ -34,6 +34,38 @@ def read_json(path: pathlib.Path | None) -> Any:
     return json.loads(path.read_text(encoding='utf-8'))
 
 
+
+
+def fetch_existing_queue_state() -> dict[str, Any]:
+    if not GH_TOKEN:
+        return {}
+    req = urllib.request.Request(
+        f'https://api.github.com/gists/{GIST_ID}',
+        headers={
+            'Authorization': 'Bearer ' + GH_TOKEN,
+            'Accept': 'application/vnd.github+json',
+            'User-Agent': 'hermes-gist-backup',
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=45) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+        meta = (data.get('files') or {}).get('hermes-evolution-gist.json') or {}
+        content = meta.get('content') or ''
+        if not content and meta.get('raw_url'):
+            raw_req = urllib.request.Request(meta['raw_url'], headers={'User-Agent': 'hermes-gist-backup'})
+            with urllib.request.urlopen(raw_req, timeout=45) as raw_resp:
+                content = raw_resp.read().decode('utf-8', errors='ignore')
+        obj = json.loads(content) if content else {}
+        return {
+            'queue': obj.get('queue') or [],
+            'queue_policy': obj.get('queue_policy'),
+            'queue_state_updated_at': obj.get('queue_state_updated_at'),
+        }
+    except Exception:
+        return {}
+
+
 def patch_gist(files: dict[str, str]) -> dict[str, Any]:
     if not GH_TOKEN:
         return {'status': 'skipped', 'error': 'missing_GITHUB_TOKEN'}
@@ -91,6 +123,7 @@ def main() -> None:
     }
     # 不写固定状态文件，避免多路 Actions / 本地 cron 并发时产生 rebase 冲突。
     # 每轮 PHI_RATIO 证据写入独立 gist_backup 结果文件，并同步到 Gist。
+    existing_queue_state = fetch_existing_queue_state()
     backup = {
         'name': 'hermes-github-evolution-queue',
         'purpose': 'Gist 中转站：轻量任务队列、远程闭环回流索引与最新结果备份',
@@ -103,7 +136,7 @@ def main() -> None:
         'latest_genes': str(genes_path.relative_to(ROOT)) if genes_path.exists() else None,
         'verification': inbox.get('verification'),
         'phi_ratio_state': phi_state,
-        'queue': [
+        'queue': existing_queue_state.get('queue') or [
             {
                 'id': 'seed-001',
                 'topic': (analysis or {}).get('gpt55_analysis', {}).get('next_gist_topic') or inbox.get('topic') or 'agent self improvement github actions verification',
@@ -111,6 +144,11 @@ def main() -> None:
                 'source_run_id': run_id,
             }
         ],
+        'queue_policy': existing_queue_state.get('queue_policy') or {
+            'states': ['ready', 'claimed', 'running', 'completed', 'failed', 'backoff', 'quarantined'],
+            'boundary': 'Gist queue state carries metadata only; no secrets, no full prompts, no trusted DB semantics.',
+        },
+        'queue_state_updated_at': existing_queue_state.get('queue_state_updated_at'),
         'boundary': 'Gist 备份只保存非密钥摘要、路径索引和下一轮主题；不保存 token 明文。',
     }
     files = {
