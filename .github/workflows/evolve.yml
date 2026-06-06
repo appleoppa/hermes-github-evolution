@@ -6,8 +6,6 @@ on:
         description: 'evolution topic'
         required: false
         default: 'ai agent eval harness autonomous coding workflows'
-  schedule:
-    - cron: '*/15 * * * *'
   push:
     paths:
       - 'tasks/**'
