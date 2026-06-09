@@ -1,0 +1,19 @@
+{
+  "mode": "claim",
+  "result": {
+    "status": "claimed",
+    "task": {
+      "id": "seed-001",
+      "topic": "agent self improvement github actions verification",
+      "status": "claimed",
+      "attempt": 1,
+      "priority": 3,
+      "created_at": "2026-06-06T18:39:01Z",
+      "claimed_by": "27070604424",
+      "lease_until": "2026-06-06T19:24:01Z",
+      "last_claimed_at": "2026-06-06T18:39:01Z"
+    },
+    "queue_hash_before": "1404771851118351781"
+  },
+  "secret_values_printed": false
+}
