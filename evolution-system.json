@@ -2,23 +2,26 @@
   "system": "github-evolution-loop",
   "brain": {
     "primary": "gpt-5.5",
-    "main_dispatcher": "MiniMax-M2.7-highspeed",
+    "main_dispatcher": "github-actions-queue",
     "evolution_lead": "gpt-5.5",
     "assistants": [
       "deepseek-v4-flash"
     ],
     "routing_policy": {
-      "minimax": "主要调度：任务分解、节奏控制、资源分配、检查点组织",
+      "github_actions": "自动化调度：任务分解、节奏控制、分支提交、PR去重和噪音抑制",
       "gpt": "最强主脑：最终裁决、核心推理、APEX/EVM收束、进化主导",
       "deepseek": "辅助脑：反证审错、漏洞发现、风险提示、补充推理"
     },
     "decision_order": [
-      "MiniMax调度",
+      "GitHub Actions队列调度",
       "GPT主脑判断",
       "DeepSeek反证辅助",
       "GPT最终收束"
     ],
-    "updated_at": "2026-05-21"
+    "updated_at": "2026-06-12",
+    "disabled_models": [
+      "retired-proprietary-dispatcher"
+    ]
   },
   "storage": {
     "local_workspace": "workspace/github-evolution",

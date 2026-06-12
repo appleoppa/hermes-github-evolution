@@ -5,7 +5,7 @@
 ## 输入
 
 - 主题：智能体自我进化、自动化验证、代码生成、知识回流
-- 主要调度：MiniMax
+- 自动化调度：GitHub Actions / queue lease
 - 最强主脑：GPT-5.5（进化主导）
 - 辅助脑：DeepSeek 4
 

@@ -33,11 +33,10 @@ jobs:
     env:
       EVOLUTION_TOPIC: ${{ github.event.inputs.topic || 'ai agent eval harness autonomous coding workflows' }}
       EVOLUTION_BATCH_ID: ${{ github.event.inputs.batch_id || '' }}
-      EVOLUTION_OPEN_PR: ${{ github.event.inputs.open_pr || 'false' }}
+      EVOLUTION_OPEN_PR: ${{ github.event.inputs.open_pr || 'true' }}
       EVOLUTION_GIST_ID: ${{ vars.EVOLUTION_GIST_ID || 'a3537d1e1b113bd4ef215463cc80c760' }}
       GPT55_5YUANTOKEN_API_KEY: ${{ secrets.GPT55_5YUANTOKEN_API_KEY }}
       DEEPSEEK_V4_FLASH_API_KEY: ${{ secrets.DEEPSEEK_V4_FLASH_API_KEY }}
-      MINIMAX_M27_HIGHSPEED_API_KEY: ${{ secrets.MINIMAX_M27_HIGHSPEED_API_KEY }}
       GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
       EVOLUTION_QUEUE_LEASE_MINUTES: '45'
       EVOLUTION_QUEUE_MAX_ATTEMPTS: '4'
@@ -75,7 +74,7 @@ jobs:
       - name: mark queue task failed with backoff/quarantine
         if: failure()
         run: python scripts/gist_queue_state.py fail || true
-      - name: commit batch result and optionally open PR
+      - name: commit batch result
         if: always()
         run: |
           set -euo pipefail
@@ -89,16 +88,36 @@ jobs:
             git push --force-with-lease origin "$EVOLUTION_BRANCH"
           fi
 
-          if [ "${EVOLUTION_OPEN_PR}" != "true" ]; then
-            echo "deferred PR creation for batch ${EVOLUTION_BATCH_ID}; branch=${EVOLUTION_BRANCH}"
+      - name: open or update draft PR for successful batch
+        if: ${{ success() && env.EVOLUTION_OPEN_PR == 'true' }}
+        run: |
+          set -euo pipefail
+          TITLE="chore: daily evolver batch ${EVOLUTION_BATCH_ID}"
+          BODY="Automated Super-Evolution-2 daily batch proposal. Batch=${EVOLUTION_BATCH_ID}; latest_workflow_run=${GITHUB_RUN_ID}; queue=lease/backoff/quarantine enabled; branch=${EVOLUTION_BRANCH}. Auto-open is enabled for successful runs only; duplicate PRs are suppressed by checking the branch first."
+          EXISTING_PR_URL=$(gh pr list \
+            --repo appleoppa/hermes-github-evolution \
+            --head "$EVOLUTION_BRANCH" \
+            --state open \
+            --json url \
+            --jq '.[0].url // empty')
+
+          if [ -n "$EXISTING_PR_URL" ]; then
+            echo "existing PR found for ${EVOLUTION_BRANCH}: ${EXISTING_PR_URL}"
+            gh pr edit "$EXISTING_PR_URL" \
+              --repo appleoppa/hermes-github-evolution \
+              --title "$TITLE" \
+              --body "$BODY"
             exit 0
           fi
 
-          BODY="Automated Super-Evolution-2 daily batch proposal. Batch=${EVOLUTION_BATCH_ID}; latest_workflow_run=${GITHUB_RUN_ID}; queue=lease/backoff/quarantine enabled; branch=${EVOLUTION_BRANCH}. This PR is opened only after the configured second daily trigger."
           gh pr create \
             --repo appleoppa/hermes-github-evolution \
             --base main \
             --head "$EVOLUTION_BRANCH" \
-            --title "chore: daily evolver batch ${EVOLUTION_BATCH_ID}" \
+            --title "$TITLE" \
             --body "$BODY" \
-            || gh pr view "$EVOLUTION_BRANCH" --repo appleoppa/hermes-github-evolution --json url
+            --draft
+
+      - name: report deferred PR creation
+        if: ${{ success() && env.EVOLUTION_OPEN_PR != 'true' }}
+        run: echo "deferred PR creation for batch ${EVOLUTION_BATCH_ID}; branch=${EVOLUTION_BRANCH}"

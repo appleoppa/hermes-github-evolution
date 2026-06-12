@@ -1,13 +1,22 @@
 {
   "gene": "hetu_luoshu_super_route_policy",
   "status": "active",
-  "policy": "MiniMax负责主要调度，GPT-5.5作为最强主脑并主导进化，DeepSeek作为辅助脑负责反证审错。",
+  "policy": "GitHub Actions/queue lease 负责自动化调度与 PR 去重，GPT-5.5 作为最强主脑并主导进化，DeepSeek 作为辅助脑负责反证审错；旧调度模型已停用，不再作为调度模型或 Secret 依赖。",
   "decision_order": [
-    "MiniMax主要调度",
+    "GitHub Actions队列调度",
     "GPT主脑推理",
     "DeepSeek辅助反证",
-    "MiniMax调度复核",
+    "GitHub Actions队列复核",
     "GPT最终收束"
   ],
-  "updated_at": "2026-05-20T10:32:24"
+  "updated_at": "2026-06-12T00:00:00Z",
+  "steps": [
+    "GitHub Actions队列调度",
+    "GPT主脑判断",
+    "DeepSeek反证辅助",
+    "GPT最终收束"
+  ],
+  "disabled_models": [
+    "retired-proprietary-dispatcher"
+  ]
 }
